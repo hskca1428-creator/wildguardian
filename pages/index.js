@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Camera, AlertTriangle, Shield, Upload, Zap } from 'lucide-react';
 
-const GuardianAI = () => {
+export default function Home() {
   const [image, setImage] = useState(null);
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
 
   const wildlifeDatabase = {
     'eastern brown snake': {
@@ -60,10 +61,17 @@ const GuardianAI = () => {
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
+      // Check file size (max 5MB)
+      if (file.size > 5 * 1024 * 1024) {
+        setError('Image too large. Please upload an image under 5MB.');
+        return;
+      }
+      
       const reader = new FileReader();
       reader.onload = (event) => {
         setImage(event.target.result);
         setResult(null);
+        setError(null);
       };
       reader.readAsDataURL(file);
     }
@@ -71,24 +79,45 @@ const GuardianAI = () => {
 
   const analyzeImage = async () => {
     setAnalyzing(true);
+    setError(null);
     
-    // Simulate AI analysis with Claude API
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Demo: Randomly select wildlife for demonstration
-    const creatures = Object.keys(wildlifeDatabase);
-    const detected = creatures[Math.floor(Math.random() * creatures.length)];
-    const info = wildlifeDatabase[detected];
-    
-    setResult({
-      detected: detected,
-      confidence: Math.floor(Math.random() * 15 + 85),
-      timestamp: new Date().toLocaleString('en-AU'),
-      location: 'Backyard - Camera 2',
-      ...info
-    });
-    
-    setAnalyzing(false);
+    try {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ image }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Analysis failed. Please try again.');
+      }
+
+      const data = await response.json();
+      
+      // Enrich with our database info
+      const detectedLower = data.detected.toLowerCase();
+      const dbInfo = wildlifeDatabase[detectedLower] || {
+        risk: data.risk || 'UNKNOWN',
+        advice: data.advice || 'Unknown species detected. Exercise caution.',
+        icon: '❓'
+      };
+
+      setResult({
+        detected: data.detected,
+        confidence: data.confidence,
+        timestamp: new Date().toLocaleString('en-AU'),
+        location: 'Uploaded Image',
+        ...dbInfo
+      });
+      
+    } catch (err) {
+      setError(err.message);
+      console.error('Analysis error:', err);
+    } finally {
+      setAnalyzing(false);
+    }
   };
 
   const getRiskColor = (risk) => {
@@ -108,7 +137,7 @@ const GuardianAI = () => {
         <div className="text-center mb-8 pt-8">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Shield className="w-12 h-12 text-blue-400" />
-            <h1 className="text-5xl font-bold text-white">GuardianAI</h1>
+            <h1 className="text-5xl font-bold text-white">WildGuardian</h1>
           </div>
           <p className="text-blue-200 text-lg">Australian Wildlife-Aware Home Security</p>
           <p className="text-blue-300 text-sm mt-2">Protecting your home from intruders AND native wildlife</p>
@@ -128,7 +157,7 @@ const GuardianAI = () => {
                 <label className="cursor-pointer block">
                   <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                   <p className="text-gray-600 mb-2">Click to upload security camera image</p>
-                  <p className="text-sm text-gray-400">PNG, JPG up to 10MB</p>
+                  <p className="text-sm text-gray-400">PNG, JPG up to 5MB</p>
                   <input
                     type="file"
                     accept="image/*"
@@ -144,7 +173,11 @@ const GuardianAI = () => {
                     className="max-w-full h-64 object-contain mx-auto rounded-lg mb-4"
                   />
                   <button
-                    onClick={() => setImage(null)}
+                    onClick={() => {
+                      setImage(null);
+                      setResult(null);
+                      setError(null);
+                    }}
                     className="text-sm text-gray-500 hover:text-gray-700"
                   >
                     Remove image
@@ -152,6 +185,12 @@ const GuardianAI = () => {
                 </div>
               )}
             </div>
+
+            {error && (
+              <div className="mt-4 bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">
+                {error}
+              </div>
+            )}
 
             {image && !result && (
               <button
@@ -225,16 +264,22 @@ const GuardianAI = () => {
 
                 {/* Actions */}
                 <div className="grid grid-cols-2 gap-3">
-                  <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
-                    Call Wildlife Expert
-                  </button>
-                  <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
+                  <a 
+                    href="tel:000"
+                    className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors text-center"
+                  >
                     Emergency: 000
+                  </a>
+                  <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
+                    Find Expert
                   </button>
                 </div>
 
                 <button
-                  onClick={() => setResult(null)}
+                  onClick={() => {
+                    setResult(null);
+                    setImage(null);
+                  }}
                   className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded-lg text-sm transition-colors"
                 >
                   Analyze Another Image
@@ -265,6 +310,4 @@ const GuardianAI = () => {
       </div>
     </div>
   );
-};
-
-export default GuardianAI;
+}
