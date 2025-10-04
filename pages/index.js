@@ -409,7 +409,6 @@ export default function Home() {
   </h3>
   <p className="text-blue-200">Connect Eufy, Ring, Arlo cameras - Eufy beta available now!</p>
 </a>
-
         {/* Footer */}
         <div className="text-center text-blue-300/60 text-sm">
           <p>© 2024 WildGuardian. Protecting Australian homes with AI-powered wildlife detection.</p>
