@@ -399,14 +399,16 @@ export default function Home() {
   </h3>
   <p className="text-blue-200">Learn how our AI achieves 94.7% accuracy in under 3 seconds</p>
 </a>
-          <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
-              <Camera className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="font-bold text-white text-xl mb-2">Camera Integration</h3>
-            <p className="text-blue-200">Compatible with Ring, Arlo, Eufy and major security systems</p>
-          </div>
-        </div>
+          <a href="/camera-integration" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
+  <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+    <Camera className="w-8 h-8 text-white" />
+  </div>
+  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+    Camera Integration
+    <ChevronRight className="w-5 h-5" />
+  </h3>
+  <p className="text-blue-200">Connect Eufy, Ring, Arlo cameras - Eufy beta available now!</p>
+</a>
 
         {/* Footer */}
         <div className="text-center text-blue-300/60 text-sm">
