@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera, AlertTriangle, Shield, Upload, Zap, CheckCircle, XCircle, Info } from 'lucide-react';
+import { Camera, AlertTriangle, Shield, Upload, Zap, CheckCircle, XCircle, Info, ChevronRight } from 'lucide-react';
 
 export default function Home() {
   const [image, setImage] = useState(null);
