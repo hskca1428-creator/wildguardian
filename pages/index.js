@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import { Camera, AlertTriangle, Shield, Upload, Zap, CheckCircle, XCircle, Info, ChevronRight } from 'lucide-react';
 
 export default function Home() {
+  {/* Eufy Beta Banner - Add this right after opening div */}
+<div className="bg-gradient-to-r from-green-600 to-blue-600 py-3 px-4 text-center">
+  <a href="/eufy-demo" className="text-white font-semibold flex items-center justify-center gap-2 hover:underline">
+    <span className="inline-block w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+    🎉 NEW: Eufy Camera Integration Live! Try the Demo →
+  </a>
+</div>
   const [image, setImage] = useState(null);
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
