@@ -17,7 +17,6 @@ export default function CameraIntegration() {
       features: ['Local storage integration', 'Real-time alerts', 'AI wildlife detection', 'No cloud required'],
       setupTime: '5 minutes',
       difficulty: 'Easy'
-      <a 
   href="/eufy-demo"
   className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-3"
 >
