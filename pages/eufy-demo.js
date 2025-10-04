@@ -86,11 +86,35 @@ export default function EufyIntegrationDemo() {
   };
 
   const handleBetaSignup = async () => {
-    if (!email || !email.includes('@')) {
-      setSignupStatus('error');
-      setTimeout(() => setSignupStatus('idle'), 3000);
-      return;
+  if (!email || !email.includes('@')) {
+    setSignupStatus('error');
+    setTimeout(() => setSignupStatus('idle'), 3000);
+    return;
+  }
+
+  setSignupStatus('loading');
+
+  try {
+    const response = await fetch('/api/beta-signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    if (response.ok) {
+      setSignupStatus('success');
+      setEmail('');
+      setTimeout(() => setSignupStatus('idle'), 5000);
+    } else {
+      throw new Error('Signup failed');
     }
+  } catch (error) {
+    setSignupStatus('error');
+    setTimeout(() => setSignupStatus('idle'), 3000);
+  }
+};
 
     setSignupStatus('loading');
 
