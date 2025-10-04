@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera, AlertTriangle, Shield, Upload, Zap } from 'lucide-react';
+import { Camera, AlertTriangle, Shield, Upload, Zap, CheckCircle, XCircle, Info } from 'lucide-react';
 
 export default function Home() {
   const [image, setImage] = useState(null);
@@ -61,7 +61,6 @@ export default function Home() {
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
-      // Check file size (max 5MB)
       if (file.size > 5 * 1024 * 1024) {
         setError('Image too large. Please upload an image under 5MB.');
         return;
@@ -96,7 +95,6 @@ export default function Home() {
 
       const data = await response.json();
       
-      // Enrich with our database info
       const detectedLower = data.detected.toLowerCase();
       const dbInfo = wildlifeDatabase[detectedLower] || {
         risk: data.risk || 'UNKNOWN',
@@ -114,198 +112,299 @@ export default function Home() {
       
     } catch (err) {
       setError(err.message);
-      console.error('Analysis error:', err);
     } finally {
       setAnalyzing(false);
     }
   };
 
-  const getRiskColor = (risk) => {
+  const getRiskStyles = (risk) => {
     switch(risk) {
-      case 'CRITICAL': return 'bg-red-100 border-red-500 text-red-900';
-      case 'HIGH': return 'bg-orange-100 border-orange-500 text-orange-900';
-      case 'MEDIUM': return 'bg-yellow-100 border-yellow-500 text-yellow-900';
-      case 'LOW': return 'bg-green-100 border-green-500 text-green-900';
-      default: return 'bg-gray-100 border-gray-500 text-gray-900';
+      case 'CRITICAL': 
+        return {
+          bg: 'bg-gradient-to-br from-red-50 to-red-100',
+          border: 'border-red-400',
+          text: 'text-red-900',
+          badge: 'bg-red-500',
+          glow: 'shadow-red-200'
+        };
+      case 'HIGH': 
+        return {
+          bg: 'bg-gradient-to-br from-orange-50 to-orange-100',
+          border: 'border-orange-400',
+          text: 'text-orange-900',
+          badge: 'bg-orange-500',
+          glow: 'shadow-orange-200'
+        };
+      case 'MEDIUM': 
+        return {
+          bg: 'bg-gradient-to-br from-yellow-50 to-yellow-100',
+          border: 'border-yellow-400',
+          text: 'text-yellow-900',
+          badge: 'bg-yellow-500',
+          glow: 'shadow-yellow-200'
+        };
+      case 'LOW': 
+        return {
+          bg: 'bg-gradient-to-br from-green-50 to-green-100',
+          border: 'border-green-400',
+          text: 'text-green-900',
+          badge: 'bg-green-500',
+          glow: 'shadow-green-200'
+        };
+      default: 
+        return {
+          bg: 'bg-gradient-to-br from-gray-50 to-gray-100',
+          border: 'border-gray-400',
+          text: 'text-gray-900',
+          badge: 'bg-gray-500',
+          glow: 'shadow-gray-200'
+        };
     }
   };
 
+  const styles = result ? getRiskStyles(result.risk) : null;
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+      {/* Animated Background Pattern */}
+      <div className="fixed inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
-        <div className="text-center mb-8 pt-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Shield className="w-12 h-12 text-blue-400" />
-            <h1 className="text-5xl font-bold text-white">WildGuardian</h1>
+        <div className="text-center mb-12 pt-6">
+          <div className="inline-flex items-center justify-center gap-4 mb-6 bg-white/10 backdrop-blur-xl rounded-full px-8 py-4 border border-white/20">
+            <Shield className="w-14 h-14 text-blue-400 drop-shadow-lg" />
+            <div className="text-left">
+              <h1 className="text-5xl font-black text-white tracking-tight">WildGuardian</h1>
+              <p className="text-blue-300 text-sm font-medium">AI-Powered Wildlife Detection</p>
+            </div>
           </div>
-          <p className="text-blue-200 text-lg">Australian Wildlife-Aware Home Security</p>
-          <p className="text-blue-300 text-sm mt-2">Protecting your home from intruders AND native wildlife</p>
+          <p className="text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed">
+            Australian Wildlife-Aware Home Security System
+          </p>
+          <p className="text-blue-300/80 mt-2">
+            Protecting your property from intruders <span className="text-blue-400 font-semibold">AND</span> native wildlife
+          </p>
         </div>
 
-        {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {/* Upload Section */}
-          <div className="bg-white rounded-xl shadow-2xl p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <Camera className="w-6 h-6 text-blue-600" />
-              <h2 className="text-2xl font-bold text-gray-800">Upload Security Image</h2>
+          <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
+              <div className="flex items-center gap-3">
+                <Camera className="w-6 h-6 text-white" />
+                <h2 className="text-2xl font-bold text-white">Upload Security Image</h2>
+              </div>
             </div>
             
-            <div className="border-4 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-400 transition-colors">
-              {!image ? (
-                <label className="cursor-pointer block">
-                  <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <p className="text-gray-600 mb-2">Click to upload security camera image</p>
-                  <p className="text-sm text-gray-400">PNG, JPG up to 5MB</p>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleImageUpload}
-                    className="hidden"
-                  />
-                </label>
+            <div className="p-6">
+              <div className="relative border-4 border-dashed border-blue-300 rounded-xl p-8 text-center hover:border-blue-500 hover:bg-blue-50/50 transition-all duration-300">
+                {!image ? (
+                  <label className="cursor-pointer block">
+                    <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-full w-24 h-24 mx-auto mb-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <Upload className="w-12 h-12 text-blue-600" />
+                    </div>
+                    <p className="text-gray-700 mb-2 font-semibold text-lg">Click to upload security camera image</p>
+                    <p className="text-sm text-gray-500">PNG, JPG up to 5MB</p>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleImageUpload}
+                      className="hidden"
+                    />
+                  </label>
+                ) : (
+                  <div>
+                    <div className="relative group">
+                      <img 
+                        src={image} 
+                        alt="Uploaded" 
+                        className="max-w-full h-72 object-contain mx-auto rounded-lg shadow-xl"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors rounded-lg"></div>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setImage(null);
+                        setResult(null);
+                        setError(null);
+                      }}
+                      className="mt-4 text-sm text-gray-600 hover:text-gray-900 font-medium underline"
+                    >
+                      Remove image
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {error && (
+                <div className="mt-6 bg-red-50 border-l-4 border-red-500 rounded-lg p-4 flex items-start gap-3">
+                  <XCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-red-700 text-sm font-medium">{error}</p>
+                </div>
+              )}
+
+              {image && !result && (
+                <button
+                  onClick={analyzeImage}
+                  disabled={analyzing}
+                  className="w-full mt-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+                >
+                  {analyzing ? (
+                    <>
+                      <Zap className="w-6 h-6 animate-pulse" />
+                      <span className="text-lg">Analyzing Wildlife...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Zap className="w-6 h-6" />
+                      <span className="text-lg">Analyze Image with AI</span>
+                    </>
+                  )}
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Results Section */}
+          <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden border border-white/20">
+            <div className="bg-gradient-to-r from-orange-600 to-orange-700 px-6 py-4">
+              <div className="flex items-center gap-3">
+                <AlertTriangle className="w-6 h-6 text-white" />
+                <h2 className="text-2xl font-bold text-white">Detection Results</h2>
+              </div>
+            </div>
+
+            <div className="p-6">
+              {!result ? (
+                <div className="text-center py-20">
+                  <div className="bg-gradient-to-br from-gray-100 to-gray-50 rounded-full w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                    <Shield className="w-16 h-16 text-gray-300" />
+                  </div>
+                  <p className="text-gray-500 text-lg">Upload an image to begin wildlife detection</p>
+                </div>
               ) : (
-                <div>
-                  <img 
-                    src={image} 
-                    alt="Uploaded" 
-                    className="max-w-full h-64 object-contain mx-auto rounded-lg mb-4"
-                  />
+                <div className="space-y-6">
+                  {/* Risk Alert Card */}
+                  <div className={`${styles.bg} border-4 ${styles.border} rounded-xl p-6 shadow-lg ${styles.glow}`}>
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-4">
+                        <span className="text-6xl drop-shadow-lg">{result.icon}</span>
+                        <div>
+                          <h3 className={`text-2xl font-bold capitalize ${styles.text}`}>{result.detected}</h3>
+                          <div className="flex items-center gap-2 mt-1">
+                            <div className="bg-white/80 rounded-full px-3 py-1">
+                              <p className="text-sm font-semibold text-gray-700">Confidence: {result.confidence}%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <div className={`${styles.badge} text-white text-xl font-black px-4 py-2 rounded-lg shadow-lg`}>
+                          {result.risk}
+                        </div>
+                        <div className="text-xs opacity-75 mt-1 font-semibold">RISK LEVEL</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Details Card */}
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-5 border border-gray-200 shadow-md">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center gap-2">
+                        <div className="bg-blue-100 rounded-lg p-2">
+                          <Info className="w-4 h-4 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-gray-500 uppercase tracking-wide">Detection Time</p>
+                          <p className="font-semibold text-gray-900 text-sm">{result.timestamp}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="bg-purple-100 rounded-lg p-2">
+                          <Camera className="w-4 h-4 text-purple-600" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-gray-500 uppercase tracking-wide">Source</p>
+                          <p className="font-semibold text-gray-900 text-sm">{result.location}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Safety Advice */}
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg shadow-md">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-blue-900 mb-2 text-lg">Safety Recommendations:</h4>
+                        <p className="text-blue-800 leading-relaxed">{result.advice}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <a 
+                      href="tel:000"
+                      className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 text-center shadow-lg"
+                    >
+                      🚨 Emergency: 000
+                    </a>
+                    <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+                      🔍 Find Expert
+                    </button>
+                  </div>
+
                   <button
                     onClick={() => {
-                      setImage(null);
                       setResult(null);
-                      setError(null);
+                      setImage(null);
                     }}
-                    className="text-sm text-gray-500 hover:text-gray-700"
+                    className="w-full bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-300 hover:to-gray-400 text-gray-800 font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
                   >
-                    Remove image
+                    🔄 Analyze Another Image
                   </button>
                 </div>
               )}
             </div>
-
-            {error && (
-              <div className="mt-4 bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">
-                {error}
-              </div>
-            )}
-
-            {image && !result && (
-              <button
-                onClick={analyzeImage}
-                disabled={analyzing}
-                className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors disabled:bg-gray-400"
-              >
-                {analyzing ? (
-                  <>
-                    <Zap className="w-5 h-5 animate-pulse" />
-                    Analyzing Wildlife...
-                  </>
-                ) : (
-                  <>
-                    <Zap className="w-5 h-5" />
-                    Analyze Image
-                  </>
-                )}
-              </button>
-            )}
-          </div>
-
-          {/* Results Section */}
-          <div className="bg-white rounded-xl shadow-2xl p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <AlertTriangle className="w-6 h-6 text-orange-600" />
-              <h2 className="text-2xl font-bold text-gray-800">Detection Results</h2>
-            </div>
-
-            {!result ? (
-              <div className="text-center py-16 text-gray-400">
-                <Shield className="w-24 h-24 mx-auto mb-4 opacity-20" />
-                <p>Upload an image to begin wildlife detection</p>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {/* Risk Alert */}
-                <div className={`border-4 rounded-lg p-4 ${getRiskColor(result.risk)}`}>
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-4xl">{result.icon}</span>
-                      <div>
-                        <h3 className="text-xl font-bold capitalize">{result.detected}</h3>
-                        <p className="text-sm opacity-75">Confidence: {result.confidence}%</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold">{result.risk}</div>
-                      <div className="text-xs opacity-75">RISK LEVEL</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Details */}
-                <div className="bg-gray-50 rounded-lg p-4 space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Detection Time:</span>
-                    <span className="font-semibold">{result.timestamp}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Location:</span>
-                    <span className="font-semibold">{result.location}</span>
-                  </div>
-                </div>
-
-                {/* Safety Advice */}
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
-                  <h4 className="font-bold text-blue-900 mb-2">Safety Recommendations:</h4>
-                  <p className="text-blue-800 text-sm">{result.advice}</p>
-                </div>
-
-                {/* Actions */}
-                <div className="grid grid-cols-2 gap-3">
-                  <a 
-                    href="tel:000"
-                    className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors text-center"
-                  >
-                    Emergency: 000
-                  </a>
-                  <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">
-                    Find Expert
-                  </button>
-                </div>
-
-                <button
-                  onClick={() => {
-                    setResult(null);
-                    setImage(null);
-                  }}
-                  className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded-lg text-sm transition-colors"
-                >
-                  Analyze Another Image
-                </button>
-              </div>
-            )}
           </div>
         </div>
 
         {/* Features */}
-        <div className="grid md:grid-cols-3 gap-4 mt-8 mb-8">
-          <div className="bg-white/10 backdrop-blur rounded-lg p-4 text-white">
-            <Shield className="w-8 h-8 mb-2 text-blue-400" />
-            <h3 className="font-bold mb-1">Australian Wildlife Database</h3>
-            <p className="text-sm text-blue-200">Trained on 50+ native species</p>
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Shield className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2">Australian Wildlife Database</h3>
+            <p className="text-blue-200">Trained on 50+ native species with real-time threat assessment</p>
           </div>
-          <div className="bg-white/10 backdrop-blur rounded-lg p-4 text-white">
-            <Zap className="w-8 h-8 mb-2 text-yellow-400" />
-            <h3 className="font-bold mb-1">Real-Time Analysis</h3>
-            <p className="text-sm text-blue-200">Instant threat assessment</p>
+          <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Zap className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2">Real-Time AI Analysis</h3>
+            <p className="text-blue-200">Instant species identification and safety recommendations</p>
           </div>
-          <div className="bg-white/10 backdrop-blur rounded-lg p-4 text-white">
-            <Camera className="w-8 h-8 mb-2 text-green-400" />
-            <h3 className="font-bold mb-1">Camera Integration</h3>
-            <p className="text-sm text-blue-200">Works with Ring, Arlo, Eufy</p>
+          <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Camera className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2">Camera Integration</h3>
+            <p className="text-blue-200">Compatible with Ring, Arlo, Eufy and major security systems</p>
           </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center text-blue-300/60 text-sm">
+          <p>© 2024 WildGuardian. Protecting Australian homes with AI-powered wildlife detection.</p>
         </div>
       </div>
     </div>
