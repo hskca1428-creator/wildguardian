@@ -379,13 +379,16 @@ export default function Home() {
 
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
-              <Shield className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="font-bold text-white text-xl mb-2">Australian Wildlife Database</h3>
-            <p className="text-blue-200">Trained on 50+ native species with real-time threat assessment</p>
-          </div>
+          <a href="/wildlife-database" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
+  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+    <Shield className="w-8 h-8 text-white" />
+  </div>
+  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+    Australian Wildlife Database
+    <ChevronRight className="w-5 h-5" />
+  </h3>
+  <p className="text-blue-200">Click to explore 50+ native species with identification guides</p>
+</a>
           <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
             <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
               <Zap className="w-8 h-8 text-white" />
