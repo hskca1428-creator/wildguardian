@@ -376,39 +376,42 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <a href="/wildlife-database" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
-  <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
-    <Shield className="w-8 h-8 text-white" />
-  </div>
-  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
-    Australian Wildlife Database
-    <ChevronRight className="w-5 h-5" />
-  </h3>
-  <p className="text-blue-200">Click to explore 50+ native species with identification guides</p>
-</a>
+            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Shield className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+              Australian Wildlife Database
+              <ChevronRight className="w-5 h-5" />
+            </h3>
+            <p className="text-blue-200">Click to explore 50+ native species with identification guides</p>
+          </a>
+
           <a href="/ai-analysis" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
-  <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
-    <Zap className="w-8 h-8 text-white" />
-  </div>
-  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
-    Real-Time AI Analysis
-    <ChevronRight className="w-5 h-5" />
-  </h3>
-  <p className="text-blue-200">Learn how our AI achieves 94.7% accuracy in under 3 seconds</p>
-</a>
+            <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Zap className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+              Real-Time AI Analysis
+              <ChevronRight className="w-5 h-5" />
+            </h3>
+            <p className="text-blue-200">Learn how our AI achieves 94.7% accuracy in under 3 seconds</p>
+          </a>
+
           <a href="/camera-integration" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
-  <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
-    <Camera className="w-8 h-8 text-white" />
-  </div>
-  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
-    Camera Integration
-    <ChevronRight className="w-5 h-5" />
-  </h3>
-  <p className="text-blue-200">Connect Eufy, Ring, Arlo cameras - Eufy beta available now!</p>
-</a>
+            <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+              <Camera className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+              Camera Integration
+              <ChevronRight className="w-5 h-5" />
+            </h3>
+            <p className="text-blue-200">Connect Eufy, Ring, Arlo cameras - Eufy beta available now!</p>
+          </a>
+        </div>
+
         {/* Footer */}
         <div className="text-center text-blue-300/60 text-sm">
           <p>© 2024 WildGuardian. Protecting Australian homes with AI-powered wildlife detection.</p>
