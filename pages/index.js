@@ -164,13 +164,32 @@ export default function Home() {
 
   const styles = result ? getRiskStyles(result.risk) : null;
 return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-      {/* Animated Background Pattern */}
-      <div className="fixed inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }}></div>
+  <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+    {/* Animated Background Pattern */}
+    <div className="fixed inset-0 opacity-10">
+      <div className="absolute inset-0" style={{
+        backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+        backgroundSize: '40px 40px'
+      }}></div>
+    </div>
+<div className="mb-8">
+          <a 
+            href="/eufy-demo"
+            className="block bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-300 shadow-2xl border-2 border-white/20"
+          >
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <span className="inline-block w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+              <span className="text-white font-black text-2xl">NEW: Eufy Camera Integration Live!</span>
+            </div>
+            <p className="text-blue-100 text-lg">
+              Try our interactive demo - See AI wildlife detection in action with your Eufy cameras
+            </p>
+            <div className="mt-4 inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-white font-semibold">
+              Click to Try Demo
+              <ChevronRight className="w-5 h-5" />
+            </div>
+          </a>
+        </div>
     
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
