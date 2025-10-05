@@ -116,8 +116,6 @@ export default function EufyIntegrationDemo() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         
-        <div className="text-center mb-16">
-        
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 bg-green-500/20 backdrop-blur-sm border border-green-500/30 rounded-full px-6 py-3 mb-6">
