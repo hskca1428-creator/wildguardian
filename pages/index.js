@@ -171,7 +171,6 @@ return (
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
-      </div>
 
         {/* ADD THIS ENTIRE SECTION HERE - Eufy Demo Banner */}
         <div className="mb-8">
