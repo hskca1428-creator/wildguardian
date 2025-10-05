@@ -10,56 +10,6 @@ const [analysisCount, setAnalysisCount] = useState(0);
 const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 const MAX_FREE_ANALYSES = 3;
 
-// Update the analyzeImage function to check limits:
-
-  const wildlifeDatabase = {
-    'eastern brown snake': {
-      risk: 'CRITICAL',
-      color: 'red',
-      advice: 'Do NOT approach. Second most venomous land snake. Call 000 and a professional snake catcher immediately.',
-      icon: '🐍'
-    },
-    'carpet python': {
-      risk: 'LOW',
-      color: 'green',
-      advice: 'Non-venomous. Keep pets and children away but not dangerous to humans. Will likely move on naturally.',
-      icon: '🐍'
-    },
-    'redback spider': {
-      risk: 'HIGH',
-      color: 'orange',
-      advice: 'Venomous. Avoid contact. Safe to observe from distance. Consider professional pest control.',
-      icon: '🕷️'
-    },
-    'funnel web spider': {
-      risk: 'CRITICAL',
-      color: 'red',
-      advice: 'Highly venomous. Keep clear. Call pest control immediately. Keep pets and children inside.',
-      icon: '🕷️'
-    },
-    'possum': {
-      risk: 'LOW',
-      color: 'green',
-      advice: 'Protected species. Harmless and beneficial. Do not feed or relocate without permit.',
-      icon: '🦡'
-    },
-    'blue tongue lizard': {
-      risk: 'LOW',
-      color: 'green',
-      advice: 'Harmless and beneficial (eats snails/slugs). Protected species. Let it pass through naturally.',
-      icon: '🦎'
-    },
-    'magpie': {
-      risk: 'MEDIUM',
-      color: 'yellow',
-      advice: 'May be territorial during breeding season (Aug-Oct). Avoid nesting areas. Protected species.',
-      icon: '🐦'
-    },
-    'kangaroo': {
-      risk: 'MEDIUM',
-      color: 'yellow',
-      advice: 'Can be aggressive if cornered. Keep distance. Do not feed. Contact wildlife rescue if injured.',
-      icon: '🦘'
     }
   };
 
