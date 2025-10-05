@@ -322,6 +322,16 @@ export default function CameraIntegration() {
               <h3 className="text-2xl font-bold text-white mb-3">Ready to Connect Your Eufy Camera?</h3>
               <p className="text-green-100 mb-6">Join our beta program and get early access to wildlife detection</p>
               <button className="bg-white hover:bg-gray-100 text-green-700 font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <a href="/eufy-demo" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
+  <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-xl w-16 h-16 flex items-center justify-center mb-4 shadow-lg">
+    <Camera className="w-8 h-8 text-white" />
+  </div>
+  <h3 className="font-bold text-white text-xl mb-2 flex items-center gap-2">
+    Camera Integration
+    <ChevronRight className="w-5 h-5" />
+  </h3>
+  <p className="text-blue-200">🔥 Eufy beta available! Click to try live demo</p>
+</a>
                 Join Beta Program (Free)
               </button>
             </div>
