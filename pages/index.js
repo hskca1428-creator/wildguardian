@@ -171,11 +171,6 @@ return (
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
-<button 
-  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105"
->
-  🔍 Find Expert
-</button>
         {/* ADD THIS ENTIRE SECTION HERE - Eufy Demo Banner */}
         <div className="mb-8">
           <a 
