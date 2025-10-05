@@ -1,3 +1,4 @@
+import React from 'react';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function Success() {
