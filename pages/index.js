@@ -172,7 +172,6 @@ return (
           backgroundSize: '40px 40px'
         }}></div>
       </div>
-</div>
 
         {/* ADD THIS ENTIRE SECTION HERE - Eufy Demo Banner */}
         <div className="mb-8">
