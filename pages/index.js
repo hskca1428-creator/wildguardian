@@ -1,17 +1,43 @@
 import React, { useState } from 'react';
 import { Camera, AlertTriangle, Shield, Upload, Zap, CheckCircle, XCircle, Info, ChevronRight } from 'lucide-react';
 
+// Mock wildlife database for demonstration purposes
+const wildlifeDatabase = {
+  kangaroo: {
+    risk: 'LOW',
+    advice: 'Kangaroos are generally not aggressive, but keep a safe distance, especially from large males. Do not feed them.',
+    icon: '🦘'
+  },
+  koala: {
+    risk: 'LOW',
+    advice: 'Koalas are not dangerous, but can scratch if they feel threatened. Observe from a distance.',
+    icon: '🐨'
+  },
+  'brown snake': {
+    risk: 'CRITICAL',
+    advice: 'Highly venomous. Do NOT approach. Slowly back away and call a professional snake catcher immediately.',
+    icon: '🐍'
+  },
+  'redback spider': {
+    risk: 'HIGH',
+    advice: 'Venomous bite. Avoid contact. Check outdoor furniture, shoes, and sheds. Seek medical attention if bitten.',
+    icon: '🕷️'
+  },
+  possum: {
+    risk: 'LOW',
+    advice: 'Generally harmless but can be a nuisance. Do not corner them as they may scratch in defense.',
+    icon: '🐾'
+  }
+};
+
 export default function Home() {
   const [image, setImage] = useState(null);
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
-const [analysisCount, setAnalysisCount] = useState(0);
-const [showUpgradeModal, setShowUpgradeModal] = useState(false);
-const MAX_FREE_ANALYSES = 3;
-
-    }
-  };
+  const [analysisCount, setAnalysisCount] = useState(0);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const MAX_FREE_ANALYSES = 3;
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -32,41 +58,43 @@ const MAX_FREE_ANALYSES = 3;
   };
 
   const analyzeImage = async () => {
+    // Check if the user has reached the free analysis limit
+    if (analysisCount >= MAX_FREE_ANALYSES) {
+      setShowUpgradeModal(true);
+      return;
+    }
+
     setAnalyzing(true);
     setError(null);
     
     try {
-      const response = await fetch('/api/analyze', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ image }),
-      });
+      // This is a mock API call. In a real application, you would fetch from your backend.
+      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
 
-      if (!response.ok) {
-        throw new Error('Analysis failed. Please try again.');
-      }
+      // Mock response logic
+      const mockWildlife = ['kangaroo', 'brown snake', 'possum', 'redback spider', 'koala'];
+      const detectedAnimal = mockWildlife[Math.floor(Math.random() * mockWildlife.length)];
+      const confidence = Math.floor(Math.random() * (99 - 85 + 1) + 85);
 
-      const data = await response.json();
-      
-      const detectedLower = data.detected.toLowerCase();
-      const dbInfo = wildlifeDatabase[detectedLower] || {
-        risk: data.risk || 'UNKNOWN',
-        advice: data.advice || 'Unknown species detected. Exercise caution.',
+      const dbInfo = wildlifeDatabase[detectedAnimal] || {
+        risk: 'UNKNOWN',
+        advice: 'Unknown species detected. Exercise caution.',
         icon: '❓'
       };
 
       setResult({
-        detected: data.detected,
-        confidence: data.confidence,
+        detected: detectedAnimal,
+        confidence: confidence,
         timestamp: new Date().toLocaleString('en-AU'),
         location: 'Uploaded Image',
         ...dbInfo
       });
+
+      // Increment the analysis count on successful analysis
+      setAnalysisCount(prevCount => prevCount + 1);
       
     } catch (err) {
-      setError(err.message);
+      setError(err.message || 'An unexpected error occurred.');
     } finally {
       setAnalyzing(false);
     }
@@ -117,36 +145,18 @@ const MAX_FREE_ANALYSES = 3;
     }
   };
 
-  const styles = result ? getRiskStyles(result.risk) : null;
-return (
-  <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
-    {/* Animated Background Pattern */}
-    <div className="fixed inset-0 opacity-10">
-      <div className="absolute inset-0" style={{
-        backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-        backgroundSize: '40px 40px'
-      }}></div>
-    </div>
-<div className="mb-8">
-          <a 
-            href="/eufy-demo"
-            className="block bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-300 shadow-2xl border-2 border-white/20"
-          >
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <span className="inline-block w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
-              <span className="text-white font-black text-2xl">NEW: Eufy Camera Integration Live!</span>
-            </div>
-            <p className="text-blue-100 text-lg">
-              Try our interactive demo - See AI wildlife detection in action with your Eufy cameras
-            </p>
-            <div className="mt-4 inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-white font-semibold">
-              Click to Try Demo
-              <ChevronRight className="w-5 h-5" />
-            </div>
-          </a>
-        </div>
-    
-        {/* Features */}
+  const styles = result ? getRiskStyles(result.risk) : getRiskStyles();
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-gray-800">
+      {/* Animated Background Pattern */}
+      <div className="fixed inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+      
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12 pt-6">
@@ -163,6 +173,25 @@ return (
           <p className="text-blue-300/80 mt-2">
             Protecting your property from intruders <span className="text-blue-400 font-semibold">AND</span> native wildlife
           </p>
+        </div>
+
+        <div className="mb-8">
+          <a 
+            href="/eufy-demo"
+            className="block bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-300 shadow-2xl border-2 border-white/20"
+          >
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <span className="inline-block w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+              <span className="text-white font-black text-2xl">NEW: Eufy Camera Integration Live!</span>
+            </div>
+            <p className="text-blue-100 text-lg">
+              Try our interactive demo - See AI wildlife detection in action with your Eufy cameras
+            </p>
+            <div className="mt-4 inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-white font-semibold">
+              Click to Try Demo
+              <ChevronRight className="w-5 h-5" />
+            </div>
+          </a>
         </div>
 
         {/* Main Content Grid */}
@@ -237,7 +266,7 @@ return (
                   ) : (
                     <>
                       <Zap className="w-6 h-6" />
-                      <span className="text-lg">Analyze Image with AI</span>
+                      <span className="text-lg">Analyze Image with AI ({MAX_FREE_ANALYSES - analysisCount} left)</span>
                     </>
                   )}
                 </button>
@@ -310,76 +339,7 @@ return (
                       </div>
                     </div>
                   </div>
-{/* Upgrade Modal */}
-        {showUpgradeModal && (
-          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
-              <div className="text-center mb-6">
-                <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <AlertTriangle className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Limit Reached</h3>
-                <p className="text-gray-600">
-                  You've used all {MAX_FREE_ANALYSES} free analyses today. Upgrade to Pro for unlimited access!
-                </p>
-              </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 mb-6">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-lg font-bold text-gray-900">WildGuardian Pro</span>
-                  <div className="text-right">
-                    <div className="text-3xl font-black text-blue-600">$9.99</div>
-                    <div className="text-sm text-gray-600">per month</div>
-                  </div>
-                </div>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Unlimited wildlife analyses
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Email alerts for dangerous species
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Priority support
-                  </li>
-                  <li className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    Cancel anytime
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                onClick={async () => {
-                  try {
-                    const response = await fetch('/api/create-checkout', {
-                      method: 'POST',
-                    });
-                    const { sessionId } = await response.json();
-                    
-                    const stripe = window.Stripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
-                    await stripe.redirectToCheckout({ sessionId });
-                  } catch (error) {
-                    console.error('Checkout error:', error);
-                  }
-                }}
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg mb-3"
-              >
-                Upgrade to Pro Now
-              </button>
-
-              <button
-                onClick={() => setShowUpgradeModal(false)}
-                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-xl transition-all"
-              >
-                Maybe Later
-              </button>
-            </div>
-          </div>
-        )}
                   {/* Safety Advice */}
                   <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg shadow-md">
                     <div className="flex items-start gap-3">
@@ -418,6 +378,7 @@ return (
             </div>
           </div>
         </div>
+
         {/* Features */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <a href="/wildlife-database" className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 cursor-pointer">
@@ -459,6 +420,66 @@ return (
           <p>© 2024 WildGuardian. Protecting Australian homes with AI-powered wildlife detection.</p>
         </div>
       </div>
+
+      {/* Upgrade Modal */}
+      {showUpgradeModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
+            <div className="text-center mb-6">
+              <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <AlertTriangle className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Limit Reached</h3>
+              <p className="text-gray-600">
+                You've used all {MAX_FREE_ANALYSES} free analyses. Upgrade to Pro for unlimited access!
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 mb-6">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-lg font-bold text-gray-900">WildGuardian Pro</span>
+                <div className="text-right">
+                  <div className="text-3xl font-black text-blue-600">$9.99</div>
+                  <div className="text-sm text-gray-600">per month</div>
+                </div>
+              </div>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-gray-700">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  Unlimited wildlife analyses
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-700">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  Email alerts for dangerous species
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-700">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  Priority support
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-700">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  Cancel anytime
+                </li>
+              </ul>
+            </div>
+
+            <button
+              onClick={() => alert("Redirecting to checkout...")}
+              className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg mb-3"
+            >
+              Upgrade to Pro Now
+            </button>
+
+            <button
+              onClick={() => setShowUpgradeModal(false)}
+              className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-xl transition-all"
+            >
+              Maybe Later
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
