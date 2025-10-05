@@ -17,7 +17,6 @@ export default function CameraIntegration() {
       features: ['Local storage integration', 'Real-time alerts', 'AI wildlife detection', 'No cloud required'],
       setupTime: '5 minutes',
       difficulty: 'Easy'
-    }
       },
     {
       id: 'ring',
