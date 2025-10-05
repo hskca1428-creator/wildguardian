@@ -171,8 +171,7 @@ return (
           backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
           backgroundSize: '40px 40px'
         }}></div>
-        {/* ADD THIS ENTIRE SECTION HERE - Eufy Demo Banner */}
-        <div className="mb-8">
+        {/*  <div className="mb-8">
           <a 
             href="/eufy-demo"
             className="block bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 rounded-2xl p-6 text-center hover:scale-[1.02] transition-all duration-300 shadow-2xl border-2 border-white/20"
@@ -189,7 +188,8 @@ return (
               <ChevronRight className="w-5 h-5" />
             </div>
           </a>
-        </div>
+        </div> */}
+       
         {/* END OF EUFY BANNER */}
 
         {/* Features */}
