@@ -11,55 +11,7 @@ const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 const MAX_FREE_ANALYSES = 3;
 
 // Update the analyzeImage function to check limits:
-const analyzeImage = async () => {
-  // Check limit
-  if (analysisCount >= MAX_FREE_ANALYSES) {
-    setShowUpgradeModal(true);
-    return;
-  }
 
-  setAnalyzing(true);
-  setError(null);
-  
-  try {
-    const response = await fetch('/api/analyze', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ image }),
-    });
-
-    if (!response.ok) {
-      throw new Error('Analysis failed. Please try again.');
-    }
-
-    const data = await response.json();
-    
-    const detectedLower = data.detected.toLowerCase();
-    const dbInfo = wildlifeDatabase[detectedLower] || {
-      risk: data.risk || 'UNKNOWN',
-      advice: data.advice || 'Unknown species detected. Exercise caution.',
-      icon: '❓'
-    };
-
-    setResult({
-      detected: data.detected,
-      confidence: data.confidence,
-      timestamp: new Date().toLocaleString('en-AU'),
-      location: 'Uploaded Image',
-      ...dbInfo
-    });
-    
-    // Increment count
-    setAnalysisCount(analysisCount + 1);
-    
-  } catch (err) {
-    setError(err.message);
-  } finally {
-    setAnalyzing(false);
-  }
-};
   const wildlifeDatabase = {
     'eastern brown snake': {
       risk: 'CRITICAL',
