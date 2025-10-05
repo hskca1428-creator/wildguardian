@@ -116,6 +116,27 @@ export default function EufyIntegrationDemo() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         
+        {/* Navigation Header */}
+        <div className="flex items-center justify-between mb-8">
+          <a 
+            href="/"
+            className="flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 hover:bg-white/20 transition-all group"
+          >
+            <ChevronRight className="w-5 h-5 text-white rotate-180 group-hover:-translate-x-1 transition-transform" />
+            <Shield className="w-6 h-6 text-blue-400" />
+            <span className="text-white font-bold">WildGuardian Home</span>
+          </a>
+          
+          <a 
+            href="/camera-integration"
+            className="text-blue-300 hover:text-white transition-colors text-sm font-semibold"
+          >
+            View All Cameras →
+          </a>
+        </div>
+
+        <div className="text-center mb-16">
+        
         {/* Hero Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 bg-green-500/20 backdrop-blur-sm border border-green-500/30 rounded-full px-6 py-3 mb-6">
