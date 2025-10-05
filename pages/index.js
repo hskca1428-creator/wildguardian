@@ -6,7 +6,60 @@ export default function Home() {
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+const [analysisCount, setAnalysisCount] = useState(0);
+const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+const MAX_FREE_ANALYSES = 3;
 
+// Update the analyzeImage function to check limits:
+const analyzeImage = async () => {
+  // Check limit
+  if (analysisCount >= MAX_FREE_ANALYSES) {
+    setShowUpgradeModal(true);
+    return;
+  }
+
+  setAnalyzing(true);
+  setError(null);
+  
+  try {
+    const response = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ image }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Analysis failed. Please try again.');
+    }
+
+    const data = await response.json();
+    
+    const detectedLower = data.detected.toLowerCase();
+    const dbInfo = wildlifeDatabase[detectedLower] || {
+      risk: data.risk || 'UNKNOWN',
+      advice: data.advice || 'Unknown species detected. Exercise caution.',
+      icon: '❓'
+    };
+
+    setResult({
+      detected: data.detected,
+      confidence: data.confidence,
+      timestamp: new Date().toLocaleString('en-AU'),
+      location: 'Uploaded Image',
+      ...dbInfo
+    });
+    
+    // Increment count
+    setAnalysisCount(analysisCount + 1);
+    
+  } catch (err) {
+    setError(err.message);
+  } finally {
+    setAnalyzing(false);
+  }
+};
   const wildlifeDatabase = {
     'eastern brown snake': {
       risk: 'CRITICAL',
@@ -355,7 +408,76 @@ return (
                       </div>
                     </div>
                   </div>
+{/* Upgrade Modal */}
+        {showUpgradeModal && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl">
+              <div className="text-center mb-6">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <AlertTriangle className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Limit Reached</h3>
+                <p className="text-gray-600">
+                  You've used all {MAX_FREE_ANALYSES} free analyses today. Upgrade to Pro for unlimited access!
+                </p>
+              </div>
 
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 mb-6">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-lg font-bold text-gray-900">WildGuardian Pro</span>
+                  <div className="text-right">
+                    <div className="text-3xl font-black text-blue-600">$9.99</div>
+                    <div className="text-sm text-gray-600">per month</div>
+                  </div>
+                </div>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Unlimited wildlife analyses
+                  </li>
+                  <li className="flex items-center gap-2 text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Email alerts for dangerous species
+                  </li>
+                  <li className="flex items-center gap-2 text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Priority support
+                  </li>
+                  <li className="flex items-center gap-2 text-sm text-gray-700">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    Cancel anytime
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                onClick={async () => {
+                  try {
+                    const response = await fetch('/api/create-checkout', {
+                      method: 'POST',
+                    });
+                    const { sessionId } = await response.json();
+                    
+                    const stripe = window.Stripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+                    await stripe.redirectToCheckout({ sessionId });
+                  } catch (error) {
+                    console.error('Checkout error:', error);
+                  }
+                }}
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg mb-3"
+              >
+                Upgrade to Pro Now
+              </button>
+
+              <button
+                onClick={() => setShowUpgradeModal(false)}
+                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-4 rounded-xl transition-all"
+              >
+                Maybe Later
+              </button>
+            </div>
+          </div>
+        )}
                   {/* Safety Advice */}
                   <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-l-4 border-blue-600 p-5 rounded-lg shadow-md">
                     <div className="flex items-start gap-3">
