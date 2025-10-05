@@ -163,8 +163,7 @@ export default function Home() {
   };
 
   const styles = result ? getRiskStyles(result.risk) : null;
-
-  return (
+return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
       {/* Animated Background Pattern */}
       <div className="fixed inset-0 opacity-10">
