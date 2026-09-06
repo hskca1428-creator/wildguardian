@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/22720170/README.md)
 # WildGuardian - AI-Powered Wildlife Detection
 
 WildGuardian is an Australian wildlife-aware home security system that uses AI to detect and identify wildlife in security camera footage, providing safety recommendations for homeowners.
