@@ -26,22 +26,48 @@ export default function Home() {
   const [betaEmail, setBetaEmail] = useState('');
   const [betaStatus, setBetaStatus] = useState(null);
 
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      if (file.size > 5 * 1024 * 1024) {
-        setError('Image too large. Please upload an image under 5MB.');
-        return;
+ // Vercel serverless functions cap request bodies at ~4.5MB, and base64
+// encoding inflates file size by ~33% — so a 4-5MB phone photo can blow
+// past that limit and come back as a non-JSON error. Resize/compress in
+// the browser first so uploads stay well under the limit regardless of
+// the original photo size.
+const MAX_DIMENSION = 1280;
+const JPEG_QUALITY = 0.8;
+
+const handleImageUpload = (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  if (file.size > 20 * 1024 * 1024) {
+    setError('That image is too large to process. Please choose a smaller photo.');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    const img = new Image();
+    img.onload = () => {
+      let { width, height } = img;
+      if (width > MAX_DIMENSION || height > MAX_DIMENSION) {
+        const scale = MAX_DIMENSION / Math.max(width, height);
+        width = Math.round(width * scale);
+        height = Math.round(height * scale);
       }
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        setImage(event.target.result);
-        setResult(null);
-        setError(null);
-      };
-      reader.readAsDataURL(file);
-    }
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, width, height);
+      setImage(canvas.toDataURL('image/jpeg', JPEG_QUALITY));
+      setResult(null);
+      setError(null);
+    };
+    img.onerror = () => setError('Could not read that image. Try a different photo.');
+    img.src = event.target.result;
   };
+  reader.onerror = () => setError('Could not read that file.');
+  reader.readAsDataURL(file);
+};
 
   const analyzeImage = async () => {
     if (analysisCount >= MAX_FREE_ANALYSES) {
