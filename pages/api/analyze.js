@@ -1,4 +1,5 @@
 import { species } from '../../data/species';
+export const config = { api: { bodyParser: { sizeLimit: '4mb', }, }, };
 
 // Build a compact reference list for the model so it only ever matches
 // against species we actually have first-aid data for, instead of
