@@ -118,6 +118,45 @@ export const firstAid = {
       'See a doctor if the wound is deep, shows signs of infection, or came from an animal acting unusually.',
     ],
   },
+  tick_attachment: {
+    title: 'Attached Tick (Paralysis Tick)',
+    steps: [
+      'Do not squeeze, pull, or scratch at the tick — disturbing it can trigger a worse reaction.',
+      'If you have no history of tick allergy, use a tick-killing ether-containing spray or freeze it to kill it in place, then leave it to drop off naturally, following current Australian Government guidance.',
+      'If you have a known tick allergy, do not attempt removal yourself — seek medical care for removal.',
+      'Call 000 immediately for any signs of anaphylaxis: difficulty breathing, swelling of the face or throat, dizziness, or widespread hives.',
+      'Watch for tick paralysis symptoms over the following days (unsteady gait, weakness, difficulty swallowing) and seek medical care if they appear.',
+    ],
+  },
+  stonefish_sting: {
+    title: 'Stonefish Sting',
+    steps: [
+      'Call 000 or get to a hospital — this is one of the most painful marine stings and often needs medical treatment.',
+      'Immerse the affected area in water as hot as the person can tolerate (not scalding) for pain relief — stonefish venom breaks down with heat.',
+      'Do not remove any spine fragments yourself unless a professional directs you to.',
+      'Antivenom is available for severe stonefish stings.',
+    ],
+  },
+  fire_ant_sting: {
+    title: 'Red Imported Fire Ant (RIFA) Sting',
+    steps: [
+      'Move away from the area calmly — disturbing a mound can bring many more ants at once.',
+      'Wash the stung area with soap and water and apply a cold pack.',
+      'Small blisters often form — do not scratch or pop them, as this raises infection risk.',
+      'Call 000 immediately if there are signs of anaphylaxis (multiple stings, difficulty breathing, widespread hives, dizziness).',
+      'Report the ant nest to your state biosecurity or agriculture authority — do not treat it yourself.',
+    ],
+  },
+  bluebottle_sting: {
+    title: 'Bluebottle Sting',
+    steps: [
+      'Carefully pick off any visible tentacles with fingers, a gloved hand, or tweezers — brief skin contact when removing them is not dangerous.',
+      'Rinse the area with seawater, not fresh water.',
+      "Immerse in hot water as hot as can be tolerated for as long as pain relief requires; if hot water isn't available, a cold pack also helps.",
+      'Do NOT use vinegar on a bluebottle sting — vinegar is specific to tropical box jellyfish and can make a bluebottle sting worse.',
+      'Seek medical help for widespread stings, a sting to the eye or mouth, or any signs of a severe allergic reaction.',
+    ],
+  },
 };
 
 export const EMERGENCY_NOTE =
