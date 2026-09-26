@@ -6,13 +6,14 @@
 // information, not a substitute for professional medical care.
 
 export const firstAid = {
-  snake_venomous_pit: {
+   snake_venomous_pit: {
     title: 'Suspected Venomous Snake Bite',
     steps: [
       'Call 000 immediately.',
-      'Keep the person completely still and calm — do not let them walk. Bring help to them rather than moving them.',
-      'Apply a broad pressure bandage firmly over the bite site, then continue wrapping up and down the whole limb (Pressure Immobilisation Technique).',
+      'Keep the person still and calm — do not let them walk.',
+      'Apply a pressure bandage firmly over the bite, then bandage the whole limb from fingers or toes upward (Pressure Immobilisation Technique).',
       'Splint the limb to stop it moving, then keep the person still until paramedics arrive.',
+      'If the person becomes unresponsive and is not breathing normally, start CPR.',
       'Do NOT wash the bite site — venom traces help identify the correct antivenom.',
       'Do NOT cut the wound, try to suck out venom, or apply a tourniquet.',
       'Note the time of the bite and any symptoms to tell paramedics.',
@@ -22,17 +23,19 @@ export const firstAid = {
     title: 'Funnel-Web / Mouse Spider Bite',
     steps: [
       'Call 000 immediately — treat this the same as a venomous snake bite.',
-      'Apply the Pressure Immobilisation Technique: a firm bandage over the bite, extending up the limb, then splint and keep the person still.',
-      'Do not wash the bite site.',
+      'Lie the person down and keep them still.',
+      'Apply an elasticised pressure-immobilisation bandage over the bite, then extend it up the limb.',
+      'Splint the limb, record the time of the bite, and wait for the ambulance.',
+      'Do not wash the bite site, and do not delay emergency action to try to identify the spider.',
       'Antivenom is available and highly effective — getting to hospital quickly matters most.',
     ],
   },
   spider_redback: {
     title: 'Redback Spider Bite',
     steps: [
-      'Do NOT apply a pressure immobilisation bandage — for redback bites this can worsen pain without helping.',
-      'Apply a cold pack to the bite for pain relief.',
-      'Keep the person calm and seek medical attention — antivenom is available if symptoms become significant.',
+      'Do NOT use a pressure immobilisation bandage — for redback bites this can worsen pain without helping.',
+      'Wash the site and apply a wrapped cold pack for about 15 minutes for pain relief.',
+      'Seek medical care for severe or systemic symptoms — antivenom is available if needed.',
       'Call 000 if severe pain, sweating, or muscle weakness develops.',
     ],
   },
