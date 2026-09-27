@@ -383,7 +383,7 @@ const handleImageUpload = (e) => {
               Full Species Database
               <ChevronRight className="w-5 h-5" />
             </h3>
-            <p className="text-blue-200 text-sm">Browse 50+ native species with ID guides and first-aid info</p>
+            <p className="text-blue-200 text-sm">Browse 60+ native species with ID guides and first-aid info</p>
           </a>
 
           <div className="block bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
@@ -392,6 +392,37 @@ const handleImageUpload = (e) => {
             </div>
             <h3 className="font-bold text-white text-lg mb-2">Security Camera Alerts</h3>
             <p className="text-blue-200 text-sm">On the roadmap: automatic alerts from Eufy, Ring & Arlo cameras — join the waitlist below</p>
+          </div>
+        </div>
+
+        {/* Hazard modules */}
+        <div className="mb-10">
+          <h3 className="text-white font-bold text-lg mb-4 text-center">Browse by hazard type</h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <a
+              href="/hazards/ticks"
+              className="block bg-white/10 backdrop-blur-xl rounded-xl p-5 border border-white/20 hover:bg-white/20 transition-all text-center"
+            >
+              <div className="text-3xl mb-2">🐛</div>
+              <h4 className="font-bold text-white">Ticks</h4>
+              <p className="text-blue-200 text-xs mt-1">Attachment and paralysis-tick guidance</p>
+            </a>
+            <a
+              href="/hazards/marine"
+              className="block bg-white/10 backdrop-blur-xl rounded-xl p-5 border border-white/20 hover:bg-white/20 transition-all text-center"
+            >
+              <div className="text-3xl mb-2">🌊</div>
+              <h4 className="font-bold text-white">Marine & Waterways</h4>
+              <p className="text-blue-200 text-xs mt-1">Jellyfish, octopus, stonefish, crocodiles</p>
+            </a>
+            <a
+              href="/hazards/insects"
+              className="block bg-white/10 backdrop-blur-xl rounded-xl p-5 border border-white/20 hover:bg-white/20 transition-all text-center"
+            >
+              <div className="text-3xl mb-2">🐜</div>
+              <h4 className="font-bold text-white">Insects & Ants</h4>
+              <p className="text-blue-200 text-xs mt-1">Stings, allergy watch, fire ant reporting</p>
+            </a>
           </div>
         </div>
 
