@@ -161,3 +161,17 @@ export const firstAid = {
 
 export const EMERGENCY_NOTE =
   'This is general information, not a substitute for professional medical care. In an emergency, always call 000.';
+
+// Shown in the footer of every safety-relevant page so the guidance is
+// visibly sourced and dated, not just asserted.
+export const LAST_REVIEWED = 'September 2026';
+
+export const SOURCES = [
+  { name: 'Healthdirect Australia — Snake bites', url: 'https://www.healthdirect.gov.au/snake-bites' },
+  { name: 'Healthdirect Australia — Spider bites', url: 'https://www.healthdirect.gov.au/spider-bites' },
+  { name: 'Healthdirect Australia — Bites and stings', url: 'https://healthdirect.gov.au/bites-and-stings' },
+  {
+    name: 'Better Health Channel — Bites and stings first aid',
+    url: 'https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid',
+  },
+];
