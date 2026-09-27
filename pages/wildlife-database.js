@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Shield, AlertTriangle, Info, ChevronRight, Filter } from 'lucide-react';
 import { species } from '../data/species';
-import { firstAid } from '../data/firstAid';
+import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
 
 export default function WildlifeDatabase() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -200,6 +200,22 @@ export default function WildlifeDatabase() {
             <ChevronRight className="w-5 h-5 rotate-180" />
             Back to Home
           </a>
+        </div>
+
+        {/* Sourcing footer */}
+        <div className="mt-8 text-center text-blue-300/60 text-sm">
+          <p>
+            First-aid guidance last reviewed: {LAST_REVIEWED}. Sources:{' '}
+            {SOURCES.map((s, i) => (
+              <span key={s.url}>
+                {i > 0 && ', '}
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-200">
+                  {s.name}
+                </a>
+              </span>
+            ))}
+            . {EMERGENCY_NOTE}
+          </p>
         </div>
       </div>
     </div>
