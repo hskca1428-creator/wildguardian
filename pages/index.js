@@ -9,7 +9,7 @@ import {
   ChevronRight,
   Camera,
 } from 'lucide-react';
-import { firstAid } from '../data/firstAid';
+import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
 
 const AU_STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT'];
 const MAX_FREE_ANALYSES = 3;
@@ -271,6 +271,27 @@ const handleImageUpload = (e) => {
             <div className="space-y-5">
               <img src={image} alt="Uploaded" className="w-full max-h-64 object-contain rounded-xl bg-gray-100" />
 
+              {/* Pre-result safety card — shown before any species match, per
+                  the principle that this is an avoidance/information tool,
+                  not a diagnosis. */}
+              <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-4">
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+                  <div className="text-sm text-amber-900">
+                    <p className="font-semibold mb-1">Before the result: this is a possibility, not a diagnosis</p>
+                    <p>
+                      A photo can't confirm the species, whether venom was delivered, how severe an exposure is, or
+                      whether an area is safe. If a bite, sting, or tick attachment is possible right now, don't wait
+                      for an ID —{' '}
+                      <a href="tel:000" className="underline font-semibold">
+                        call 000
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {result.imageQuality && (
                 <div className="flex items-start gap-2 bg-yellow-50 border border-yellow-300 text-yellow-900 rounded-lg p-3 text-sm">
                   <Info className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -408,7 +429,19 @@ const handleImageUpload = (e) => {
         </div>
 
         {/* Footer */}
-        <div className="text-center text-blue-300/60 text-sm">
+        <div className="text-center text-blue-300/60 text-sm space-y-2">
+          <p>
+            First-aid guidance last reviewed: {LAST_REVIEWED}. Sources:{' '}
+            {SOURCES.map((s, i) => (
+              <span key={s.url}>
+                {i > 0 && ', '}
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-200">
+                  {s.name}
+                </a>
+              </span>
+            ))}
+            . {EMERGENCY_NOTE}
+          </p>
           <p>© {new Date().getFullYear()} WildGuardian. Helping Australians identify wildlife safely.</p>
         </div>
       </div>
