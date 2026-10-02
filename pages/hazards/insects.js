@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { AlertTriangle, ChevronRight, MapPin, ShieldAlert, HelpCircle, Flag } from 'lucide-react';
 import { species } from '../../data/species';
 import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED } from '../../data/firstAid';
@@ -24,6 +25,22 @@ const isRifa = (s) => s.firstAidId === 'fire_ant_sting';
 export default function Insects() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+      <Head>
+        <title>Insect & Ant Safety Guide | WildGuardian</title>
+        <meta
+          name="description"
+          content="Safety guidance for bull ants, European wasps and red imported fire ants — sting first aid, anaphylaxis warning signs, and how to report fire ant sightings."
+        />
+        <link rel="canonical" href="https://www.wildguardian.com.au/hazards/insects" />
+        <meta property="og:title" content="Insect & Ant Safety Guide | WildGuardian" />
+        <meta
+          property="og:description"
+          content="Safety guidance for bull ants, European wasps and red imported fire ants — sting first aid, anaphylaxis warning signs, and how to report fire ant sightings."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.wildguardian.com.au/hazards/insects" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <div className="bg-red-700 text-white text-center text-sm font-semibold py-2 px-4">
         In an emergency, always call{' '}
         <a href="tel:000" className="underline">
