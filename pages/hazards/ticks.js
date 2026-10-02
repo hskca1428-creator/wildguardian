@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { AlertTriangle, ChevronRight, MapPin, ShieldAlert, HelpCircle } from 'lucide-react';
 import { species } from '../../data/species';
 import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED } from '../../data/firstAid';
@@ -27,6 +28,22 @@ const tickSpecies = species.filter((s) => s.category === 'tick');
 export default function Ticks() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+      <Head>
+        <title>Tick Safety Guide | WildGuardian</title>
+        <meta
+          name="description"
+          content="How to recognise the Australian paralysis tick, avoid attachment, and respond safely if one attaches — including when to call 000."
+        />
+        <link rel="canonical" href="https://www.wildguardian.com.au/hazards/ticks" />
+        <meta property="og:title" content="Tick Safety Guide | WildGuardian" />
+        <meta
+          property="og:description"
+          content="How to recognise the Australian paralysis tick, avoid attachment, and respond safely if one attaches — including when to call 000."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.wildguardian.com.au/hazards/ticks" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <div className="bg-red-700 text-white text-center text-sm font-semibold py-2 px-4">
         In an emergency, always call{' '}
         <a href="tel:000" className="underline">
