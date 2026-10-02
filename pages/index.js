@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import {
   Shield,
   AlertTriangle,
@@ -158,6 +159,22 @@ const handleImageUpload = (e) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-gray-800">
+      <Head>
+        <title>WildGuardian | Identify Australian Wildlife Safely</title>
+        <meta
+          name="description"
+          content="Upload a photo to identify Australian snakes and spiders, browse 60+ wildlife guides, and find safety-first information for bites, stings and tick attachments."
+        />
+        <link rel="canonical" href="https://www.wildguardian.com.au/" />
+        <meta property="og:title" content="What did you spot? Identify Australian wildlife safely." />
+        <meta
+          property="og:description"
+          content="Upload a photo to identify Australian snakes and spiders, browse 60+ wildlife guides, and find safety-first information for bites, stings and tick attachments."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.wildguardian.com.au/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       {/* Persistent emergency banner */}
       <div className="bg-red-700 text-white text-center text-sm font-semibold py-2 px-4">
         In an emergency, always call{' '}
