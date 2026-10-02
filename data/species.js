@@ -7,12 +7,12 @@ export const species = [
     "icon": "🐍",
     "location": "Eastern & Central Australia",
     "size": "1.1m - 2.4m",
-    "description": "Second most venomous land snake in the world. Responsible for most snake-bite deaths in Australia.",
+    "description": "A medically important venomous snake that is widespread in many populated parts of eastern Australia. Responsible for most snake-bite deaths in Australia.",
     "identification": "Variable brown color, slender body, round head barely distinct from neck",
     "active": "Spring to Autumn, diurnal (day active)",
     "habitat": "Grasslands, woodlands, farms, suburban areas",
     "category": "snake",
-    "encounterAdvice": "Do NOT approach. Back away slowly. Call 000 and professional snake catcher immediately.",
+    "encounterAdvice": "Keep your distance and do not approach, touch or try to move it. If it's safely outdoors, back away slowly and give it space to leave on its own. If it's inside a building, contact a licensed snake catcher rather than attempting to handle it yourself.",
     "firstAidId": "snake_venomous_pit"
   },
   {
@@ -39,7 +39,7 @@ export const species = [
     "icon": "🐍",
     "location": "Central Australia (rare)",
     "size": "1.8m - 2.5m",
-    "description": "Most venomous land snake in the world. Fortunately, very rare and shy.",
+    "description": "An extremely venomous snake by laboratory testing, though real-world risk is low because it lives in remote country and rarely encounters people.",
     "identification": "Color changes seasonally (olive to dark brown), small eyes, angular head",
     "active": "Spring to Summer, diurnal",
     "habitat": "Remote arid regions, deep soil cracks, floodplains",
@@ -55,7 +55,7 @@ export const species = [
     "icon": "🐍",
     "location": "Northern & Eastern coastal areas",
     "size": "2m - 3m",
-    "description": "Third most venomous land snake. Fast-moving and can be aggressive.",
+    "description": "A medically important snake found in northern and eastern coastal regions. Fast-moving and may defend itself vigorously if threatened.",
     "identification": "Light brown to dark brown, large head, pale face, reddish eyes",
     "active": "Spring to Summer, diurnal",
     "habitat": "Sugarcane fields, grasslands, coastal scrub",
@@ -103,7 +103,7 @@ export const species = [
     "icon": "🕷️",
     "location": "Sydney region, NSW",
     "size": "1-5cm body length",
-    "description": "Highly aggressive and dangerously venomous. Males are more dangerous than females.",
+    "description": "May rear up and strike repeatedly if threatened, and is dangerously venomous. Males are more dangerous than females.",
     "identification": "Large, glossy black/dark brown, thick legs, aggressive behavior when threatened",
     "active": "Summer, more active after rain",
     "habitat": "Moist, sheltered areas, under rocks, in burrows, gardens",
@@ -201,7 +201,7 @@ export const species = [
     "size": "37-43cm",
     "description": "Territorial bird, especially during breeding season. Can swoop to protect nests.",
     "identification": "Black and white plumage, melodious call, red eyes in adults",
-    "active": "Year-round, diurnal (aggressive Aug-Oct)",
+    "active": "Year-round, diurnal (territorial and may swoop Aug-Oct)",
     "habitat": "Parks, gardens, sports fields, urban areas",
     "category": "bird",
     "encounterAdvice": "Avoid nesting areas during breeding season (Aug-Oct). Wear hat/helmet. Make eye contact. Protected species.",
@@ -348,7 +348,7 @@ export const species = [
     "active": "Spring to Autumn, diurnal",
     "habitat": "Trees, shrubs, gardens, near water",
     "category": "snake",
-    "encounterAdvice": "Completely harmless. Do not harm - protected and beneficial. Let it move on naturally.",
+    "encounterAdvice": "Not considered medically dangerous to people. Do not harm - protected and beneficial. Let it move on naturally.",
     "firstAidId": "snake_nonvenomous"
   },
   {
@@ -364,7 +364,7 @@ export const species = [
     "active": "Spring to Autumn, diurnal",
     "habitat": "Gardens, bushland, suburban areas",
     "category": "reptile",
-    "encounterAdvice": "Completely harmless to humans. Beneficial for gardens. Let it pass through naturally. Protected - do not harm.",
+    "encounterAdvice": "Not considered medically dangerous to people. Beneficial for gardens. Let it pass through naturally. Protected - do not harm.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -428,7 +428,7 @@ export const species = [
     "active": "Year-round, nocturnal",
     "habitat": "Eucalypt forests, woodlands, tree hollows",
     "category": "mammal",
-    "encounterAdvice": "Completely harmless. Protected species. Do not attempt to catch or keep as pet.",
+    "encounterAdvice": "Not considered medically dangerous to people. Protected species. Do not attempt to catch or keep as pet.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -460,7 +460,7 @@ export const species = [
     "active": "Year-round, diurnal",
     "habitat": "Gardens, walls, windows, vegetation",
     "category": "spider",
-    "encounterAdvice": "Completely harmless to humans. Fascinating to observe. Beneficial pest control.",
+    "encounterAdvice": "Not considered medically dangerous to people. Fascinating to observe. Beneficial pest control.",
     "firstAidId": "spider_minor"
   },
   {
@@ -492,7 +492,7 @@ export const species = [
     "active": "Year-round, diurnal",
     "habitat": "Woodlands, gardens, parks, near water",
     "category": "bird",
-    "encounterAdvice": "Completely harmless. May take food from hands. Protected species. Popular garden visitor.",
+    "encounterAdvice": "Not considered medically dangerous to people. Avoid hand-feeding wildlife even when docile. Protected species.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -556,7 +556,7 @@ export const species = [
     "active": "Year-round, diurnal",
     "habitat": "Forests, woodlands, grasslands, suburban areas",
     "category": "mammal",
-    "encounterAdvice": "Completely harmless. Do not handle (spines can prick). Protected species. Leave undisturbed.",
+    "encounterAdvice": "Not considered medically dangerous to people. Do not handle (spines can prick). Protected species. Leave undisturbed.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -631,7 +631,7 @@ export const species = [
     "icon": "😈",
     "location": "Tasmania only",
     "size": "50-80cm",
-    "description": "Largest carnivorous marsupial. Can be aggressive, powerful bite.",
+    "description": "Largest carnivorous marsupial. Can defend itself forcefully with a powerful bite if threatened.",
     "identification": "Black fur, white chest markings, large head, powerful jaws, loud screech",
     "active": "Year-round, nocturnal",
     "habitat": "Forests, coastal scrub (Tasmania only)",
@@ -668,7 +668,7 @@ export const species = [
     "active": "Wet season, diurnal",
     "habitat": "Tropical woodlands, savannas",
     "category": "reptile",
-    "encounterAdvice": "Completely harmless. Defensive display only. Protected species.",
+    "encounterAdvice": "Not considered medically dangerous to people. Its frill display is a bluff, not an attack. Protected species.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -684,7 +684,7 @@ export const species = [
     "active": "Spring to Autumn, diurnal",
     "habitat": "Woodlands, mallee, grasslands, suburban areas",
     "category": "reptile",
-    "encounterAdvice": "Completely harmless. Slow-moving. Protected species. Popular in gardens.",
+    "encounterAdvice": "Not considered medically dangerous to people. Slow-moving. Protected species. Popular in gardens.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -700,7 +700,7 @@ export const species = [
     "active": "Year-round, diurnal",
     "habitat": "Gardens, lawns, rockeries, woodpiles",
     "category": "reptile",
-    "encounterAdvice": "Completely harmless. Beneficial pest control. Protected species.",
+    "encounterAdvice": "Not considered medically dangerous to people. Beneficial pest control. Protected species.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -716,7 +716,7 @@ export const species = [
     "active": "Year-round, nocturnal",
     "habitat": "Trees, buildings, toilets, near water",
     "category": "amphibian",
-    "encounterAdvice": "Completely harmless. Beneficial - eats mosquitoes. Can be handled gently.",
+    "encounterAdvice": "Not considered medically dangerous to people. Beneficial - eats mosquitoes. Handle gently and rarely, if at all.",
     "firstAidId": "wildlife_bite_scratch"
   },
   {
@@ -743,7 +743,7 @@ export const species = [
     "icon": "🐜",
     "location": "All of Australia",
     "size": "8-40mm",
-    "description": "Large aggressive ant with powerful sting. Can cause allergic reactions.",
+    "description": "Large ant with a powerful, painful sting that will defend its nest vigorously if disturbed. Can cause allergic reactions.",
     "identification": "Large red/black ant, large mandibles, aggressive behavior",
     "active": "Year-round, diurnal",
     "habitat": "Bushland, gardens, lawns, forests",
@@ -759,7 +759,7 @@ export const species = [
     "icon": "🐝",
     "location": "Southern Australia",
     "size": "12-17mm",
-    "description": "Invasive wasp. Can sting multiple times. Aggressive near nests.",
+    "description": "Invasive wasp. Can sting multiple times and will defend its nest vigorously if disturbed.",
     "identification": "Yellow and black stripes, triangle-shaped face markings, paperlike nests",
     "active": "Spring to Autumn, diurnal",
     "habitat": "Gardens, walls, roof cavities, underground",
@@ -775,7 +775,7 @@ export const species = [
     "icon": "🐙",
     "location": "Coastal Australia",
     "size": "12-20cm",
-    "description": "Tiny but extremely venomous. One of the world's most venomous animals.",
+    "description": "A small marine animal with a potentially life-threatening bite. Never touch it, even if it looks still or small.",
     "identification": "Small, yellow-brown with bright blue rings when threatened",
     "active": "Year-round, diurnal",
     "habitat": "Rock pools, coral reefs, shallow water",
