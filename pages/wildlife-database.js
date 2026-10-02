@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import { Search, Shield, AlertTriangle, Info, ChevronRight, Filter } from 'lucide-react';
 import { species } from '../data/species';
 import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
@@ -34,6 +35,22 @@ export default function WildlifeDatabase() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+      <Head>
+        <title>Australian Wildlife Database | WildGuardian</title>
+        <meta
+          name="description"
+          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and first-aid steps for bites and stings."
+        />
+        <link rel="canonical" href="https://www.wildguardian.com.au/wildlife-database" />
+        <meta property="og:title" content="Australian Wildlife Database | WildGuardian" />
+        <meta
+          property="og:description"
+          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and first-aid steps for bites and stings."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.wildguardian.com.au/wildlife-database" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       {/* Background Pattern */}
       <div className="fixed inset-0 opacity-10">
         <div className="absolute inset-0" style={{
