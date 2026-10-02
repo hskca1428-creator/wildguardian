@@ -35,8 +35,8 @@ export const firstAid = {
     steps: [
       'Do NOT use a pressure immobilisation bandage — for redback bites this can worsen pain without helping.',
       'Wash the site and apply a wrapped cold pack for about 15 minutes for pain relief.',
-      'Seek medical care for severe or systemic symptoms — antivenom is available if needed.',
-      'Call 000 if severe pain, sweating, or muscle weakness develops.',
+      "For significant symptoms (spreading pain, sweating, nausea, or muscle weakness), seek medical care promptly — a hospital emergency department or GP; antivenom is available if needed.",
+      'Call 000 immediately for any signs of a severe allergic reaction: difficulty breathing, swelling of the face or throat, or dizziness.',
     ],
   },
   spider_minor: {
@@ -87,7 +87,7 @@ export const firstAid = {
   insect_sting_allergy_watch: {
     title: 'Bull Ant / European Wasp Sting',
     steps: [
-      'Remove the stinger if visible (scrape a wasp sting out rather than pinching it).',
+      "If it was a bee sting, scrape out the stinger if visible (bees can leave a barbed stinger behind) — wasps generally don't leave one.",
       'Apply a cold pack to reduce pain and swelling.',
       'An antihistamine can help with a local reaction.',
       "Call 000 immediately if there's difficulty breathing, swelling of the face or throat, dizziness, or widespread hives — signs of anaphylaxis.",
