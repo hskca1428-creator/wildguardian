@@ -9,6 +9,7 @@ import {
   Info,
   ChevronRight,
   Camera,
+  BookOpen,
 } from 'lucide-react';
 import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
 
@@ -388,7 +389,7 @@ const handleImageUpload = (e) => {
         </div>
 
         {/* Feature links */}
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
           <a
             href="/wildlife-database"
             className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all"
@@ -401,6 +402,20 @@ const handleImageUpload = (e) => {
               <ChevronRight className="w-5 h-5" />
             </h3>
             <p className="text-blue-200 text-sm">Browse 60+ native species with ID guides and first-aid info</p>
+          </a>
+
+          <a
+            href="/guides"
+            className="block bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 hover:bg-white/20 transition-all"
+          >
+            <div className="bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl w-14 h-14 flex items-center justify-center mb-4 shadow-lg">
+              <BookOpen className="w-7 h-7 text-white" />
+            </div>
+            <h3 className="font-bold text-white text-lg mb-2 flex items-center gap-2">
+              Snake Safety Guides
+              <ChevronRight className="w-5 h-5" />
+            </h3>
+            <p className="text-blue-200 text-sm">Australian first aid, backyard safety, seasons and identification guides</p>
           </a>
 
           <div className="block bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
