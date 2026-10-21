@@ -25,10 +25,19 @@ export const speciesLinks = {
   18: { href: '/wildlife/saltwater-crocodile', label: 'Read the Saltwater Crocodile profile' },
   19: { href: '/wildlife/freshwater-crocodile', label: 'Read the Freshwater Crocodile profile' },
   20: { href: '/wildlife/dingo', label: 'Read the Dingo profile' },
+  21: { href: '/wildlife/carpet-python', label: 'Read the Carpet Python profile' },
   22: {
     href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake',
     label: 'Read the Common Tree Snake guide',
   },
+  23: { href: '/wildlife/blue-tongue-lizard', label: 'Read the Blue-Tongue Lizard profile' },
+  24: { href: '/wildlife/bearded-dragon', label: 'Read the Bearded Dragon profile' },
+  25: { href: '/wildlife/common-brushtail-possum', label: 'Read the Common Brushtail Possum profile' },
+  26: { href: '/wildlife/common-ringtail-possum', label: 'Read the Ringtail Possum profile' },
+  27: { href: '/wildlife/sugar-glider', label: 'Read the Sugar Glider profile' },
+  28: { href: '/wildlife/huntsman-spider', label: 'Read the Huntsman Spider profile' },
+  29: { href: '/wildlife/jumping-spider', label: 'Read the Jumping Spider profile' },
+  30: { href: '/wildlife/kookaburra', label: 'Read the Kookaburra profile' },
 };
 
 export function getSpeciesLink(id) {
