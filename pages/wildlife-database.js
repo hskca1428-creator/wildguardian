@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Search, Shield, AlertTriangle, Info, ChevronRight, Filter } from 'lucide-react';
 import { species } from '../data/species';
 import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
+import { getSpeciesLink } from '../data/speciesLinks';
 
 export default function WildlifeDatabase() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -113,6 +114,7 @@ export default function WildlifeDatabase() {
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {filteredWildlife.map((animal) => {
             const styles = getRiskStyles(animal.risk);
+            const speciesLink = getSpeciesLink(animal.id);
             return (
               <div key={animal.id} className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden border border-white/20 hover:scale-[1.02] transition-transform duration-300">
                 {/* Header */}
@@ -121,7 +123,20 @@ export default function WildlifeDatabase() {
                     <div className="flex items-center gap-4">
                       <span className="text-6xl drop-shadow-lg">{animal.icon}</span>
                       <div>
-                        <h3 className={`text-2xl font-bold ${styles.text}`}>{animal.name}</h3>
+                        <h3 className={`text-2xl font-bold ${styles.text}`}>
+                          {speciesLink ? (
+                            <a
+                              href={speciesLink.href}
+                              className="inline-flex items-center gap-1 underline decoration-current/40 underline-offset-4 hover:decoration-current"
+                              aria-label={speciesLink.label}
+                            >
+                              {animal.name}
+                              <ChevronRight className="h-5 w-5" aria-hidden="true" />
+                            </a>
+                          ) : (
+                            animal.name
+                          )}
+                        </h3>
                         <p className="text-sm italic text-gray-600 mt-1">{animal.scientificName}</p>
                         <div className="flex items-center gap-2 mt-2">
                           <div className={`${styles.badge} text-white text-xs font-bold px-3 py-1 rounded-full`}>

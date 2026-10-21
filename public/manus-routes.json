@@ -2,6 +2,7 @@
   "routes": [
     { "path": "/", "title": "WildGuardian home" },
     { "path": "/wildlife-database", "title": "Australian Wildlife Database" },
+    { "path": "/wildlife/:slug", "title": "Australian Wildlife Profile" },
     { "path": "/guides", "title": "Australian Snake Safety Guides" },
     { "path": "/guides/:slug", "title": "Australian Snake Safety Guide" },
     { "path": "/hazards/ticks", "title": "Tick Safety Guide" },

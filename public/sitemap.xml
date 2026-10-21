@@ -11,6 +11,46 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.wildguardian.com.au/wildlife/inland-taipan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/coastal-taipan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/common-death-adder</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/mulga-snake-king-brown</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/sydney-funnel-web-spider</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/tree-dwelling-funnel-web-spider</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/redback-spider</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/red-bellied-black-snake</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.wildguardian.com.au/guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
