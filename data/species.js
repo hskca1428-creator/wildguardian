@@ -242,7 +242,7 @@ export const species = [
   {
     "id": 16,
     "name": "Red Kangaroo",
-    "scientificName": "Macropus rufus",
+    "scientificName": "Osphranter rufus",
     "risk": "MEDIUM",
     "icon": "🦘",
     "location": "Inland Australia",
@@ -306,7 +306,7 @@ export const species = [
   {
     "id": 20,
     "name": "Dingo",
-    "scientificName": "Canis lupus dingo",
+    "scientificName": "Canis familiaris (dingo)",
     "risk": "MEDIUM",
     "icon": "🐕",
     "location": "Most of Australia",
