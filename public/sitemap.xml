@@ -146,6 +146,56 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.wildguardian.com.au/wildlife/laughing-kookaburra</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/sulphur-crested-cockatoo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/rainbow-lorikeet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/australian-white-ibis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/short-beaked-echidna</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/common-wombat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/koala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/flying-fox-fruit-bat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/platypus</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/tasmanian-devil</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.wildguardian.com.au/guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

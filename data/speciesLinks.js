@@ -38,6 +38,16 @@ export const speciesLinks = {
   28: { href: '/wildlife/huntsman-spider', label: 'Read the Huntsman Spider profile' },
   29: { href: '/wildlife/jumping-spider', label: 'Read the Jumping Spider profile' },
   30: { href: '/wildlife/kookaburra', label: 'Read the Kookaburra profile' },
+  31: { href: '/wildlife/laughing-kookaburra', label: 'Read the Laughing Kookaburra profile' },
+  32: { href: '/wildlife/sulphur-crested-cockatoo', label: 'Read the Sulphur-Crested Cockatoo profile' },
+  33: { href: '/wildlife/rainbow-lorikeet', label: 'Read the Rainbow Lorikeet profile' },
+  34: { href: '/wildlife/australian-white-ibis', label: 'Read the Australian White Ibis profile' },
+  35: { href: '/wildlife/short-beaked-echidna', label: 'Read the Echidna profile' },
+  36: { href: '/wildlife/common-wombat', label: 'Read the Wombat profile' },
+  37: { href: '/wildlife/koala', label: 'Read the Koala profile' },
+  38: { href: '/wildlife/flying-fox-fruit-bat', label: 'Read the Flying Fox profile' },
+  39: { href: '/wildlife/platypus', label: 'Read the Platypus profile' },
+  40: { href: '/wildlife/tasmanian-devil', label: 'Read the Tasmanian Devil profile' },
 };
 
 export function getSpeciesLink(id) {

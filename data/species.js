@@ -530,7 +530,7 @@ export const species = [
   {
     "id": 34,
     "name": "Australian White Ibis",
-    "scientificName": "Threskiornis molucca",
+    "scientificName": "Threskiornis moluccus",
     "risk": "LOW",
     "icon": "🦩",
     "location": "All coastal Australia",
