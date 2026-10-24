@@ -1,4 +1,5 @@
 import { species } from '../../data/species';
+import { checkRateLimit } from '../../lib/rateLimit';
 export const config = { api: { bodyParser: { sizeLimit: '4mb', }, }, };
 
 // Build a compact reference list for the model so it only ever matches
@@ -28,12 +29,45 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'No image provided' });
   }
 
-  const mediaTypeMatch = image.match(/^data:(image\/[a-zA-Z]+);base64,/);
-  const mediaType = mediaTypeMatch ? mediaTypeMatch[1] : 'image/jpeg';
-  const base64Data = image.split(',')[1];
-
-  if (!base64Data) {
+  // Only accept a real base64 data URL for a type the AI service supports.
+  // (Anything else is rejected here, before it can use up a visitor's quota or
+  // reach the paid API.)
+  if (typeof image !== 'string') {
     return res.status(400).json({ error: 'Invalid image data' });
+  }
+
+  const prefix = image.match(/^data:(image\/(?:jpeg|png|webp|gif));base64,/);
+  if (!prefix) {
+    return res
+      .status(400)
+      .json({ error: 'Unsupported image type', details: 'Please upload a JPG, PNG, WebP or GIF photo.' });
+  }
+
+  const mediaType = prefix[1];
+  const base64Data = image.slice(prefix[0].length);
+
+  if (!base64Data || !/^[A-Za-z0-9+/]+={0,2}$/.test(base64Data)) {
+    return res.status(400).json({ error: 'Invalid image data' });
+  }
+
+  // Rate limit before the (paid) AI call. If the limiter itself fails
+  // unexpectedly we let the request through rather than block a real user.
+  let limit = null;
+  try {
+    limit = await checkRateLimit(req);
+  } catch (err) {
+    console.error('Rate limiter error (allowing request):', err);
+  }
+  if (limit) {
+    res.setHeader('X-RateLimit-Store', limit.store);
+    if (!limit.allowed) {
+      res.setHeader('Retry-After', String(limit.retryAfter));
+      return res.status(limit.status).json({
+        error: 'Rate limit exceeded',
+        details: limit.message,
+        reason: limit.reason,
+      });
+    }
   }
 
   const focusLine = focus
