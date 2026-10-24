@@ -196,6 +196,56 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.wildguardian.com.au/wildlife/eastern-water-dragon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/frilled-lizard</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/shingleback-lizard</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/common-garden-skink</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/green-tree-frog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/cane-toad</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/bull-ant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/european-wasp</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/blue-ringed-octopus</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.wildguardian.com.au/wildlife/box-jellyfish</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.wildguardian.com.au/guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

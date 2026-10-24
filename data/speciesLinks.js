@@ -48,6 +48,16 @@ export const speciesLinks = {
   38: { href: '/wildlife/flying-fox-fruit-bat', label: 'Read the Flying Fox profile' },
   39: { href: '/wildlife/platypus', label: 'Read the Platypus profile' },
   40: { href: '/wildlife/tasmanian-devil', label: 'Read the Tasmanian Devil profile' },
+  41: { href: '/wildlife/eastern-water-dragon', label: 'Read the Eastern Water Dragon profile' },
+  42: { href: '/wildlife/frilled-lizard', label: 'Read the Frilled Lizard profile' },
+  43: { href: '/wildlife/shingleback-lizard', label: 'Read the Shingleback Lizard profile' },
+  44: { href: '/wildlife/common-garden-skink', label: 'Read the Common Garden Skink profile' },
+  45: { href: '/wildlife/green-tree-frog', label: 'Read the Green Tree Frog profile' },
+  46: { href: '/wildlife/cane-toad', label: 'Read the Cane Toad profile' },
+  47: { href: '/wildlife/bull-ant', label: 'Read the Bull Ant profile' },
+  48: { href: '/wildlife/european-wasp', label: 'Read the European Wasp profile' },
+  49: { href: '/wildlife/blue-ringed-octopus', label: 'Read the Blue-Ringed Octopus profile' },
+  50: { href: '/wildlife/box-jellyfish', label: 'Read the Box Jellyfish profile' },
 };
 
 export function getSpeciesLink(id) {
