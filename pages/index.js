@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import NewsletterSignup from '../components/NewsletterSignup';
 import {
   Shield,
   AlertTriangle,
   Upload,
-  CheckCircle,
   XCircle,
   Info,
   ChevronRight,
@@ -25,8 +25,6 @@ export default function Home() {
   const [error, setError] = useState(null);
   const [analysisCount, setAnalysisCount] = useState(0);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
-  const [betaEmail, setBetaEmail] = useState('');
-  const [betaStatus, setBetaStatus] = useState(null);
 
  // Vercel serverless functions cap request bodies at ~4.5MB, and base64
 // encoding inflates file size by ~33% — so a 4-5MB phone photo can blow
@@ -100,21 +98,6 @@ const handleImageUpload = (e) => {
       setError(err.message || 'An unexpected error occurred.');
     } finally {
       setAnalyzing(false);
-    }
-  };
-
-  const submitBetaSignup = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await fetch('/api/beta-signup', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: betaEmail }),
-      });
-      const data = await res.json();
-      setBetaStatus(res.ok ? 'success' : data.error || 'error');
-    } catch {
-      setBetaStatus('error');
     }
   };
 
@@ -388,6 +371,14 @@ const handleImageUpload = (e) => {
           )}
         </div>
 
+        <p className="-mt-5 mb-8 text-center text-xs text-blue-300/70">
+          Photos are sent over an encrypted connection to an AI service (Anthropic) to produce your result, and aren't
+          saved by WildGuardian.{' '}
+          <a href="/privacy" className="underline hover:text-blue-200">
+            Privacy Policy
+          </a>
+        </p>
+
         {/* Feature links */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           <a
@@ -458,37 +449,14 @@ const handleImageUpload = (e) => {
           </div>
         </div>
 
-        {/* Beta / waitlist */}
-        <div className="bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-white/20 text-center mb-10">
-          <h3 className="text-white font-bold text-lg mb-2">More tools on the way</h3>
-          <p className="text-blue-200 text-sm mb-4">
-            Ticks, jellyfish, ants and more — leave your email to hear when they launch.
-          </p>
-          {betaStatus === 'success' ? (
-            <p className="text-green-300 font-semibold flex items-center justify-center gap-2">
-              <CheckCircle className="w-5 h-5" /> You're on the list!
-            </p>
-          ) : (
-            <form onSubmit={submitBetaSignup} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                required
-                placeholder="you@example.com"
-                value={betaEmail}
-                onChange={(e) => setBetaEmail(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-xl border-2 border-white/20 bg-white/90 focus:border-blue-400 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-all"
-              >
-                Notify Me
-              </button>
-            </form>
-          )}
-          {betaStatus === 'error' && (
-            <p className="text-red-300 text-sm mt-2">Something went wrong — try again.</p>
-          )}
+        {/* Newsletter */}
+        <div className="mb-10">
+          <NewsletterSignup
+            variant="dark"
+            adTracking="WG_Home"
+            heading="Stay safe in the Australian outdoors"
+            blurb="New safety guides, seasonal wildlife alerts and tool updates, straight to your inbox."
+          />
         </div>
 
         {/* Footer */}
@@ -505,7 +473,12 @@ const handleImageUpload = (e) => {
             ))}
             . {EMERGENCY_NOTE}
           </p>
-          <p>© {new Date().getFullYear()} WildGuardian. Helping Australians identify wildlife safely.</p>
+          <p>
+            © {new Date().getFullYear()} WildGuardian. Helping Australians identify wildlife safely.{' '}
+            <a href="/privacy" className="underline hover:text-blue-200">
+              Privacy Policy
+            </a>
+          </p>
         </div>
       </div>
 
@@ -520,30 +493,13 @@ const handleImageUpload = (e) => {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Limit Reached</h3>
               <p className="text-gray-600">
                 You've used all {MAX_FREE_ANALYSES} free identifications for this session. Paid plans are coming
-                soon — leave your email below and we'll let you know.
+                soon — subscribe below and we'll let you know.
               </p>
             </div>
 
-            {betaStatus === 'success' ? (
-              <p className="text-green-700 font-semibold text-center mb-4">You're on the list!</p>
-            ) : (
-              <form onSubmit={submitBetaSignup} className="space-y-3 mb-4">
-                <input
-                  type="email"
-                  required
-                  placeholder="you@example.com"
-                  value={betaEmail}
-                  onChange={(e) => setBetaEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-400 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg"
-                >
-                  Notify Me
-                </button>
-              </form>
-            )}
+            <div className="mb-4">
+              <NewsletterSignup variant="light" adTracking="WG_FreeLimit" buttonLabel="Notify me" bare />
+            </div>
 
             <button
               onClick={() => setShowUpgradeModal(false)}

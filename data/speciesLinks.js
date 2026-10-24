@@ -1,12 +1,6 @@
 export const speciesLinks = {
-  1: {
-    href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake',
-    label: 'Read the Eastern Brown Snake guide',
-  },
-  2: {
-    href: '/guides/tiger-snake-vs-eastern-brown-how-to-tell-them-apart',
-    label: 'Read the Tiger Snake guide',
-  },
+  1: { href: '/wildlife/eastern-brown-snake', label: 'Read the Eastern Brown Snake profile' },
+  2: { href: '/wildlife/tiger-snake', label: 'Read the Tiger Snake profile' },
   3: { href: '/wildlife/inland-taipan', label: 'Read the Inland Taipan profile' },
   4: { href: '/wildlife/coastal-taipan', label: 'Read the Coastal Taipan profile' },
   5: { href: '/wildlife/common-death-adder', label: 'Read the Death Adder profile' },
@@ -26,10 +20,7 @@ export const speciesLinks = {
   19: { href: '/wildlife/freshwater-crocodile', label: 'Read the Freshwater Crocodile profile' },
   20: { href: '/wildlife/dingo', label: 'Read the Dingo profile' },
   21: { href: '/wildlife/carpet-python', label: 'Read the Carpet Python profile' },
-  22: {
-    href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake',
-    label: 'Read the Common Tree Snake guide',
-  },
+  22: { href: '/wildlife/green-tree-snake', label: 'Read the Green Tree Snake profile' },
   23: { href: '/wildlife/blue-tongue-lizard', label: 'Read the Blue-Tongue Lizard profile' },
   24: { href: '/wildlife/bearded-dragon', label: 'Read the Bearded Dragon profile' },
   25: { href: '/wildlife/common-brushtail-possum', label: 'Read the Common Brushtail Possum profile' },

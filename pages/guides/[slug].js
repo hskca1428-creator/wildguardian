@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import NewsletterSignup from '../../components/NewsletterSignup';
 import Link from 'next/link';
 import { AlertTriangle, ArrowLeft, BookOpen, ExternalLink, Shield } from 'lucide-react';
 import { getGuideBySlug, getGuideSlugs } from '../../lib/guides';
@@ -368,6 +369,20 @@ export default function GuidePage({ guide }) {
           </Link>
         </aside>
 
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-950">Not sure what you saw?</h2>
+          <p className="mt-2 leading-relaxed text-slate-700">
+            Upload a photo for a quick, safety-first check. Take it from a safe distance, and never get closer for a better shot.
+          </p>
+          <Link href="/" className="mt-4 inline-flex items-center gap-2 font-bold text-blue-700 hover:text-blue-950">
+            Try the WildGuardian photo identifier <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
+          </Link>
+        </section>
+
+        <div className="mt-7">
+          <NewsletterSignup variant="light" adTracking="WG_Guide" />
+        </div>
+
         <div className="mt-8">
           <Link href="/guides" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-950">
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -382,6 +397,8 @@ export default function GuidePage({ guide }) {
           <Link href="/" className="underline hover:text-blue-700">WildGuardian home</Link>
           <span className="mx-2">·</span>
           <Link href="/wildlife-database" className="underline hover:text-blue-700">Wildlife database</Link>
+          <span className="mx-2">·</span>
+          <Link href="/privacy" className="underline hover:text-blue-700">Privacy</Link>
         </p>
       </footer>
     </div>

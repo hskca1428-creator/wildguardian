@@ -49,12 +49,15 @@ export const firstAid = {
     ],
   },
   snake_nonvenomous: {
-    title: 'Non-Venomous Snake Bite (Python, Tree Snake)',
+    title: 'Snake Bite, Even If Believed Non-Venomous (Python, Tree Snake)',
     steps: [
-      "These snakes aren't venomous, but a bite can still cause a puncture wound.",
-      'Wash the wound thoroughly with soap and water.',
-      'Apply an antiseptic and cover with a clean dressing.',
-      "See a doctor if the wound is deep, won't stop bleeding, or your tetanus vaccination isn't current.",
+      'Treat any snake bite as a possible venomous bite. A photo, app result or quick look cannot confirm what bit someone, and all snake bites are treated as life-threatening.',
+      'Call 000 immediately.',
+      'Keep the person still and calm — do not let them walk or run.',
+      'Apply a pressure bandage firmly over the bite, then bandage the whole limb from fingers or toes upward and splint it (Pressure Immobilisation Technique).',
+      'If the person becomes unresponsive and is not breathing normally, start CPR.',
+      'Do NOT wash the bite site, cut it, suck it or apply a tourniquet.',
+      'Hospital clinicians work out whether venom was involved, so you do not need to identify the snake.',
     ],
   },
   crocodile_attack: {

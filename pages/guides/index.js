@@ -169,6 +169,8 @@ export default function GuidesIndex({ guides }) {
           <Link href="/" className="underline hover:text-white">WildGuardian home</Link>
           <span className="mx-2">·</span>
           <Link href="/wildlife-database" className="underline hover:text-white">Wildlife database</Link>
+          <span className="mx-2">·</span>
+          <Link href="/privacy" className="underline hover:text-white">Privacy</Link>
         </p>
       </footer>
     </div>

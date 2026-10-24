@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import NewsletterSignup from '../../components/NewsletterSignup';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, MapPin, Ruler, Shield } from 'lucide-react';
 import ArticleMarkdown from '../../components/ArticleMarkdown';
@@ -31,8 +32,29 @@ function formatCategory(category) {
   return `${category.charAt(0).toUpperCase()}${category.slice(1)} profile`;
 }
 
+// Guides worth reading next, by profile slug. Kept explicit so related
+// links are always chosen by a person, not guessed.
+const RELATED_GUIDES = {
+  'eastern-brown-snake': [
+    { href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake', label: 'Eastern brown snake vs common tree snake' },
+    { href: '/guides/tiger-snake-vs-eastern-brown-how-to-tell-them-apart', label: 'Tiger snake vs eastern brown: how to tell them apart' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+  ],
+  'tiger-snake': [
+    { href: '/guides/tiger-snake-vs-eastern-brown-how-to-tell-them-apart', label: 'Tiger snake vs eastern brown: how to tell them apart' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+    { href: '/guides/snake-in-the-backyard-what-to-do-and-not-to-do', label: 'Snake in the backyard: what to do (and what not to do)' },
+  ],
+  'green-tree-snake': [
+    { href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake', label: 'Eastern brown snake vs common tree snake' },
+    { href: '/guides/snake-in-the-backyard-what-to-do-and-not-to-do', label: 'Snake in the backyard: what to do (and what not to do)' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+  ],
+};
+
 export default function WildlifeProfile({ page, databaseSpecies }) {
   const canonicalUrl = `${SITE_URL}/wildlife/${page.slug}`;
+  const relatedGuides = RELATED_GUIDES[page.slug];
   const pageTitle = `${page.title} | WildGuardian`;
   const structuredData = {
     '@context': 'https://schema.org',
@@ -140,6 +162,21 @@ export default function WildlifeProfile({ page, databaseSpecies }) {
           </div>
         </article>
 
+        {relatedGuides && (
+          <section className="mt-7 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-bold text-slate-950">Related snake safety guides</h2>
+            <ul className="mt-3 space-y-2">
+              {relatedGuides.map((guide) => (
+                <li key={guide.href}>
+                  <Link href={guide.href} className="font-medium text-blue-700 underline hover:text-blue-950">
+                    {guide.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <aside className="mt-7 rounded-2xl border border-blue-200 bg-blue-50 p-6">
           <h2 className="text-xl font-bold text-slate-950">Use the wildlife database safely</h2>
           <p className="mt-2 leading-relaxed text-slate-700">
@@ -149,6 +186,20 @@ export default function WildlifeProfile({ page, databaseSpecies }) {
             Browse the Australian Wildlife Database <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
           </Link>
         </aside>
+
+        <section className="mt-7 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-bold text-slate-950">Not sure what you saw?</h2>
+          <p className="mt-2 leading-relaxed text-slate-700">
+            Upload a photo for a quick, safety-first check. Take it from a safe distance, and never get closer for a better shot.
+          </p>
+          <Link href="/" className="mt-4 inline-flex items-center gap-2 font-bold text-blue-700 hover:text-blue-950">
+            Try the WildGuardian photo identifier <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
+          </Link>
+        </section>
+
+        <div className="mt-7">
+          <NewsletterSignup variant="light" adTracking="WG_Species" />
+        </div>
 
         <div className="mt-8">
           <Link href="/wildlife-database" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-950">
@@ -164,6 +215,8 @@ export default function WildlifeProfile({ page, databaseSpecies }) {
           <Link href="/" className="underline hover:text-blue-700">WildGuardian home</Link>
           <span className="mx-2">·</span>
           <Link href="/guides" className="underline hover:text-blue-700">Snake safety guides</Link>
+          <span className="mx-2">·</span>
+          <Link href="/privacy" className="underline hover:text-blue-700">Privacy</Link>
         </p>
       </footer>
     </div>

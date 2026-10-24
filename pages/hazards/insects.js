@@ -183,6 +183,11 @@ export default function Insects() {
             ))}
             . {EMERGENCY_NOTE}
           </p>
+          <p className="mt-2">
+            <a href="/privacy" className="underline hover:text-blue-200">
+              Privacy Policy
+            </a>
+          </p>
         </div>
       </div>
     </div>
