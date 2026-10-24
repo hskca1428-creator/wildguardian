@@ -58,6 +58,16 @@ export const speciesLinks = {
   48: { href: '/wildlife/european-wasp', label: 'Read the European Wasp profile' },
   49: { href: '/wildlife/blue-ringed-octopus', label: 'Read the Blue-Ringed Octopus profile' },
   50: { href: '/wildlife/box-jellyfish', label: 'Read the Box Jellyfish profile' },
+  51: { href: '/wildlife/irukandji-jellyfish', label: 'Read the Irukandji Jellyfish profile' },
+  52: { href: '/wildlife/blue-bellied-black-snake', label: 'Read the Blue-bellied Black Snake profile' },
+  53: { href: '/wildlife/spotted-python', label: 'Read the Spotted Python profile' },
+  54: { href: '/wildlife/copperhead-snake', label: 'Read the Copperhead Snake profile' },
+  55: { href: '/wildlife/australian-raven', label: 'Read the Australian Raven profile' },
+  56: { href: '/wildlife/perentie', label: 'Read the Perentie profile' },
+  57: { href: '/wildlife/australian-paralysis-tick', label: 'Read the Australian Paralysis Tick profile' },
+  58: { href: '/wildlife/reef-stonefish', label: 'Read the Reef Stonefish profile' },
+  59: { href: '/wildlife/red-imported-fire-ant', label: 'Read the Red Imported Fire Ant profile' },
+  60: { href: '/wildlife/bluebottle', label: 'Read the Bluebottle profile' },
 };
 
 export function getSpeciesLink(id) {
