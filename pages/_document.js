@@ -5,6 +5,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 // immediately after the opening <body> tag, exactly as Google specifies.
 // Because this lives in _document.js it is applied to every page.
 const GTM_ID = 'GTM-K4GGGBD4';
+const SHARE_IMAGE = 'https://www.wildguardian.com.au/og-default.png';
 
 const gtmScript = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -19,6 +20,15 @@ export default function Document() {
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: gtmScript }} />
         {/* End Google Tag Manager */}
+        {/* Default link-preview image for every page (Facebook, WhatsApp, iMessage, X, LinkedIn). */}
+        <meta property="og:image" content={SHARE_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="WildGuardian: identify Australian wildlife safely. In an emergency, call 000."
+        />
+        <meta name="twitter:image" content={SHARE_IMAGE} />
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}
