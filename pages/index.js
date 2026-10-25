@@ -233,7 +233,7 @@ const handleImageUpload = (e) => {
             <label className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-xl py-14 cursor-pointer hover:border-blue-400 hover:bg-blue-50/50 transition-all">
               <Upload className="w-12 h-12 text-gray-400 mb-3" />
               <span className="text-gray-600 font-semibold">Tap to upload a photo</span>
-              <span className="text-gray-400 text-sm mt-1">JPG or PNG, under 5MB</span>
+              <span className="text-gray-400 text-sm mt-1">JPG or PNG — large photos are resized automatically</span>
               <input type="file" accept="image/*" onChange={handleImageUpload} className="hidden" />
             </label>
           )}
