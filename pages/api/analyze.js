@@ -1,6 +1,16 @@
 import { species } from '../../data/species';
 import { checkRateLimit } from '../../lib/rateLimit';
+import { extractText, describeResponse, parseAnalysisJson, normaliseMatches } from '../../lib/analysisParser';
 export const config = { api: { bodyParser: { sizeLimit: '4mb', }, }, };
+
+// The model can be changed without a code change by setting ANALYZE_MODEL in Vercel.
+const MODEL = process.env.ANALYZE_MODEL || 'claude-sonnet-5';
+
+// Visitors never see technical error text. Every failure path says the same
+// kind thing, and always keeps the emergency reminder.
+const EMERGENCY_HINT = "If you may have been bitten or stung, don't wait for a photo result. Call 000.";
+const FAILED_MESSAGE = `We couldn't analyse that photo just now. Please try again in a moment. ${EMERGENCY_HINT}`;
+const BUSY_MESSAGE = `The photo check is very busy right now. Please try again in a minute. ${EMERGENCY_HINT}`;
 
 // Build a compact reference list for the model so it only ever matches
 // against species we actually have first-aid data for, instead of
@@ -100,73 +110,66 @@ Respond ONLY with valid JSON in this exact shape, nothing else:
 }`;
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-5',
-        max_tokens: 1024,
-        messages: [
-          {
-            role: 'user',
-            content: [
-              {
-                type: 'image',
-                source: {
-                  type: 'base64',
-                  media_type: mediaType,
-                  data: base64Data,
-                },
-              },
-              {
-                type: 'text',
-                text: prompt,
-              },
-            ],
-          },
-        ],
-      }),
-    });
+    let response;
+    try {
+      response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': ANTHROPIC_API_KEY,
+          'anthropic-version': '2023-06-01',
+        },
+        body: JSON.stringify({
+          model: MODEL,
+          max_tokens: 2048,
+          messages: [
+            {
+              role: 'user',
+              content: [
+                { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Data } },
+                { type: 'text', text: prompt },
+              ],
+            },
+          ],
+        }),
+      });
+    } catch (networkError) {
+      console.error('Could not reach the AI service:', networkError && networkError.message);
+      return res.status(502).json({ error: 'Analysis failed', details: FAILED_MESSAGE });
+    }
 
     if (!response.ok) {
-      const errorData = await response.text();
-      console.error('Anthropic API error:', errorData);
-      throw new Error(`API failed: ${response.status}`);
+      const body = await response.text().catch(() => '');
+      console.error('AI service error', response.status, body.slice(0, 500));
+      const busy = [429, 503, 529].includes(response.status);
+      return res
+        .status(busy ? 503 : 502)
+        .json({ error: 'Analysis failed', details: busy ? BUSY_MESSAGE : FAILED_MESSAGE });
     }
 
     const data = await response.json();
-    let resultText = data.content[0].text;
-    resultText = resultText.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    const parsed = JSON.parse(resultText);
+    const text = extractText(data);
+    if (!text) {
+      console.error('AI reply had no text block:', JSON.stringify(describeResponse(data)));
+      return res.status(502).json({ error: 'Analysis failed', details: FAILED_MESSAGE });
+    }
 
-    // Hydrate each match with the full species record (including first-aid
-    // id) from our own trusted data, rather than trusting anything about the
-    // species beyond its id from the model's output.
-    const matches = (parsed.matches || [])
-      .map((m) => {
-        const record = species.find((s) => s.id === m.speciesId);
-        if (!record) return null;
-        return {
-          confidence: m.confidence,
-          reasoning: m.reasoning,
-          species: record,
-        };
-      })
-      .filter(Boolean);
+    let parsed;
+    try {
+      parsed = parseAnalysisJson(text);
+    } catch (parseError) {
+      console.error('AI reply was not usable JSON:', parseError.message, '| start of reply:', text.slice(0, 200));
+      return res.status(502).json({ error: 'Analysis failed', details: FAILED_MESSAGE });
+    }
 
+    // Only trusted records from our own database are returned: the model
+    // supplies a species id, confidence and a one-line reason, nothing else.
     res.status(200).json({
-      matches,
-      imageQuality: parsed.imageQuality || null,
+      matches: normaliseMatches(parsed, species),
+      imageQuality: typeof parsed.imageQuality === 'string' && parsed.imageQuality ? parsed.imageQuality : null,
     });
   } catch (error) {
     console.error('Analysis error:', error);
-    res.status(500).json({
-      error: 'Analysis failed',
-      details: error.message,
-    });
+    res.status(502).json({ error: 'Analysis failed', details: FAILED_MESSAGE });
   }
 }
