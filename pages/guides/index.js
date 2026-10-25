@@ -43,7 +43,7 @@ export default function GuidesIndex({ guides }) {
           content="Australian guidance on safer snake sightings, snake-bite first aid, seasonal activity and bush preparation."
         />
         <meta property="og:url" content={`${SITE_URL}/guides`} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Australian Snake Safety Guides | WildGuardian" />
         <meta
           name="twitter:description"
