@@ -305,7 +305,7 @@ export default function GuidePage({ guide }) {
         <meta property="og:title" content={guide.title} />
         <meta property="og:description" content={guide.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guide.title} />
         <meta name="twitter:description" content={guide.metaDescription} />
         <script
