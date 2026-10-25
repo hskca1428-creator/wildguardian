@@ -90,7 +90,7 @@ export default function WildlifeProfile({ page, databaseSpecies }) {
         <meta property="og:title" content={page.title} />
         <meta property="og:description" content={page.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={page.title} />
         <meta name="twitter:description" content={page.metaDescription} />
         <script
