@@ -69,7 +69,7 @@ export default function WildlifeDatabase() {
             </div>
             <div>
               <h1 className="text-4xl font-black text-white">Australian Wildlife Database</h1>
-              <p className="text-blue-300">Complete guide to 50+ native species</p>
+              <p className="text-blue-300">Complete guide to 60+ native species</p>
             </div>
           </div>
         </div>
