@@ -48,7 +48,7 @@ export default function Privacy() {
         <meta property="og:title" content="Privacy Policy | WildGuardian" />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <div className="bg-red-700 px-4 py-2 text-center text-sm font-semibold text-white">
