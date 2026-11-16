@@ -40,7 +40,7 @@ Give ravens room and avoid feeding them from hands, tables or vehicles. A bird t
 
 If an Australian Raven appears injured, entangled or unable to fly, contact the relevant state wildlife rescue organisation or local council rather than picking it up. This guide does not provide bird-handling instructions because the right response depends on the animal’s condition and local wildlife rules.
 
-A bite or scratch that breaks the skin should be treated as a health issue. Healthdirect advises washing the wound with soap and running water, drying it and covering it with a clean dressing; medical assessment is advised as soon as possible for an animal bite that breaks skin. [3] Seek urgent care for a large or deep wound, a bite to the face or head, or bleeding that will not stop. [3]
+A bite or scratch that breaks the skin needs medical advice. WildGuardian does not write first-aid instructions; see Healthdirect’s guidance on animal bites. [3]
 
 ## Frequently asked questions
 
@@ -58,10 +58,12 @@ They are not venomous. The respectful approach is still to keep your distance an
 
 ### What should I do if one bites or scratches me?
 
-Wash broken skin with soap and running water, cover the wound and seek medical advice, particularly for a deep wound or worsening symptoms. [3]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [4] [5]
 
 ## References
 
 [1]: https://birdlife.org.au/bird-profiles/australian-raven/ "Australian Raven — BirdLife Australia"
 [2]: https://australian.museum/learn/animals/birds/australian-raven/ "Australian Raven — Australian Museum"
 [3]: https://www.healthdirect.gov.au/animal-and-human-bites "Animal and human bites — Healthdirect Australia"
+[4]: https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites "Healthdirect — Dog, cat, bat and human bites"
+[5]: https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid "Better Health Channel — Bites and stings first aid"
