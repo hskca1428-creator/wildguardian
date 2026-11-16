@@ -45,13 +45,14 @@ For people with a known allergy to insect stings, ASCIA advises covering up as m
 
 Anyone with a past severe reaction to an insect sting should discuss future-sting planning with their treating clinician. ASCIA says people at risk of anaphylaxis are usually advised to have an ASCIA Action Plan for Anaphylaxis and an adrenaline device readily available. [4] A person’s prescribed plan takes priority over general online information.
 
-## If a bull ant stings someone
+## If someone is bitten, stung or hurt
 
-Most ant stings cause a local reaction such as pain or a hot feeling, redness, itch and swelling. [3] For a mild, local reaction, Healthdirect advises washing the area with soap and water and using a cold or ice pack wrapped in a towel or cloth for 15 minutes to reduce pain, itch and swelling. [3] The Australian Museum also notes that ice can relieve sting pain. [2]
+> **GET MEDICAL ADVICE.** Most single stings are painful but not dangerous. Allergic reactions are the risk.
 
-Get medical advice promptly if the sting is in the mouth or near an eye, if abdominal pain and vomiting occur, if the person feels dizzy, if symptoms are worsening, or if they have had a serious allergic reaction to an ant sting before. [3] A large, red, swollen area that lasts beyond several hours also warrants medical review under Healthdirect’s guidance. [3]
+- Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.
+- Not sure? Poisons Information Centre: 13 11 26.
 
-Treat possible anaphylaxis as an emergency. Warning signs listed by Healthdirect include noisy breathing, a swollen tongue or throat, wheeze or persistent cough, voice change, dizziness and collapse. If anaphylaxis is suspected, use an adrenaline autoinjector straight away if one is available, then call Triple Zero (000) and ask for an ambulance; follow the person’s ASCIA allergy action plan if they have one. [3] Do not wait to see whether breathing or circulation symptoms settle.
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid); [Queensland Health — Bites and stings](https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings).
 
 ## Frequently asked questions
 
@@ -69,7 +70,7 @@ No species-wide conclusion should be drawn from one bull-ant name. The Jack Jump
 
 ### What should I do after a sting?
 
-For a mild local reaction, wash the area and use a cloth-wrapped cold pack for 15 minutes. Seek medical advice for worsening or concerning symptoms, and treat breathing problems, throat or tongue swelling, dizziness or collapse as possible anaphylaxis: use an available adrenaline autoinjector immediately and call Triple Zero (000) for an ambulance. [3]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [6] [7]
 
 ### Can a photograph settle the identification?
 
@@ -82,3 +83,5 @@ A photo can sometimes assist an expert, but it should not be used as a reason to
 [3]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/ant-stings-and-bites "Healthdirect Ant stings and bites"
 [4]: https://www.allergy.org.au/patients/insect-allergy-bites-and-stings/allergic-reactions-to-bites-and-stings "ASCIA Allergic Reactions to Bites and Stings"
 [5]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/insect-bites-and-stings "Healthdirect Insect bites and stings"
+[6]: https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid "Better Health Channel — Bites and stings first aid"
+[7]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Queensland Health — Bites and stings"
