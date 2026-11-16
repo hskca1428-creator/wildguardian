@@ -13,9 +13,24 @@ function getReferences(markdown) {
 }
 
 function InlineText({ text, references }) {
-  const tokens = text.split(/(\[\d+\]|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g);
+  const tokens = text.split(/(\[[^\]]+\]\(https?:\/\/[^)\s]+\)|\[\d+\]|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g);
 
   return tokens.map((token, index) => {
+    const link = token.match(/^\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)$/);
+    if (link) {
+      return (
+        <a
+          key={`${token}-${index}`}
+          href={link[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:text-blue-950"
+        >
+          {link[1]}
+        </a>
+      );
+    }
+
     const citation = token.match(/^\[(\d+)\]$/);
     if (citation && references[citation[1]]) {
       return (
