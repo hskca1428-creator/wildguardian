@@ -48,11 +48,14 @@ Avoid relying on colour, a jump, or an online image to make a medical decision. 
 
 The record’s **LOW** risk label is consistent with the family-level evidence available here: Museums Victoria describes jumping spiders as timid, says they rarely bite, and notes that a bite may cause a local reaction such as redness, swelling, burning or itching. [2] This label is not a substitute for care if symptoms are concerning or the spider was not confidently identified.
 
-## If a bite is suspected
+## If someone is bitten, stung or hurt
 
-For a suspected bite from a jumping spider or another spider not thought to be a funnel-web or mouse spider, Healthdirect advises washing the area with soap and water, applying antiseptic cream if available, and using a wrapped ice pack to reduce swelling and pain. It also lists paracetamol or ibuprofen as pain-relief options. [5] Seek medical care if there is a lot of pain, the bite does not settle within a few hours, swelling or itching worsens after 24–48 hours, or you are worried. [5]
+> **GET MEDICAL ADVICE.** Get advice from a doctor, pharmacist or the Poisons Information Centre if you are worried or the bite is getting worse.
 
-Pressure-immobilisation bandaging is **not** the response described for a suspected jumping-spider bite: Healthdirect limits that treatment to funnel-web or mouse-spider bites. [5] Call Triple Zero (000) for signs of anaphylaxis, including difficult or noisy breathing, swelling or tightness in the throat, a swollen tongue, collapse, or a child becoming pale and floppy. [5]
+- Not sure? Poisons Information Centre: 13 11 26.
+- Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Spider bites](https://www.healthdirect.gov.au/spider-bites); [NSW Poisons Information Centre — Spiders](https://www.poisonsinfo.nsw.gov.au/bites-and-stings/spiders).
 
 ## Frequently asked questions
 
