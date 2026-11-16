@@ -61,11 +61,13 @@ Use Queensland’s official advice rather than trying to manage, move or test a 
 
 These steps are deliberately about separation and avoidance. Do not attempt to handle, capture, feed or relocate a cassowary.
 
-## Injury, sick birds and urgent response
+## If someone is bitten, stung or hurt
 
-A cassowary’s kick can break bones, and its claw is capable of serious injury. [1] Queensland’s unambiguous direction is to call **000 immediately** if a person has been injured by a cassowary. [2] This page does not substitute for emergency assessment or give animal-handling directions.
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-For a sick, injured or orphaned cassowary, Queensland advises reporting it to **1300 130 372** (option 1, then option 2), through the QWildlife app, or via the online sighting form. Do not approach or try to move the bird. [2] A routine sighting can also be logged through QWildlife or the online form, which contributes information for conservation management. [1] [2]
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
