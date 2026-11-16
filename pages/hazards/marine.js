@@ -2,13 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import { AlertTriangle, ChevronRight, MapPin, ShieldAlert, HelpCircle } from 'lucide-react';
 import { species } from '../../data/species';
-import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED } from '../../data/firstAid';
+import { firstAid, EMERGENCY_NOTE, GUIDANCE_NOTE } from '../../data/firstAid';
+import FirstAidRouter from '../../components/FirstAidRouter';
 
-// Marine/waterway hazards genuinely need different treatments per mechanism
-// (vinegar for box jellyfish, hot water for bluebottle and stonefish,
-// pressure immobilisation for blue-ringed octopus, trauma-first for
-// crocodiles) — grouped on one page for navigation, never merged into one
-// generic protocol.
+// Marine hazards need different responses, so each card routes to official
+// guidance rather than WildGuardian writing treatment steps.
 const MARINE_SOURCES = [
   { name: 'Healthdirect Australia — Sea creature stings', url: 'https://www.healthdirect.gov.au/sea-creature-stings' },
   { name: 'Queensland Government — Dangerous marine life', url: 'https://www.qld.gov.au/emergency/safety/dangerous-marine' },
@@ -37,13 +35,13 @@ export default function Marine() {
         <title>Marine & Waterway Safety Guide | WildGuardian</title>
         <meta
           name="description"
-          content="Safety guidance for Australian marine and waterway hazards — box jellyfish, blue-ringed octopus, stonefish, bluebottles and crocodiles — with correct, mechanism-specific first aid."
+          content="Safety guidance for Australian marine and waterway hazards — box jellyfish, blue-ringed octopus, stonefish, bluebottles and crocodiles — with links to official first-aid guidance and when to call 000."
         />
         <link rel="canonical" href="https://www.wildguardian.com.au/hazards/marine" />
         <meta property="og:title" content="Marine & Waterway Safety Guide | WildGuardian" />
         <meta
           property="og:description"
-          content="Safety guidance for Australian marine and waterway hazards — box jellyfish, blue-ringed octopus, stonefish, bluebottles and crocodiles — with correct, mechanism-specific first aid."
+          content="Safety guidance for Australian marine and waterway hazards — box jellyfish, blue-ringed octopus, stonefish, bluebottles and crocodiles — with links to official first-aid guidance and when to call 000."
         />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.wildguardian.com.au/hazards/marine" />
@@ -124,19 +122,7 @@ export default function Marine() {
                 <p className="text-xs font-semibold text-cyan-700 uppercase mb-1">Do not approach</p>
                 <p className="text-sm text-gray-800">{s.encounterAdvice}</p>
               </div>
-
-              {firstAid[s.firstAidId] && (
-                <div className="bg-slate-900 text-white rounded-lg p-4">
-                  <p className="text-xs font-semibold text-slate-300 uppercase mb-2">
-                    If exposure is possible: {firstAid[s.firstAidId].title}
-                  </p>
-                  <ul className="text-sm text-slate-100 space-y-1 list-disc list-inside">
-                    {firstAid[s.firstAidId].steps.map((step, i) => (
-                      <li key={i}>{step}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <FirstAidRouter aid={firstAid[s.firstAidId]} context="If exposure is possible" />
 
               <div className="bg-gray-50 rounded-lg p-4">
                 <div className="flex items-start gap-2">
@@ -163,7 +149,7 @@ export default function Marine() {
 
         <div className="text-center text-blue-300/60 text-sm">
           <p>
-            Guidance last reviewed: {LAST_REVIEWED}. Sources:{' '}
+            {GUIDANCE_NOTE} Official sources:{' '}
             {MARINE_SOURCES.map((s, i) => (
               <span key={s.url}>
                 {i > 0 && ', '}
