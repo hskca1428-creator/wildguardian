@@ -47,15 +47,17 @@ Never touch a platypus or try to move it. A startled animal may defend itself, a
 
 Small choices at waterways also matter. NSW identifies discarded fishing line and yabby traps as drowning risks, while Museums Victoria explains that loops and rings of litter can entangle a platypus and cause serious injury. [2] [4] Take all line, hooks, nets and litter away from the waterway, and help retain natural vegetation along creek banks. [3]
 
-## If a platypus spur injury occurs
+## If someone is bitten, stung or hurt
 
-Platypus envenomation is uncommon, but it is not trivial. A 2025 peer-reviewed Australian clinical report describes severe local pain and swelling after penetrating spur injuries, along with a risk of deep tissue infection. [5] Seek urgent medical assessment after a suspected spur injury, particularly for a puncture wound or severe pain.
+> **GET MEDICAL ADVICE.** Get medical help. The pain can be severe and usually needs medical pain relief.
 
-Do **not** apply snakebite-style pressure bandage immobilisation to a platypus spur injury. The clinical report finds no evidence to support it for platypus envenomation, whose symptoms are localised. [5] Medical professionals should determine pain treatment and wound management. In a medical emergency, call **000**. [7]
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Queensland Health — Bites and stings](https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings).
 
 ## Conservation context in Australia
 
-A short database label cannot describe every jurisdiction’s legal or conservation setting. Queensland’s WildNet entry lists *O. anatinus* as **Special Least Concern** under Queensland’s nature conservation framework and as **not listed** under the EPBC field shown in that database. [6] In contrast, Museums Victoria reports that the platypus was listed as threatened in Victoria in 2021. [4] Local threats and protections therefore matter alongside any broad label.
+A short database label cannot describe every jurisdiction’s legal or conservation setting. Queensland’s WildNet entry lists *O. anatinus* as **Special Least Concern** under Queensland’s nature conservation framework and as **not listed** under the EPBC field shown in that database. [5] In contrast, Museums Victoria reports that the platypus was listed as threatened in Victoria in 2021. [4] Local threats and protections therefore matter alongside any broad label.
 
 For people who share a catchment with platypuses, the most useful response is prevention: protect bank vegetation, avoid leaving entangling debris near water, and reduce disturbance around known freshwater habitat. These actions align with the habitat pressures and entanglement risks documented by Australian government and museum sources. [2] [3] [4]
 
@@ -75,7 +77,7 @@ It mainly eats aquatic invertebrates, especially insect larvae, and also takes p
 
 ### Are platypuses dangerous to people?
 
-They are shy and usually avoid people, but a male has venomous hind-leg spurs and a spur injury can cause severe local pain and swelling. Do not touch or corner a platypus. [1] [2] [5]
+They are shy and usually avoid people, but a male has venomous hind-leg spurs and a spur injury can cause severe local pain and swelling. Do not touch or corner a platypus. [1] [2] [6]
 
 ### Why should fishing line and litter be removed from waterways?
 
@@ -87,6 +89,5 @@ Platypuses can become entangled in discarded line, traps and looped litter, with
 [2]: https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/land-mammals/platypus "Platypus"
 [3]: https://www.qld.gov.au/environment/plants-animals/animals/discovering-wildlife/platypus "Platypus"
 [4]: https://museumsvictoria.com.au/article/the-platypus-a-unique-and-vulnerable-australian/ "The platypus a unique and vulnerable Australian"
-[5]: https://www.mja.com.au/journal/2025/222/8/platypus-envenomation "Platypus envenomation"
-[6]: https://apps.des.qld.gov.au/species-search/details/?id=836 "Taxon Ornithorhynchus anatinus platypus"
-[7]: https://www.healthdirect.gov.au/healthdirect-helpline "How Healthdirect can help you"
+[5]: https://apps.des.qld.gov.au/species-search/details/?id=836 "Taxon Ornithorhynchus anatinus platypus"
+[6]: https://www.mja.com.au/journal/2025/222/8/platypus-envenomation "Platypus envenomation"
