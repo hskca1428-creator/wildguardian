@@ -1,180 +1,186 @@
-// First-aid protocols, keyed by id and referenced from each species entry
-// (data/species.js) via `firstAidId`. Kept as a single source of truth so a
-// correction only needs to be made once and applies everywhere it's used.
-// General-public first-aid guidance, aligned with Australian Resuscitation
-// Council / St John Ambulance Australia practice. This is general
-// information, not a substitute for professional medical care.
+// WildGuardian does not write first-aid instructions.
+//
+// Every card here is a ROUTER: it tells the reader which tier of help applies
+// and sends them to official Australian health sources. We deliberately do not
+// author treatment steps (temperatures, durations, bandaging, removal methods).
+//
+// Tiers:
+//   'call000'  - possible serious exposure. Call 000 first. Nothing else on
+//                this page should delay that call.
+//   'getHelp'  - not usually an emergency, but get advice from a real service
+//                (Poisons Information Centre 13 11 26, a doctor, or a pharmacist).
+//
+// Every card keeps the same id it had before, so data/species.js
+// (firstAidId) does not need to change.
+
+export const HEALTHDIRECT_SNAKE = { name: 'Healthdirect — Snake bites', url: 'https://www.healthdirect.gov.au/snake-bites' };
+export const HEALTHDIRECT_SPIDER = { name: 'Healthdirect — Spider bites', url: 'https://www.healthdirect.gov.au/spider-bites' };
+export const HEALTHDIRECT_SEA = { name: 'Healthdirect — Sea creature bites and stings', url: 'https://www.healthdirect.gov.au/sea-creature-stings' };
+export const HEALTHDIRECT_TICK = { name: 'Healthdirect — Tick bites', url: 'https://www.healthdirect.gov.au/tick-bites' };
+export const HEALTHDIRECT_ANIMAL = { name: 'Healthdirect — Dog, cat, bat and human bites', url: 'https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites' };
+export const ASCIA_TICKS = { name: 'ASCIA — Tick allergy', url: 'https://www.allergy.org.au/ticks' };
+export const QLD_BITES = { name: 'Queensland Health — Bites and stings', url: 'https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings' };
+export const QLD_MARINE = { name: 'Queensland Government — Dangerous marine life', url: 'https://www.qld.gov.au/emergency/safety/dangerous-marine' };
+export const NSW_SPIDERS = { name: 'NSW Poisons Information Centre — Spiders', url: 'https://www.poisonsinfo.nsw.gov.au/bites-and-stings/spiders' };
+export const BETTER_HEALTH = { name: 'Better Health Channel — Bites and stings first aid', url: 'https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid' };
+export const FIRE_ANTS = { name: 'National Fire Ant Eradication Program — Report a sighting', url: 'https://www.fireants.org.au' };
+
+const CALL_000 = 'Call 000 now.';
+const OPERATOR = 'Stay with the person and follow the 000 operator’s instructions.';
+const ANAPHYLAXIS =
+  'Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.';
+const POISONS = 'Not sure? Poisons Information Centre: 13 11 26.';
 
 export const firstAid = {
-   snake_venomous_pit: {
-    title: 'Suspected Venomous Snake Bite',
-    steps: [
-      'Call 000 immediately.',
-      'Keep the person still and calm — do not let them walk.',
-      'Apply a pressure bandage firmly over the bite, then bandage the whole limb from fingers or toes upward (Pressure Immobilisation Technique).',
-      'Splint the limb to stop it moving, then keep the person still until paramedics arrive.',
-      'If the person becomes unresponsive and is not breathing normally, start CPR.',
-      'Do NOT wash the bite site — venom traces help identify the correct antivenom.',
-      'Do NOT cut the wound, try to suck out venom, or apply a tourniquet.',
-      'Note the time of the bite and any symptoms to tell paramedics.',
-    ],
-  },
-  spider_pit: {
-    title: 'Funnel-Web / Mouse Spider Bite',
-    steps: [
-      'Call 000 immediately — treat this the same as a venomous snake bite.',
-      'Lie the person down and keep them still.',
-      'Apply an elasticised pressure-immobilisation bandage over the bite, then extend it up the limb.',
-      'Splint the limb, record the time of the bite, and wait for the ambulance.',
-      'Do not wash the bite site, and do not delay emergency action to try to identify the spider.',
-      'Antivenom is available and highly effective — getting to hospital quickly matters most.',
-    ],
-  },
-  spider_redback: {
-    title: 'Redback Spider Bite',
-    steps: [
-      'Do NOT use a pressure immobilisation bandage — for redback bites this can worsen pain without helping.',
-      'Wash the site and apply a wrapped cold pack for about 15 minutes for pain relief.',
-      "For significant symptoms (spreading pain, sweating, nausea, or muscle weakness), seek medical care promptly — a hospital emergency department or GP; antivenom is available if needed.",
-      'Call 000 immediately for any signs of a severe allergic reaction: difficulty breathing, swelling of the face or throat, or dizziness.',
-    ],
-  },
-  spider_minor: {
-    title: 'Minor Spider Bite (White-Tail, Huntsman, Jumping Spider)',
-    steps: [
-      'Wash the bite site with soap and water.',
-      'Apply a cold pack to reduce pain and swelling.',
-      'Monitor the area over the next day or two.',
-      "See a doctor if you notice increasing redness, swelling, or any sign of infection.",
-    ],
+  // ---------- TIER 1: CALL 000 ----------
+  snake_venomous_pit: {
+    title: 'Possible venomous snake bite',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [OPERATOR, 'Do not wait for symptoms, and do not try to identify the snake first.'],
+    links: [HEALTHDIRECT_SNAKE, QLD_BITES],
   },
   snake_nonvenomous: {
-    title: 'Snake Bite, Even If Believed Non-Venomous (Python, Tree Snake)',
-    steps: [
-      'Treat any snake bite as a possible venomous bite. A photo, app result or quick look cannot confirm what bit someone, and all snake bites are treated as life-threatening.',
-      'Call 000 immediately.',
-      'Keep the person still and calm — do not let them walk or run.',
-      'Apply a pressure bandage firmly over the bite, then bandage the whole limb from fingers or toes upward and splint it (Pressure Immobilisation Technique).',
-      'If the person becomes unresponsive and is not breathing normally, start CPR.',
-      'Do NOT wash the bite site, cut it, suck it or apply a tourniquet.',
-      'Hospital clinicians work out whether venom was involved, so you do not need to identify the snake.',
+    title: 'Any snake bite, even from a snake that looks harmless',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [
+      'A photo, an app result or a quick look cannot confirm what bit someone. Treat every snake bite as an emergency.',
+      OPERATOR,
     ],
+    links: [HEALTHDIRECT_SNAKE, QLD_BITES],
+  },
+  spider_pit: {
+    title: 'Possible funnel-web or mouse spider bite',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [OPERATOR, 'Do not delay the call to identify the spider.'],
+    links: [HEALTHDIRECT_SPIDER, NSW_SPIDERS],
   },
   crocodile_attack: {
-    title: 'Crocodile Attack',
-    steps: [
-      'Call 000 immediately — this is a medical emergency.',
-      'Get the person out of the water and away from the area.',
-      'Control any bleeding with firm, direct pressure.',
-      'Treat for shock: keep them warm, lying down if possible, and monitor breathing until help arrives.',
-    ],
+    title: 'Crocodile attack',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [OPERATOR, 'Get away from the water’s edge. Do not go back in for a photo or to look.'],
+    links: [QLD_MARINE],
   },
   jellyfish_sting: {
-    title: 'Box Jellyfish / Irukandji Sting',
-    steps: [
-      'Call 000 immediately — both can cause serious reactions.',
-      'Generously douse the sting with vinegar for at least 30 seconds to deactivate any unfired stinging cells.',
-      'Do NOT rub the area, rinse with fresh water, or apply a pressure bandage.',
-      'If the person stops breathing or becomes unresponsive, begin CPR and continue until help arrives.',
-      'Irukandji symptoms (severe pain, nausea, high blood pressure) can appear 20–30 minutes after a seemingly minor sting — seek care even if it felt mild at first.',
+    title: 'Possible box jellyfish or Irukandji sting',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [
+      OPERATOR,
+      'Serious symptoms can start well after a sting that seemed minor. Get help even if it feels mild.',
     ],
+    links: [HEALTHDIRECT_SEA, QLD_MARINE],
   },
   octopus_neurotoxic_pit: {
-    title: 'Blue-Ringed Octopus Bite',
-    steps: [
-      'Call 000 immediately — the bite can be painless at first, but the venom can cause paralysis, including of breathing muscles.',
-      'Apply the Pressure Immobilisation Technique, as for a venomous snake bite.',
-      'Be ready to perform rescue breathing/CPR — this is the main life-saving measure if breathing is affected. Stay with the person until paramedics arrive.',
-    ],
-  },
-  insect_sting_allergy_watch: {
-    title: 'Bull Ant / European Wasp Sting',
-    steps: [
-      "If it was a bee sting, scrape out the stinger if visible (bees can leave a barbed stinger behind) — wasps generally don't leave one.",
-      'Apply a cold pack to reduce pain and swelling.',
-      'An antihistamine can help with a local reaction.',
-      "Call 000 immediately if there's difficulty breathing, swelling of the face or throat, dizziness, or widespread hives — signs of anaphylaxis.",
-    ],
-  },
-  cane_toad_toxin: {
-    title: 'Cane Toad Toxin Contact',
-    steps: [
-      "Cane toads secrete toxin from skin glands — the main risk is to pets that mouth them, but wash your hands thoroughly after handling one.",
-      'If toxin contacts eyes or mouth, flush thoroughly with water and seek medical (or veterinary) attention.',
-      'Never lick or eat a cane toad, and keep pets away from them.',
-    ],
-  },
-  platypus_spur: {
-    title: 'Platypus Spur Injury',
-    steps: [
-      'Male platypuses have a venomous spur on their hind legs that causes intense, long-lasting pain — not life-threatening, but very painful, sometimes for days or weeks.',
-      'Call 000 or get to a hospital — pain relief often needs to be managed medically, sometimes with a local anaesthetic nerve block.',
-      'There is no antivenom; treatment focuses on pain control.',
-    ],
-  },
-  wildlife_bite_scratch: {
-    title: 'General Wildlife Bite or Scratch',
-    steps: [
-      'Wash the wound thoroughly with soap and water.',
-      'Apply pressure with a clean cloth to stop any bleeding.',
-      'Check that your tetanus vaccination is up to date.',
-      'See a doctor if the wound is deep, shows signs of infection, or came from an animal acting unusually.',
-    ],
-  },
-  tick_attachment: {
-    title: 'Attached Tick (Paralysis Tick)',
-    steps: [
-      'Do not squeeze, pull, or scratch at the tick — disturbing it can trigger a worse reaction.',
-      'If you have no history of tick allergy, use a tick-killing ether-containing spray or freeze it to kill it in place, then leave it to drop off naturally, following current Australian Government guidance.',
-      'If you have a known tick allergy, do not attempt removal yourself — seek medical care for removal.',
-      'Call 000 immediately for any signs of anaphylaxis: difficulty breathing, swelling of the face or throat, dizziness, or widespread hives.',
-      'Watch for tick paralysis symptoms over the following days (unsteady gait, weakness, difficulty swallowing) and seek medical care if they appear.',
-    ],
+    title: 'Possible blue-ringed octopus bite',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [OPERATOR, 'The bite can be painless, so do not wait for pain before calling.'],
+    links: [HEALTHDIRECT_SEA, QLD_MARINE],
   },
   stonefish_sting: {
-    title: 'Stonefish Sting',
-    steps: [
-      'Call 000 or get to a hospital — this is one of the most painful marine stings and often needs medical treatment.',
-      'Immerse the affected area in water as hot as the person can tolerate (not scalding) for pain relief — stonefish venom breaks down with heat.',
-      'Do not remove any spine fragments yourself unless a professional directs you to.',
-      'Antivenom is available for severe stonefish stings.',
-    ],
+    title: 'Possible stonefish sting',
+    tier: 'call000',
+    headline: CALL_000,
+    lines: [OPERATOR],
+    links: [HEALTHDIRECT_SEA, QLD_MARINE],
   },
-  fire_ant_sting: {
-    title: 'Red Imported Fire Ant (RIFA) Sting',
-    steps: [
-      'Move away from the area calmly — disturbing a mound can bring many more ants at once.',
-      'Wash the stung area with soap and water and apply a cold pack.',
-      'Small blisters often form — do not scratch or pop them, as this raises infection risk.',
-      'Call 000 immediately if there are signs of anaphylaxis (multiple stings, difficulty breathing, widespread hives, dizziness).',
-      'Report the ant nest to your state biosecurity or agriculture authority — do not treat it yourself.',
-    ],
+
+  // ---------- TIER 2: GET HELP ----------
+  spider_redback: {
+    title: 'Redback spider bite',
+    tier: 'getHelp',
+    headline: 'Get medical advice. Do not wait for it to pass.',
+    lines: [POISONS, ANAPHYLAXIS],
+    links: [HEALTHDIRECT_SPIDER, NSW_SPIDERS],
+  },
+  spider_minor: {
+    title: 'Spider bite (white-tail, huntsman, jumping spider)',
+    tier: 'getHelp',
+    headline: 'Get advice from a doctor, pharmacist or the Poisons Information Centre if you are worried or the bite is getting worse.',
+    lines: [POISONS, ANAPHYLAXIS],
+    links: [HEALTHDIRECT_SPIDER, NSW_SPIDERS],
+  },
+  insect_sting_allergy_watch: {
+    title: 'Bull ant, bee or wasp sting',
+    tier: 'getHelp',
+    headline: 'Most single stings are painful but not dangerous. Allergic reactions are the risk.',
+    lines: [ANAPHYLAXIS, POISONS],
+    links: [BETTER_HEALTH, QLD_BITES],
+  },
+  tick_attachment: {
+    title: 'Attached tick',
+    tier: 'getHelp',
+    headline: 'Do not guess. Follow current official tick guidance, and get medical help if you have had a tick allergy or are unsure.',
+    lines: [ANAPHYLAXIS, 'Unwell in the days after a tick bite: see a doctor and mention the tick.'],
+    links: [HEALTHDIRECT_TICK, ASCIA_TICKS],
   },
   bluebottle_sting: {
-    title: 'Bluebottle Sting',
-    steps: [
-      'Carefully pick off any visible tentacles with fingers, a gloved hand, or tweezers — brief skin contact when removing them is not dangerous.',
-      'Rinse the area with seawater, not fresh water.',
-      "Immerse in hot water as hot as can be tolerated for as long as pain relief requires; if hot water isn't available, a cold pack also helps.",
-      'Do NOT use vinegar on a bluebottle sting — vinegar is specific to tropical box jellyfish and can make a bluebottle sting worse.',
-      'Seek medical help for widespread stings, a sting to the eye or mouth, or any signs of a severe allergic reaction.',
-    ],
+    title: 'Bluebottle sting',
+    tier: 'getHelp',
+    headline: 'Follow official bluebottle guidance. Get medical help for a sting to the eye or mouth, widespread stings, or a bad reaction.',
+    lines: [ANAPHYLAXIS, POISONS],
+    links: [HEALTHDIRECT_SEA, QLD_MARINE],
+  },
+  fire_ant_sting: {
+    title: 'Red imported fire ant sting',
+    tier: 'getHelp',
+    headline: 'Move away from the nest, then get advice. Report the nest instead of treating it yourself.',
+    lines: [ANAPHYLAXIS, POISONS],
+    links: [FIRE_ANTS, BETTER_HEALTH],
+  },
+  platypus_spur: {
+    title: 'Platypus spur injury',
+    tier: 'getHelp',
+    headline: 'Get medical help. The pain can be severe and usually needs medical pain relief.',
+    lines: [POISONS],
+    links: [HEALTHDIRECT_ANIMAL, QLD_BITES],
+  },
+  cane_toad_toxin: {
+    title: 'Cane toad toxin contact',
+    tier: 'getHelp',
+    headline: 'Get advice from the Poisons Information Centre (13 11 26) or a doctor. For a pet, contact a vet.',
+    lines: [ANAPHYLAXIS],
+    links: [BETTER_HEALTH, QLD_BITES],
+  },
+  bat_bite_scratch: {
+    title: 'Bat bite, scratch or saliva contact',
+    tier: 'getHelp',
+    headline: 'Get urgent medical advice after any bat bite, scratch or saliva contact, even if it looks minor.',
+    lines: ['Do not handle a bat. Report a sick or injured bat to local wildlife authorities.', POISONS],
+    links: [HEALTHDIRECT_ANIMAL, BETTER_HEALTH],
+  },
+  wildlife_bite_scratch: {
+    title: 'Any wildlife bite or scratch',
+    tier: 'getHelp',
+    headline: 'Get medical advice about any bite or scratch that breaks the skin.',
+    lines: [POISONS],
+    links: [HEALTHDIRECT_ANIMAL, BETTER_HEALTH],
   },
 };
 
 export const EMERGENCY_NOTE =
-  'This is general information, not a substitute for professional medical care. In an emergency, always call 000.';
+  'WildGuardian is general information only and does not give medical advice. In an emergency, call 000.';
 
-// Shown in the footer of every safety-relevant page so the guidance is
-// visibly sourced and dated, not just asserted.
-export const LAST_REVIEWED = 'September 2026';
+// Replaces the old "last reviewed" line, which could be read as clinical review.
+export const GUIDANCE_NOTE =
+  'WildGuardian does not write first-aid instructions. These cards point to official Australian health sources.';
 
+export const TIER_LABEL = {
+  call000: 'CALL 000 FIRST',
+  getHelp: 'GET MEDICAL ADVICE',
+};
+
+// Footer source list: the official pages the cards link to.
 export const SOURCES = [
-  { name: 'Healthdirect Australia — Snake bites', url: 'https://www.healthdirect.gov.au/snake-bites' },
-  { name: 'Healthdirect Australia — Spider bites', url: 'https://www.healthdirect.gov.au/spider-bites' },
-  { name: 'Healthdirect Australia — Bites and stings', url: 'https://healthdirect.gov.au/bites-and-stings' },
-  {
-    name: 'Better Health Channel — Bites and stings first aid',
-    url: 'https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid',
-  },
+  HEALTHDIRECT_SNAKE,
+  HEALTHDIRECT_SPIDER,
+  HEALTHDIRECT_SEA,
+  HEALTHDIRECT_TICK,
+  HEALTHDIRECT_ANIMAL,
+  QLD_BITES,
+  BETTER_HEALTH,
 ];
