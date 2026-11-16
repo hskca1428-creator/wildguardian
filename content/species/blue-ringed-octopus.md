@@ -48,18 +48,14 @@ Children need close supervision around rock pools. Queensland Health’s prevent
 
 Blue-ringed octopus safety is about avoiding contact, not about trying to assess the animal’s mood or predict its behaviour. Treat the blue rings as an urgent reminder to stay back; do not rely on their absence as reassurance. [4] [5]
 
-## Suspected bite: immediate emergency action
+## If someone is bitten, stung or hurt
 
-Treat a suspected blue-ringed octopus bite as an emergency, even if it seems minor or painless. Queensland Health says bites can be painless and notes numbness around the mouth, tongue, face and neck, chest tightness and difficulty breathing as possible signs. [5] The NSW Poisons Information Centre states that bites can cause paralysis and stop breathing. [3]
+> **CALL 000 FIRST.** Call 000 now.
 
-**Immediate action, exactly as NSW official first-aid guidance states:**
+- Stay with the person and follow the 000 operator’s instructions.
+- The bite can be painless, so do not wait for pain before calling.
 
-1. **Call 000.**
-2. **Seek immediate help from a lifeguard.**
-3. **Apply a pressure bandage to the entire affected limb.**
-4. **If the person is unconscious or stops breathing, start CPR.** [3]
-
-That limb instruction is specifically scoped to an affected limb. Queensland Health separately advises calling Triple Zero (000) and keeping the person’s whole body still; for a suspected head or neck bite, it says not to apply first aid to the bite area. [5] Follow the dispatcher’s directions while waiting for emergency help. Do not delay the call to watch for symptoms.
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Sea creature bites and stings](https://www.healthdirect.gov.au/sea-creature-stings); [Queensland Government — Dangerous marine life](https://www.qld.gov.au/emergency/safety/dangerous-marine).
 
 ## FAQs
 
