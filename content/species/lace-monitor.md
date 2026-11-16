@@ -41,7 +41,7 @@ Their forked tongue helps them gather chemical information while investigating t
 
 Female Lace Monitors lay eggs, often in active termite nests; the stable conditions in a nest can assist incubation. [1] [2] Do not disturb termite mounds, hollows, fallen timber or other potential shelter and breeding features for the sake of a closer look.
 
-A GPS study in the Burragorang Valley, New South Wales, tracked nine large adult males. In that study, mean 95% minimum-convex-polygon home range was 65.5 hectares, core ranges had almost no overlap, and winter movement was greatly reduced. [5] These results are useful context for why an individual may repeatedly appear around a broad wooded area, but they should not be treated as a universal size for every Lace Monitor: the study focused on large males at one south-eastern Australian site. [5]
+A GPS study in the Burragorang Valley, New South Wales, tracked nine large adult males. In that study, mean 95% minimum-convex-polygon home range was 65.5 hectares, core ranges had almost no overlap, and winter movement was greatly reduced. [4] These results are useful context for why an individual may repeatedly appear around a broad wooded area, but they should not be treated as a universal size for every Lace Monitor: the study focused on large males at one south-eastern Australian site. [4]
 
 ## Safer encounters
 
@@ -52,13 +52,13 @@ A Lace Monitor is best left to continue its normal activity. Its normal use of t
 - **Keep dogs away and supervise children.** The same NSW guidance recommends keeping dogs away from wildlife. [3]
 - **Let it choose its route away.** Step back rather than crowding, cornering or blocking an animal near a tree, hollow, log or track. Its documented response to alarm can be to climb a tree. [1]
 
-## If there is a scratch or bite
+## If someone is bitten, stung or hurt
 
-Museum guidance says Lace Monitors are not thought to be harmful, but their sharp claws and large pointed teeth can cause a painful injury. [1] This page does **not** treat a Lace Monitor bite as a snakebite. The relevant concern is a wound from an animal: Healthdirect notes that native animals can bite, that broken skin can become infected, and that a person whose skin is broken by an animal bite should see a doctor as soon as possible. [4]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-For a minor wound while arranging medical advice, Healthdirect advises cleaning the skin around it with soap and water, using running water to remove dirt or other material, patting it dry with a clean cloth and covering it with a clean dressing. Apply pressure with a dry dressing after cleaning if it is bleeding heavily. [4] Medical assessment also allows a clinician to consider wound care and tetanus vaccination status. [4]
+- Not sure? Poisons Information Centre: 13 11 26.
 
-Seek emergency care if the wound is large or deep, is on the face or head, or bleeding cannot be stopped. Do not drive yourself to hospital; have someone drive you or call Triple Zero (000) for an ambulance. [4] Fever, increasing pain, redness, swelling, warmth, pus or discharge are signs that can accompany an infected animal-bite wound and need medical attention. [4]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -80,12 +80,12 @@ No. NSW guidance says never to feed Lace Monitors because food scraps and unsecu
 
 ### What should I do if a Lace Monitor scratches or bites me?
 
-Treat it as an animal-wound issue, not snakebite first aid. Clean and cover the wound as advised by Healthdirect, seek medical advice promptly if the skin is broken, and seek emergency care for a large or deep wound, a face or head wound, or bleeding that will not stop. [4]
+Treat it as an animal-wound issue, not snakebite first aid. Clean and cover the wound as advised by Healthdirect, seek medical advice promptly if the skin is broken, and seek emergency care for a large or deep wound, a face or head wound, or bleeding that will not stop. [5]
 
 ## References
 
 [1]: https://collections.museumsvictoria.com.au/species/8384 "Varanus varius Lace Monitor, Museums Victoria Collections"
 [2]: https://bio-prd-naturekit-public-data.s3.ap-southeast-2.amazonaws.com/species_assessments/Varanus_varius_12283.pdf "Threatened Species Assessment Varanus varius"
 [3]: https://fieldofmar-e.schools.nsw.gov.au/fact-sheets/reptiles/lace-monitor-fact-sheet "Lace monitor fact sheet, Field of Mars Environmental Education Centre"
-[4]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Dog, cat, bat and human bites, Healthdirect Australia"
-[5]: https://www.herpconbio.org/Volume_14/Issue_1/Pascoe_etal_2019.pdf "Territoriality and seasonality in the home range of adult male free-ranging lace monitors"
+[4]: https://www.herpconbio.org/Volume_14/Issue_1/Pascoe_etal_2019.pdf "Territoriality and seasonality in the home range of adult male free-ranging lace monitors"
+[5]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Dog, cat, bat and human bites, Healthdirect Australia"
