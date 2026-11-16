@@ -188,7 +188,7 @@ export const species = [
     "active": "Year-round, nocturnal",
     "habitat": "Inside homes, gardens, under bark, in leaf litter",
     "category": "spider",
-    "encounterAdvice": "Avoid handling. Bite causes localized pain/swelling. Clean wound, apply ice, seek medical advice if symptoms worsen.",
+    "encounterAdvice": "Avoid handling. Bite causes localized pain/swelling. Seek medical advice if symptoms worsen.",
     "firstAidId": "spider_minor"
   },
   {
@@ -605,7 +605,7 @@ export const species = [
     "habitat": "Rainforests, urban areas, camps in trees",
     "category": "mammal",
     "encounterAdvice": "NEVER handle - can carry lyssavirus. If bitten/scratched seek immediate medical attention. Protected species.",
-    "firstAidId": "wildlife_bite_scratch"
+    "firstAidId": "bat_bite_scratch"
   },
   {
     "id": 39,
@@ -732,7 +732,7 @@ export const species = [
     "active": "Year-round, nocturnal",
     "habitat": "Moist areas, gardens, near lights (hunting insects)",
     "category": "amphibian",
-    "encounterAdvice": "Toxic to pets - keep dogs/cats away. Wash hands after handling. Invasive pest - report sightings.",
+    "encounterAdvice": "Toxic to pets - keep dogs/cats away. Do not handle. Invasive pest - report sightings.",
     "firstAidId": "cane_toad_toxin"
   },
   {
@@ -796,7 +796,7 @@ export const species = [
     "active": "October-May (stinger season), marine",
     "habitat": "Northern tropical waters, beaches, estuaries",
     "category": "jellyfish",
-    "encounterAdvice": "Swim in stinger nets only. Wear stinger suit. Vinegar for stings. IMMEDIATE medical emergency.",
+    "encounterAdvice": "Swim in stinger nets only. Wear stinger suit. IMMEDIATE medical emergency - call 000.",
     "firstAidId": "jellyfish_sting"
   },
   {
@@ -908,7 +908,7 @@ export const species = [
     "active": "Year-round, peaks in spring/summer",
     "habitat": "Wet sclerophyll forest, rainforest edges, long grass, garden vegetation",
     "category": "tick",
-    "encounterAdvice": "Check yourself, children and pets after bushwalks in tick habitat. Do not squeeze, pull or scratch at an attached tick — disturbing it can trigger a worse reaction.",
+    "encounterAdvice": "Check yourself, children and pets after bushwalks in tick habitat. If a tick is attached, follow the official guidance linked below.",
     "firstAidId": "tick_attachment"
   },
   {
