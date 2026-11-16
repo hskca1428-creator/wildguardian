@@ -56,15 +56,13 @@ Use these practical steps if you encounter a Red Kangaroo:
 
 On roads, be particularly alert where wildlife-crossing signs are present and in places with evidence of wildlife road deaths. Queensland advises slowing in those places, particularly at night; NSW National Parks also advises avoiding driving at dawn and dusk and scanning the road and verges ahead. [3] [4]
 
-## Injury or medical response
+## If someone is bitten, stung or hurt
 
-An emergency comes first. If someone has been seriously injured, call **Triple Zero (000)** immediately. Healthdirect says the call taker can give situation-specific first-aid advice while help is on the way. [5]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Do not create a second casualty by going back towards the kangaroo. Healthdirect’s DRSABCD approach begins with checking for danger to yourself, bystanders and the injured person. If the person is responsive, its guidance is to make them comfortable, monitor breathing, and manage severe bleeding; if there is no response, send for help immediately. [5]
+- Not sure? Poisons Information Centre: 13 11 26.
 
-For a sick or injured kangaroo, keep clear rather than approaching it. Queensland warns that sick or injured kangaroos can become defensive and says to contact a trained wildlife rehabilitator instead. NSW National Parks directs people who find sick, injured or orphaned wildlife to a licensed wildlife rescue and rehabilitation group, local vet or the nearest National Parks office. [3] [4]
-
-For non-emergency health guidance in Australia, Healthdirect can be called on **1800 022 222**. [5]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -94,4 +92,3 @@ No. An injured kangaroo may be defensive. Keep clear and contact an appropriatel
 [2]: https://bie.ala.org.au/species/Macropus+rufus "Atlas of Living Australia Osphranter rufus"
 [3]: https://www.qld.gov.au/environment/plants-animals/animals/living-with/kangaroos "Queensland Government Kangaroos and wallabies"
 [4]: https://www.nationalparks.nsw.gov.au/safety/wildlife-encounters "NSW National Parks Wildlife encounters"
-[5]: https://www.healthdirect.gov.au/treatments-and-self-care/first-aid/first-aid "Healthdirect First aid basics"
