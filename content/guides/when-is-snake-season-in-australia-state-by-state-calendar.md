@@ -8,7 +8,7 @@ dateReviewed: 2026-10-17
 
 # When is snake season in Australia? [State-by-state calendar]
 
-> **Possible snake bite? Call 000 immediately.** Treat every suspected snake bite as potentially life-threatening. Do not wait for symptoms or identification. Keep the person still and reassured, apply pressure bandaging with immobilisation if you know how, and begin CPR if they are unresponsive and not breathing normally. Do not wash, cut or suck the bite, use a tourniquet, or try to catch or kill the snake. [1] [2]
+> **Possible snake bite? Call 000 immediately.** Treat every suspected snake bite as potentially life-threatening. Do not wait for symptoms or identification, and follow the operator’s instructions. [1] [2]
 
 There is no single Australian “snake season” with a reliable national start and finish. Snakes depend on external heat, so temperature, daylight, rain, prey, habitat and the species involved affect when they can be seen. Australia’s temperate south and tropical north therefore follow different broad patterns. [3]
 
@@ -22,7 +22,7 @@ Use this calendar as a **heightened-awareness guide**, not an all-clear at other
 | **Victoria** | Raise awareness in **spring** and maintain it through the **warmer months**. Victoria’s environment agency says snakes emerge from reduced winter activity as temperatures rise and may be more visible in warmer months. [5] | Visibility does not mean aggression. Give snakes space rather than trying to move or harm them. [5] |
 | **Queensland** | Activity commonly lifts as months warm, **particularly around September**. [6] | Queensland spans very different climates. In tropical northern conditions, take cues from heat, early morning or night-time activity, and the period following the wet season rather than relying on one closing date. [3] [6] |
 | **Western Australia** | In the **southwest**, sightings and encounters rise particularly in **early spring** as temperatures rise; warmer weather remains an important alert period. [7] | WA’s fauna agency notes reptiles may also bask on winter days, and may be active at night in hot weather. A single statewide month range would be misleading. [7] |
-| **South Australia** | Treat **spring and the warm season** as the main planning period. South Australian local-government guidance says activity generally increases in spring as snakes emerge from winter dormancy to seek food and mates. [9] | This is a broad seasonal cue, not a statewide promise of dates. Food, water and low ground cover can draw snakes into urban areas. [8] |
+| **South Australia** | Treat **spring and the warm season** as the main planning period. South Australian local-government guidance says activity generally increases in spring as snakes emerge from winter dormancy to seek food and mates. [8] | This is a broad seasonal cue, not a statewide promise of dates. Food, water and low ground cover can draw snakes into urban areas. [9] |
 | **Tasmania** | **October to March** is Tasmania’s clearest usual activity window. The Tasmanian environment agency says low environmental temperatures generally limit activity to those warmer months. [10] | Tasmanian snakes can be active on warm nights, and very hot weather can send snakes towards shade or water. Use a torch outside after dark. [10] |
 | **Australian Capital Territory** | **October to March** is the ACT Government’s stated period of greatest activity. [11] | During long dry periods, snakes may appear in suburban gardens while looking for water. [11] |
 | **Northern Territory** | Think **warm conditions**, not one Territory-wide season. The NT Government says snakes are most active when it is warm. [12] | In tropical northern Australia, activity is often concentrated in early mornings, at night and following the wet season, including April to June. Central and tropical regions should not be treated as having the same calendar. [3] |
@@ -33,7 +33,7 @@ Snakes are ectotherms: their body temperature depends on the surrounding environ
 
 That biology explains why a date alone is a poor risk test. A mild or unusually warm winter can bring southern snakes out sooner, while heat can shift some activity into the evening or night. [3] [7] Queensland guidance also notes that activity can follow food availability: frog-eating species, for example, may be active on warm, humid nights near streams when frogs breed. [6]
 
-Your immediate surroundings matter too. Snakes use shelter and hunt where food is available. State authorities identify long grass, timber or sheet-metal piles, garden debris, sheds, roof spaces and rodent-rich areas as possible places for snakes to hide or find prey. [6] [7] [8] In flood-prone Queensland areas, snakes may move to higher ground during flooding. [6]
+Your immediate surroundings matter too. Snakes use shelter and hunt where food is available. State authorities identify long grass, timber or sheet-metal piles, garden debris, sheds, roof spaces and rodent-rich areas as possible places for snakes to hide or find prey. [6] [7] [9] In flood-prone Queensland areas, snakes may move to higher ground during flooding. [6]
 
 Make seasonal preparations before the warmer period in your area, but keep ordinary snake awareness whenever you are outdoors, gardening, using a shed, or walking near water, long grass or bushland.
 
@@ -46,21 +46,16 @@ Use this short checklist when activity is likely to be higher:
 - **Look where you place feet and hands.** Stay on clear paths where possible, use a torch outside at night, and avoid reaching blindly into logs, rock gaps, dense vegetation or stored materials. [1] [11]
 - **Wear practical coverage** when working or walking in long grass or bushland, such as long trousers and enclosed footwear. [1] [7]
 - **Give a seen snake space.** Move children and pets away, back away yourself, and let the snake move on. Do not approach it for a closer look or photograph. [1] [11]
-- **Reduce shelter and prey around the home.** Keep yards and sheds tidy, store materials off the ground where practical, and reduce rats and mice. These measures can make a property less attractive to snakes. [6] [7] [8]
-- **Use an authorised local service if a snake creates a safety concern.** Do not attempt capture, removal or relocation yourself. [4] [7] [8]
+- **Reduce shelter and prey around the home.** Keep yards and sheds tidy, store materials off the ground where practical, and reduce rats and mice. These measures can make a property less attractive to snakes. [6] [7] [9]
+- **Use an authorised local service if a snake creates a safety concern.** Do not attempt capture, removal or relocation yourself. [4] [7] [9]
 
 ## If someone may have been bitten
 
 A bite can be painless and marks can be hard to see, so act on suspicion rather than appearance. [2] **Call 000 immediately and follow the dispatcher’s instructions.** Do not wait to identify the snake, and do not delay for a drive to find it. [1] [2]
 
-While help is on the way:
+While help is on the way, stay with the person and follow the 000 operator. WildGuardian does not write first-aid instructions; the official guidance is linked in the references. Do not try to catch or kill the snake. [1] [2]
 
-1. Move beyond the snake only if this can be done without further risk, then keep the person **still, calm and under observation**. [1] [2]
-2. Apply **pressure bandaging with immobilisation** to the bitten limb if you are able to do so; keep the limb still. [1] [2]
-3. If the person is unresponsive and not breathing normally, start **CPR**. [1] [2]
-4. Do **not** wash the area, cut it, suck it, use an arterial tourniquet, give food or alcohol, or try to catch or kill the snake. [1] [2]
-
-These steps apply in every state and territory, in every month, and whether the snake was seen or merely suspected. [1] [2]
+This applies in every state and territory, in every month, and whether the snake was seen or merely suspected. [1] [2]
 
 ## Frequently asked questions
 
@@ -89,8 +84,8 @@ No. Call **000 immediately** for any suspected snake bite. Identification is not
 [5]: https://www.ffm.vic.gov.au/media-releases/snake-season-is-here,-be-prepared-and-stay-safe "Forest Fire Management Victoria: Snake season is here, be prepared and stay safe"
 [6]: https://environment.qld.gov.au/wildlife/animals/living-with/snakes/frequent-questions "Queensland Government: Frequently asked questions about snakes"
 [7]: https://www.dbca.wa.gov.au/media/2150/download "Western Australian Department of Biodiversity, Conservation and Attractions: Reptiles in and around the house"
-[8]: https://www.environment.sa.gov.au/topics/animals-and-plants/living-with-wildlife/snakes "South Australian Department for Environment and Water: Snakes"
-[9]: https://www.victor.sa.gov.au/council-activities/environment-and-public-health/snakes "City of Victor Harbor: Snake Safety and Awareness"
+[8]: https://www.victor.sa.gov.au/council-activities/environment-and-public-health/snakes "City of Victor Harbor: Snake Safety and Awareness"
+[9]: https://www.environment.sa.gov.au/topics/animals-and-plants/living-with-wildlife/snakes "South Australian Department for Environment and Water: Snakes"
 [10]: https://nre.tas.gov.au/wildlife-management/fauna-of-tasmania/reptiles-and-frogs/tasmanian-snakes "Department of Natural Resources and Environment Tasmania: Tasmanian Snakes"
 [11]: https://www.act.gov.au/environment/animals-and-plants/animals/wildlife-management/snakes "ACT Government: Snakes"
 [12]: https://nt.gov.au/environment/animals/wildlife-in-nt/snakes "Northern Territory Government: Snakes"
