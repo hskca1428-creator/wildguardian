@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Head from 'next/head';
 import { Search, Shield, AlertTriangle, Info, ChevronRight, Filter } from 'lucide-react';
 import { species } from '../data/species';
-import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
+import { firstAid, EMERGENCY_NOTE, GUIDANCE_NOTE, SOURCES } from '../data/firstAid';
+import FirstAidRouter from '../components/FirstAidRouter';
 import { getSpeciesLink } from '../data/speciesLinks';
 
 export default function WildlifeDatabase() {
@@ -40,13 +41,13 @@ export default function WildlifeDatabase() {
         <title>Australian Wildlife Database | WildGuardian</title>
         <meta
           name="description"
-          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and first-aid steps for bites and stings."
+          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and links to official help for bites and stings."
         />
         <link rel="canonical" href="https://www.wildguardian.com.au/wildlife-database" />
         <meta property="og:title" content="Australian Wildlife Database | WildGuardian" />
         <meta
           property="og:description"
-          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and first-aid steps for bites and stings."
+          content="Browse 60+ Australian wildlife species with identification guides, risk ratings, habitat info and links to official help for bites and stings."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.wildguardian.com.au/wildlife-database" />
@@ -182,19 +183,7 @@ export default function WildlifeDatabase() {
                       </div>
                     </div>
                   </div>
-
-                  {firstAid[animal.firstAidId] && (
-                    <div className="bg-slate-900 text-white rounded-lg p-4">
-                      <p className="text-xs font-semibold text-slate-300 uppercase mb-2">
-                        If a bite or sting happens: {firstAid[animal.firstAidId].title}
-                      </p>
-                      <ul className="text-sm text-slate-100 space-y-1 list-disc list-inside">
-                        {firstAid[animal.firstAidId].steps.map((step, i) => (
-                          <li key={i}>{step}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                  <FirstAidRouter aid={firstAid[animal.firstAidId]} context="If a bite or sting happens" />
 
                   <div className="flex gap-3 text-xs text-gray-600">
                     <div className="flex-1 bg-gray-100 rounded-lg p-2">
@@ -237,7 +226,7 @@ export default function WildlifeDatabase() {
         {/* Sourcing footer */}
         <div className="mt-8 text-center text-blue-300/60 text-sm">
           <p>
-            First-aid guidance last reviewed: {LAST_REVIEWED}. Sources:{' '}
+            {GUIDANCE_NOTE} Official sources:{' '}
             {SOURCES.map((s, i) => (
               <span key={s.url}>
                 {i > 0 && ', '}
