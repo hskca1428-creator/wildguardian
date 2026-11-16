@@ -36,11 +36,14 @@ If you see a snake, pause and create distance. Keep pets and children away, do n
 
 If a snake is inside a home, classroom or another confined setting, arrange a suitably licensed local snake controller or wildlife professional. Do not attempt to relocate it. A snake that looks inactive, injured or dead should also be left alone.
 
-## Suspected bite: call 000
+## If someone is bitten, stung or hurt
 
-Healthdirect advises that all snake bites are potentially life-threatening. Call 000 for an ambulance immediately, move away from the snake without trying to catch it, and keep the person still and calm. [2]
+> **CALL 000 FIRST.** Call 000 now.
 
-Apply pressure immobilisation: bandage over the bite, then bandage from the fingers or toes upward over the whole limb, add a rigid splint and restrict movement. [2] [3] Do not wash the bite, cut the wound, suck out venom or apply a tourniquet. Do not wait for symptoms or a species identification. If the person becomes unresponsive and is not breathing normally, start CPR while awaiting the ambulance. [2]
+- Stay with the person and follow the 000 operator’s instructions.
+- Do not wait for symptoms, and do not try to identify the snake first.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Snake bites](https://www.healthdirect.gov.au/snake-bites); [Queensland Health — Bites and stings](https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings).
 
 ## Frequently asked questions
 
@@ -58,11 +61,10 @@ They can be. Wetlands, creek margins, swamps and other moist sites are relevant 
 
 ### What should I do after a possible Copperhead bite?
 
-Treat it as an emergency: call 000, keep the person still and apply pressure immobilisation. [2] [3]
+Call 000 now. WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [2] [3]
 
 ## References
 
 [1]: https://australian.museum/learn/animals/reptiles/copperhead/ "Copperhead Snake — Australian Museum"
-[2]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/snake-bites "Snake bites — Healthdirect Australia"
-[3]: https://www.poisonsinfo.nsw.gov.au/first-aid "First aid — NSW Poisons Information Centre"
-[4]: https://biomedicalsciences.unimelb.edu.au/departments/department-of-biochemistry-and-pharmacology/engage/avru/discover/snakes/copperhead-austrelaps-superbus "Copperheads, Austrelaps — Australian Venom Research Unit"
+[2]: https://www.healthdirect.gov.au/snake-bites "Healthdirect — Snake bites"
+[3]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Queensland Health — Bites and stings"
