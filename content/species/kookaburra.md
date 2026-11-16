@@ -49,11 +49,13 @@ If a bird is calling repeatedly, give it room. For the Laughing Kookaburra, the 
 
 If a kookaburra appears sick or injured, seek local professional advice rather than trying to take it into care. NSW advises that only licensed wildlife rehabilitation providers or registered veterinarians can take sick, injured or orphaned native animals into care, and that untrained rescue can harm the person or animal. [7] Contact a local licensed wildlife rescue organisation or veterinarian and follow their directions.
 
-## Medical response if a bill injury breaks skin
+## If someone is bitten, stung or hurt
 
-This LOW-risk record does not mean a bird’s bill cannot cause a wound. Healthdirect notes that any animal, including native animals, can bite, and advises seeing a doctor as soon as possible if an animal bite breaks the skin. [8] For a minor wound, Healthdirect advises cleaning the skin around it with soap and water, using running water to remove visible contamination, patting it dry and covering it with a clean dressing. [8]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Seek emergency care if the wound is large or deep, is on the face or head, or bleeding cannot be stopped; call Triple Zero (000) for urgent medical help. [8] Medical advice is also important after broken skin because tetanus status and infection risk may need assessment. [8] Bat-specific Australian bat lyssavirus advice and snakebite or envenomation protocols are **not** kookaburra guidance; use ordinary animal-wound advice for a bill injury unless a clinician says otherwise.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
