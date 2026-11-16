@@ -32,7 +32,7 @@ export default function GuidesIndex({ guides }) {
         <title>Australian Snake Safety Guides | WildGuardian</title>
         <meta
           name="description"
-          content="Practical Australian snake safety guides on identification, bite first aid, backyard sightings, seasonal activity and bush preparation."
+          content="Practical Australian snake safety guides on identification, what to do after a possible bite, backyard sightings, seasonal activity and bush preparation."
         />
         <link rel="canonical" href={`${SITE_URL}/guides`} />
         <meta property="og:type" content="website" />
@@ -40,14 +40,14 @@ export default function GuidesIndex({ guides }) {
         <meta property="og:title" content="Australian Snake Safety Guides | WildGuardian" />
         <meta
           property="og:description"
-          content="Australian guidance on safer snake sightings, snake-bite first aid, seasonal activity and bush preparation."
+          content="Australian guidance on safer snake sightings, what to do after a possible snake bite, seasonal activity and bush preparation."
         />
         <meta property="og:url" content={`${SITE_URL}/guides`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Australian Snake Safety Guides | WildGuardian" />
         <meta
           name="twitter:description"
-          content="Australian guidance on safer snake sightings, snake-bite first aid, seasonal activity and bush preparation."
+          content="Australian guidance on safer snake sightings, what to do after a possible snake bite, seasonal activity and bush preparation."
         />
       </Head>
 
@@ -85,7 +85,7 @@ export default function GuidesIndex({ guides }) {
           </div>
           <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl">Australian snake safety guides</h1>
           <p className="mt-5 text-lg leading-relaxed text-blue-100 sm:text-xl">
-            Clear, practical guides for safer snake sightings, bush preparation and emergency first aid. Each guide
+            Clear, practical guides for safer snake sightings, bush preparation and where to find official emergency guidance. Each guide
             puts distance, calm decisions and current Australian source material ahead of a quick species guess.
           </p>
         </section>
