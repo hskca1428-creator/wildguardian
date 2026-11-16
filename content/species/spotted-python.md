@@ -36,7 +36,7 @@ Queensland Government regional profiles document the species in south-east Queen
 
 Watch from a distance and leave the snake space to move away. Keep children and pets back. If the animal is in a building or another place where this is not possible, seek help from an appropriately licensed local wildlife or snake-removal service.
 
-Even though this python is non-venomous, do not dismiss a bite or rely on a species guess. Healthdirect advises that all snake bites are potentially life-threatening because the snake may be misidentified. [6] Call 000, keep the person still and calm, apply pressure immobilisation to the affected limb and await an ambulance. Do not wash, cut or suck the wound, apply a tourniquet, or try to catch the snake. [6]
+Even though this python is non-venomous, do not dismiss a bite or rely on a species guess. Healthdirect advises that all snake bites are potentially life-threatening because the snake may be misidentified. [6] Call 000 and follow the operator’s instructions.
 
 ## Frequently asked questions
 
