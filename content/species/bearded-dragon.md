@@ -51,11 +51,13 @@ If a dragon is beside a road, put personal safety first. Do not enter traffic or
 
 The page does **not** give capture, handling, feeding or relocation directions. These activities can increase stress, make identification harder and may be regulated differently across Australian jurisdictions. For a genuinely injured or trapped native animal, contact the relevant local wildlife rescue organisation or state/territory wildlife authority rather than attempting to manage it yourself.
 
-## If someone is bitten
+## If someone is bitten, stung or hurt
 
-Advice about bites must also stay in scope. The Australian Museum states that an adult **Central Bearded Dragon (*P. vitticeps*)** bite can be painful, break skin and leave a bruise. It says the species has primitive venom glands whose role is not understood, and reports that a bite from this species should not have a long-term ill effect. [4] Tasmania’s Department of Natural Resources and Environment assessed *P. vitticeps* as not dangerous to humans for its import-risk assessment. [5] Neither statement is a blanket medical assessment for every *Pogona* species, so this page does not label the whole genus venomous or non-venomous.
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-If **any animal bite breaks the skin**, Healthdirect advises seeing a doctor as soon as possible. Healthdirect says to seek emergency care for a large or deep wound, a bite to the face or head, or bleeding that cannot be stopped. [6] For a minor bite, Healthdirect’s general advice includes cleaning the skin around the wound with soap and water, removing visible dirt under running water, drying with a clean cloth and covering it with a clean dressing. [6] Seek medical advice rather than using snakebite or other venom-specific first-aid procedures; those are not recommended here for a *Pogona* sighting.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## FAQs
 
@@ -77,7 +79,7 @@ The published examples are. Museums Victoria describes *P. barbata* as active du
 
 ### What should I do if I am bitten?
 
-Treat broken skin as an animal-bite injury. Healthdirect advises prompt medical review when skin is broken, and urgent emergency care for a large or deep wound, a face or head bite, or bleeding that will not stop. [6]
+Treat broken skin as an animal-bite injury. Healthdirect advises prompt medical review when skin is broken, and urgent emergency care for a large or deep wound, a face or head bite, or bleeding that will not stop. [5]
 
 ## References
 
@@ -85,5 +87,4 @@ Treat broken skin as an animal-bite injury. Healthdirect advises prompt medical 
 [2]: https://collections.museumsvictoria.com.au/species/8374 "Museums Victoria: Pogona barbata Bearded Dragon"
 [3]: https://www.wildlife.vic.gov.au/__data/assets/pdf_file/0017/84104/Bearded-Dragon.pdf "Victorian Government Bearded Dragon wildlife factsheet"
 [4]: https://australian.museum/learn/animals/reptiles/central-bearded-dragon/ "Australian Museum Central Bearded Dragon"
-[5]: https://nre.tas.gov.au/wildlife-management/management-of-wildlife/importing-fauna/species-risk-assessments/central-bearded-dragon "Tasmanian Government Central Bearded Dragon risk assessment"
-[6]: https://www.healthdirect.gov.au/animal-and-human-bites "Healthdirect Australia animal and human bites"
+[5]: https://www.healthdirect.gov.au/animal-and-human-bites "Healthdirect Australia animal and human bites"
