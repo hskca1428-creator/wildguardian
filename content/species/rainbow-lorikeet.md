@@ -47,9 +47,13 @@ If a Rainbow Lorikeet appears sick, injured or orphaned, do not turn the sightin
 
 In Western Australia, an apparent Rainbow Lorikeet outside metropolitan Perth has extra significance: DPIRD asks people to report wild birds outside metropolitan Perth so the department can respond. [3] Follow the relevant authority’s current directions rather than assuming the rules from another state apply.
 
-## If a person is bitten
+## If someone is bitten, stung or hurt
 
-Any animal can bite, including native animals. [5] If an animal bite breaks the skin, Healthdirect advises seeing a doctor as soon as possible; urgent emergency care is advised for a large or deep wound, a bite to the face or head, or bleeding that will not stop. [5] This is general wound guidance, not a claim that Rainbow Lorikeets carry a particular human disease. For urgent medical help, call triple zero (000); Healthdirect’s 24-hour helpline is 1800 022 222. [5]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
+
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -79,4 +83,3 @@ Contact a local licensed wildlife rescue and rehabilitation group or a veterinar
 [2]: https://fieldofmar-e.schools.nsw.gov.au/fact-sheets/birds/rainbow-lorikeet-fact-sheet "NSW Department of Education Rainbow lorikeet fact sheet"
 [3]: https://www.dpird.wa.gov.au/businesses/pests-weeds-and-diseases/animal-pests-diseases/pest-birds/rainbow-lorikeet/ "Western Australia DPIRD Rainbow lorikeet"
 [4]: https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/sick-or-injured-animals "NSW Environment and Heritage Help a sick or injured animal"
-[5]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Healthdirect Australia animal bite guidance"
