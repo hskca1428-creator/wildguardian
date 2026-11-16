@@ -36,13 +36,15 @@ Stop at a respectful distance and keep the animal’s route to cover open. Do no
 
 Use care around burrows, rock crevices and shade shelters. Do not place hands where you cannot see, and do not corner a Perentie against a rock, fence or vehicle. The Northern Territory Government advises that all lizards can bite and that authorised handling requires appropriate protection; casual handling is not appropriate. [4]
 
-If you find an injured animal, contact the relevant state wildlife authority or a licensed wildlife rescue service. Do not apply snake-bite procedures simply because a Perentie is a large reptile; that protocol is for specified snake and highly venomous invertebrate bites, not monitor-lizard injuries. [6]
+If you find an injured animal, contact the relevant state wildlife authority or a licensed wildlife rescue service. Do not apply snake-bite procedures simply because a Perentie is a large reptile; that protocol is for specified snake and highly venomous invertebrate bites, not monitor-lizard injuries. [5]
 
-## If a bite or scratch breaks skin
+## If someone is bitten, stung or hurt
 
-A defensive bite or scratch can break skin. Northern Territory guidance advises cleaning and disinfecting monitor-lizard bites or scratches promptly, and notes infection risk from bacteria in a monitor’s mouth. [4] Healthdirect says any animal bite that breaks skin should receive medical advice as soon as possible. [5]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Wash a minor wound with soap and running water, remove visible debris, dry it with a clean cloth and cover it with a clean dressing. [5] Seek urgent care for a large or deep wound, an injury to the face or head, or bleeding that will not stop. Call 000 for urgent medical help where needed. [5]
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -60,7 +62,7 @@ No. They are monitor lizards. They can still defend themselves with teeth, claws
 
 ### What should I do if one bites or scratches me?
 
-Clean and disinfect the wound, cover it and obtain medical advice if skin is broken. Seek urgent care for serious wounds. [4] [5]
+Clean and disinfect the wound, cover it and obtain medical advice if skin is broken. Seek urgent care for serious wounds. [4] [6]
 
 ## References
 
@@ -68,5 +70,5 @@ Clean and disinfect the wound, cover it and obtain medical advice if skin is bro
 [2]: https://wildnet.science-data.qld.gov.au/taxon-detail?taxon_id=75 "Varanus giganteus, Perentie — Queensland Government WildNet"
 [3]: https://cdn.environment.sa.gov.au/landscape/docs/hf/simpson-strzelecki-dunefields-bio-region-plus-bioicons-fact.pdf "Simpson-Strzelecki Dunefields biodiversity fact sheet — South Australian Government"
 [4]: https://nt.gov.au/environment/animals/caring-for-wildlife/caring-for-lizards "Caring for lizards — Northern Territory Government"
-[5]: https://www.healthdirect.gov.au/animal-and-human-bites "Animal and human bites — Healthdirect Australia"
-[6]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Bites and stings — Queensland Government"
+[5]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Bites and stings — Queensland Government"
+[6]: https://www.healthdirect.gov.au/animal-and-human-bites "Animal and human bites — Healthdirect Australia"
