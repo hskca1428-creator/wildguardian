@@ -46,11 +46,13 @@ If a possum appears sick, injured or orphaned, contact a local licensed wildlife
 
 For a persistent property issue, seek current advice from the relevant state or territory wildlife authority or a suitably authorised local service rather than attempting to deal with the animal yourself.
 
-## If a bite breaks skin
+## If someone is bitten, stung or hurt
 
-If a possum bite breaks skin, use the general animal-bite guidance below rather than first aid for a different type of animal. Healthdirect says that any animal, including a native animal, can bite, and advises seeing a doctor as soon as possible if an animal bite has broken the skin. [7]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-For a minor wound, Healthdirect advises cleaning the skin around it with soap and water, removing visible dirt with running water, drying it with a clean cloth and covering it with a clean dressing. [7] Seek urgent emergency care for a large or deep wound, a bite to the face or head, or bleeding that will not stop. [7] Fever, increasing pain, redness, swelling, warmth, pus or discharge after a bite can indicate infection and need medical assessment. [7] For immediate Australian health advice, Healthdirect’s helpline is 1800 022 222; call Triple Zero (000) for urgent medical help. [7]
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
