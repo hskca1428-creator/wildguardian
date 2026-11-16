@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, BookOpen, Shield } from 'lucide-react';
 
 const SITE_URL = 'https://www.wildguardian.com.au';
-const LAST_UPDATED = '24 October 2026';
+const LAST_UPDATED = '16 November 2026';
 const CONTACT_EMAIL = 'support@wildguardian.com.au';
 const DESCRIPTION =
   'How WildGuardian handles your information: photos you upload for identification, email subscriptions, analytics, and the services we use.';
@@ -90,7 +90,8 @@ export default function Privacy() {
               <li>You don’t need an account to use WildGuardian.</li>
               <li>A photo you upload is used only to produce your result. We don’t keep a copy.</li>
               <li>If you subscribe, we keep your name and email address in our email service until you unsubscribe.</li>
-              <li>We use Google Analytics (through Google Tag Manager) to see how the site is used.</li>
+              <li>We use Google Tag Manager and Google Analytics to see how the site is used.</li>
+              <li>We limit how many photos one connection can submit, using a scrambled code, not your IP address.</li>
               <li>We don’t sell your personal information.</li>
             </List>
           </aside>
@@ -140,9 +141,11 @@ export default function Privacy() {
             <p>
               To keep the free photo identifier fair and stop abuse, we limit how many photos one connection can submit.
               To do that we turn your IP address into a scrambled code (a salted hash) and store only that code, in
-              counters that are deleted automatically within about 36 hours. Our hosting provider, Vercel, also keeps
-              standard server logs (such as IP address, browser type and pages requested) to operate and secure the
-              service.
+              counters held by our database provider, Upstash. The counters are deleted automatically within about 36
+              hours. We also keep a daily total of photo requests across the whole site, which is not linked to any
+              person. Our hosting provider, Vercel, keeps standard server logs (such as IP address, browser type and
+              pages requested) and error logs to operate and secure the service. Error logs record technical details
+              of a failed request, not the photo.
             </p>
 
             <SubHeading>When you contact us</SubHeading>
@@ -174,6 +177,10 @@ export default function Privacy() {
                 <strong>Vercel</strong> (website hosting).{' '}
                 <ExternalLink href="https://vercel.com/legal/privacy-policy">Vercel’s privacy policy</ExternalLink>.
               </li>
+              <li>
+                <strong>Upstash</strong> (database that holds the photo-limit counters described above).{' '}
+                <ExternalLink href="https://upstash.com/trust/privacy.html">Upstash’s privacy policy</ExternalLink>.
+              </li>
             </List>
             <p>
               We don’t sell your personal information. We may disclose information if the law requires it or to protect
@@ -181,15 +188,23 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section title="4. Information handled outside Australia">
+          <Section title="4. Links to other websites">
             <p>
-              These providers are largely based in the United States and may store or process information there or in
+              WildGuardian links to official health, government and wildlife organisations, such as Healthdirect, state
+              and territory health services and the Australian Museum. When you follow one of these links you leave our
+              site. We don’t control those sites or what they collect, so please read their own privacy policies.
+            </p>
+          </Section>
+
+          <Section title="5. Information handled outside Australia">
+            <p>
+              Providers such as Anthropic, AWeber, Google, Vercel and Upstash are largely based in the United States and may store or process information there or in
               other countries. We choose reputable providers, but we can’t control how their systems operate. By using
               the photo identifier or subscribing, you understand your information may be handled outside Australia.
             </p>
           </Section>
 
-          <Section title="5. Cookies">
+          <Section title="6. Cookies">
             <p>
               Google’s tags set cookies or similar identifiers in your browser to measure site usage, and AWeber may set
               cookies when you submit its sign-up form. You can block or delete cookies in your browser settings, or
@@ -199,7 +214,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section title="6. How long we keep information">
+          <Section title="7. How long we keep information">
             <List>
               <li>
                 <strong>Photos:</strong> we don’t keep them.
@@ -219,14 +234,14 @@ export default function Privacy() {
             </List>
           </Section>
 
-          <Section title="7. Security">
+          <Section title="8. Security">
             <p>
               We use encrypted connections (HTTPS) and rely on reputable providers to protect information. No method of
               transmission or storage is completely secure, so we can’t guarantee absolute security.
             </p>
           </Section>
 
-          <Section title="8. Your choices and rights">
+          <Section title="9. Your choices and rights">
             <List>
               <li>
                 <strong>Unsubscribe</strong> at any time using the link in any email, or by emailing us.
@@ -243,7 +258,7 @@ export default function Privacy() {
             </List>
           </Section>
 
-          <Section title="9. Children">
+          <Section title="10. Children">
             <p>
               WildGuardian is a general safety resource and isn’t directed at children under 16. We don’t knowingly
               collect personal information from children. If you believe a child has subscribed, email us and we’ll
@@ -251,15 +266,16 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section title="10. General information, not medical advice">
+          <Section title="11. General information, not medical advice">
             <p>
               WildGuardian provides general information only. A photo result is a possibility, not a diagnosis, and
-              nothing on this site replaces medical care. If you may have been bitten or stung, don’t wait for a photo
-              result. Call 000.
+              nothing on this site replaces medical care. We don’t write first-aid instructions. Our pages point to
+              official Australian health sources. If you may have been bitten or stung, don’t wait for a photo result.
+              Call 000.
             </p>
           </Section>
 
-          <Section title="11. Changes to this policy">
+          <Section title="12. Changes to this policy">
             <p>
               We may update this policy from time to time. The “last updated” date at the top shows the current version.
               If we make a significant change, we’ll make it clear on the site.
