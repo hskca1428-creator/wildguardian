@@ -49,15 +49,17 @@ If a devil is using a shed, garage, under-car space or another part of a propert
 
 On Tasmanian roads, slow down after dark, scan road edges and heed wildlife-warning signs. NRE Tasmania specifically advises slower night driving and allowing an animal to move off before passing. [5] If you see a road-killed devil, only stop or make a report when it is safe to do so; the Roadkill Project asks the public to record the sighting through the Tasmanian Roadkill Reporter app. [4]
 
-## If a person is bitten or scratched
+## If someone is bitten, stung or hurt
 
-If a bite or scratch breaks the skin, it is a medical issue. Healthdirect states that **any animal bite that breaks skin should be assessed by a doctor as soon as possible**, and advises immediate medical advice to reduce infection and tetanus risk. [7]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Seek emergency care for a large or deep wound, a bite to the face or head, or bleeding that will not stop. Healthdirect advises calling Triple Zero (000) for urgent medical help. [7] This is general Australian mammal-bite guidance; it is not bat-exposure advice and should not be used as a substitute for it. No one should wait for symptoms before seeking care for a skin-breaking bite.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Conservation in Tasmania
 
-Devil Facial Tumour Disease (DFTD) is the major contemporary threat identified by NRE Tasmania. It is a fatal condition marked by facial tumours, and the Save the Tasmanian Devil Program is the Australian and Tasmanian governments’ official response to the extinction threat posed by DFTD. [1] [8]
+Devil Facial Tumour Disease (DFTD) is the major contemporary threat identified by NRE Tasmania. It is a fatal condition marked by facial tumours, and the Save the Tasmanian Devil Program is the Australian and Tasmanian governments’ official response to the extinction threat posed by DFTD. [1] [7]
 
 The species is wholly protected and is listed as endangered under Tasmania’s *Threatened Species Protection Act 1995* and the Commonwealth *Environment Protection and Biodiversity Conservation Act 1999*, according to NRE Tasmania. [1] Careful driving matters because road mortality remains a documented concern: the Roadkill Project has received more than 7,000 reports since it began in 2009. [4]
 
@@ -91,5 +93,4 @@ NRE Tasmania identifies Devil Facial Tumour Disease as the greatest recent threa
 [4]: https://nre.tas.gov.au/conservation/threatened-species-and-communities/lists-of-threatened-species/threatened-species-vertebrates/save-the-tasmanian-devil-program/tasmanian-devil-roadkill-project "Tasmanian Devil Roadkill Project"
 [5]: https://nre.tas.gov.au/wildlife-management/living-with-wildlife/tasmanian-wildlife-roadkill/sharing-the-road-with-wildlife "Sharing the Road with Wildlife"
 [6]: https://nre.tas.gov.au/conservation/threatened-species-and-communities/lists-of-threatened-species/threatened-species-vertebrates/save-the-tasmanian-devil-program/common-devil-issues "Guide to Common Devil Issues"
-[7]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Dog, cat, bat and human bites"
-[8]: https://nre.tas.gov.au/conservation/threatened-species-and-communities/lists-of-threatened-species/threatened-species-vertebrates/save-the-tasmanian-devil-program "Save the Tasmanian Devil Program"
+[7]: https://nre.tas.gov.au/conservation/threatened-species-and-communities/lists-of-threatened-species/threatened-species-vertebrates/save-the-tasmanian-devil-program "Save the Tasmanian Devil Program"
