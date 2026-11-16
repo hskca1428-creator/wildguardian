@@ -48,11 +48,13 @@ A sighting beside a path, patio, garden bed or park rock does not require a pers
 
 This page intentionally offers no capture, handling, feeding, relocation, pest-control, nest-removal or wildlife-treatment directions. The useful outcome is simple coexistence: leave the skink’s routine undisturbed and enjoy the short observation.
 
-## Medical response where relevant
+## If someone is bitten, stung or hurt
 
-A Common Garden Skink encounter is not presented here as a venom emergency. If any native animal interaction breaks a person’s skin, however, use ordinary Australian health advice for an animal wound rather than making assumptions from the animal’s small size. Healthdirect states that native animals can bite and advises seeing a doctor as soon as possible if an animal bite has broken the skin. [7]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Go to an emergency department if the wound is large or deep, involves the face or head, or bleeding cannot be stopped; Healthdirect says not to drive yourself and to call Triple Zero (000) for an ambulance when needed. [7] This is general wound escalation advice, not a claim of a special toxin or species-specific medical effect for *L. guichenoti*.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -84,4 +86,3 @@ Treat it as a brief wildlife observation. Give it space, avoid interfering with 
 [4]: https://www.greenadelaide.sa.gov.au/news/2024-common-lizards-adelaide "5 common lizards of Adelaide, Green Adelaide"
 [5]: http://keyserver.lucidcentral.org/key-server/data/09040100-0c09-4b0f-8501-000900020c0d/media/Html/Lampropholis_guichenoti.htm "Lampropholis guichenoti, Lucid Central Australian National University"
 [6]: https://www.dcceew.gov.au/sites/default/files/env/pages/dc11235d-8b3b-43f7-b991-8429f477a1d4/files/31-fauna-2a-squamata-scincidae.pdf "Fauna of Australia, Family Scincidae, Australian Government"
-[7]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Dog, cat, bat and human bites, Healthdirect Australia"
