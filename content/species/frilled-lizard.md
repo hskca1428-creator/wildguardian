@@ -49,11 +49,13 @@ If a frilled lizard is displaying its frill, increase the distance rather than w
 
 If the animal appears injured, sick or unable to leave danger, do not try home treatment or take it into care. In the Northern Territory, official guidance is to contact a local wildlife care organisation, Wildlife Operations or a veterinary clinic; native wildlife care requires a wildlife carer’s permit. [8] Elsewhere in Australia, contact the relevant state or territory wildlife authority, a local licensed wildlife rescue service or a veterinarian for direction. This keeps decisions about care with appropriately trained and authorised people.
 
-## If a bite or scratch breaks the skin
+## If someone is bitten, stung or hurt
 
-A frilled lizard may bite if it is cornered, so prevention is the priority. [2] The following is general Australian health guidance for any animal bite or scratch, not a species-specific envenomation protocol. Healthdirect advises gently washing the wound with soap and running water for about five minutes, patting it dry and covering it with a clean dressing. If the skin is broken, see a doctor promptly; urgent medical help is also needed for a deep wound, signs of infection, or a wound on the hand, face, feet or genitals. [9]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-Call Triple Zero (000) for an ambulance if an animal-bite wound is on the face or head, is large or deep, or bleeding cannot be stopped. [9] Healthdirect also advises that people with weakened immune systems avoid reptiles because they can carry harmful germs such as *Salmonella*. [9] Avoiding contact and washing hands after any unplanned animal contact are sensible safeguards.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -75,7 +77,7 @@ Keep your distance and seek advice from the responsible local wildlife authority
 
 ### Should I seek medical help after a frilled-lizard bite or scratch?
 
-If skin is broken, Healthdirect advises seeing a doctor promptly. Wash the wound gently with soap and running water for about five minutes, dry it and cover it with a clean dressing; call 000 for severe bleeding, or a large or deep wound on the face or head. [9]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [9] [10]
 
 ## References
 
@@ -87,4 +89,5 @@ If skin is broken, Healthdirect advises seeing a doctor promptly. Wash the wound
 [6]: https://hero.epa.gov/reference/6408871/ "Demography and home range of the frillneck lizard in northern Australia"
 [7]: https://nt.gov.au/environment/animals/caring-for-wildlife/caring-for-lizards "Northern Territory Government Caring for lizards"
 [8]: https://nt.gov.au/environment/animals/caring-for-wildlife/about-caring-for-wildlife "Northern Territory Government About caring for wildlife"
-[9]: https://www.healthdirect.gov.au/healthy-living/physical-wellbeing/keeping-healthy-and-safe-with-pets-and-other-animals "Healthdirect Keeping healthy and safe with pets and other animals"
+[9]: https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites "Healthdirect — Dog, cat, bat and human bites"
+[10]: https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid "Better Health Channel — Bites and stings first aid"
