@@ -351,21 +351,20 @@ export default function GuidePage({ guide }) {
           </p>
           <GuideContent markdown={guide.content} />
           <div className="mt-10 border-t border-slate-200 pt-5 text-sm text-slate-500">
-            Last reviewed: {formatDate(guide.dateReviewed)}. This is general information, not a substitute for medical care.
+            General information compiled from the official sources listed on this page. It is not medical advice. In an emergency, call 000.
           </div>
         </article>
 
         <aside className="mt-7 rounded-2xl border border-blue-200 bg-blue-50 p-6">
-          <h2 className="text-xl font-bold text-slate-950">Need snake-bite first-aid steps?</h2>
+          <h2 className="text-xl font-bold text-slate-950">Possible snake bite?</h2>
           <p className="mt-2 leading-relaxed text-slate-700">
-            For a possible bite, call 000 immediately. Our pressure-immobilisation guide explains the official first-aid
-            sequence while help is on the way.
+            For a possible bite, call 000 immediately. Our guide links to the official first-aid guidance.
           </p>
           <Link
             href="/guides/snake-bite-first-aid-pressure-immobilisation-technique"
             className="mt-4 inline-flex items-center gap-2 font-bold text-blue-700 hover:text-blue-950"
           >
-            Read the snake-bite first-aid guide <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
+            Read the snake-bite guide <ArrowLeft className="h-4 w-4 rotate-180" aria-hidden="true" />
           </Link>
         </aside>
 
