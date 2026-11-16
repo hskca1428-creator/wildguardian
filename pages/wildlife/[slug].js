@@ -38,17 +38,17 @@ const RELATED_GUIDES = {
   'eastern-brown-snake': [
     { href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake', label: 'Eastern brown snake vs common tree snake' },
     { href: '/guides/tiger-snake-vs-eastern-brown-how-to-tell-them-apart', label: 'Tiger snake vs eastern brown: how to tell them apart' },
-    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite: call 000 and find official first-aid guidance' },
   ],
   'tiger-snake': [
     { href: '/guides/tiger-snake-vs-eastern-brown-how-to-tell-them-apart', label: 'Tiger snake vs eastern brown: how to tell them apart' },
-    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite: call 000 and find official first-aid guidance' },
     { href: '/guides/snake-in-the-backyard-what-to-do-and-not-to-do', label: 'Snake in the backyard: what to do (and what not to do)' },
   ],
   'green-tree-snake': [
     { href: '/guides/how-to-identify-eastern-brown-snake-vs-common-tree-snake', label: 'Eastern brown snake vs common tree snake' },
     { href: '/guides/snake-in-the-backyard-what-to-do-and-not-to-do', label: 'Snake in the backyard: what to do (and what not to do)' },
-    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite first aid: the pressure-immobilisation technique' },
+    { href: '/guides/snake-bite-first-aid-pressure-immobilisation-technique', label: 'Snake bite: call 000 and find official first-aid guidance' },
   ],
 };
 
@@ -158,7 +158,7 @@ export default function WildlifeProfile({ page, databaseSpecies }) {
           <ArticleMarkdown markdown={page.content} skipFirstHeading />
 
           <div className="mt-10 border-t border-slate-200 pt-5 text-sm text-slate-500">
-            Last reviewed: {formatDate(page.dateReviewed)}. This is general information, not a substitute for medical care.
+            General information compiled from the official sources listed on this page. It is not medical advice. In an emergency, call 000.
           </div>
         </article>
 
