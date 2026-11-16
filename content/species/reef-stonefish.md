@@ -14,7 +14,7 @@ dateReviewed: 2026-10-24
 
 The Reef Stonefish, *Synanceia verrucosa*, is a highly camouflaged venomous marine fish. Its body can resemble a rock, coral rubble or an encrusted lump on the seafloor. [1] WildGuardian’s HIGH label is a public-safety rating. The practical rule is simple: do not touch unfamiliar marine life and do not walk barefoot on reef flats or rubble.
 
-A suspected stonefish sting needs urgent medical care. Healthdirect says to call 000 for an ambulance, leave a spine in place unless an emergency operator tells you otherwise, and use tolerably hot water for pain relief while obtaining care. [2]
+A suspected stonefish sting needs urgent medical care: call 000 and follow the operator’s instructions. See the official guidance in the section below. [2]
 
 ## Camouflage and identification limits
 
@@ -28,17 +28,13 @@ The Australian Museum records the Reef Stonefish through much of the Great Barri
 
 It is a sit-and-wait predator of small fish and crustaceans. [1] Remaining still is part of both its camouflage and its hunting strategy. A person may therefore encounter a stonefish without seeing movement first, which makes careful footwear and attention to footing more valuable than trying to scan for a particular silhouette.
 
-## Avoiding a sting
+## If someone is bitten, stung or hurt
 
-Wear reef shoes or other suitable protective footwear where local conditions and activity make them appropriate. Keep hands off reef animals and do not reach into crevices, under ledges or through rubble. Follow marine-park, lifeguard and local safety advice, particularly in shallow water where people may stand or wade.
+> **CALL 000 FIRST.** Call 000 now.
 
-If a fish is seen, let it remain where it is. Attempting to move it creates the same close contact that causes most preventable marine injuries. Do not assume a fish is harmless because it is motionless, small or coloured like its background.
+- Stay with the person and follow the 000 operator’s instructions.
 
-## Suspected stonefish sting: urgent response
-
-Call 000 and seek urgent medical care. Healthdirect advises leaving an embedded spine in place unless instructed to remove it by an ambulance operator. [2] Queensland’s clinical treatment pathway specifies hot-water immersion at about 45 °C for 20–30 minutes, provided the water is not hot enough to burn the person. [3]
-
-Stonefish antivenom is available, but assessment and treatment decisions belong to clinicians. [2] [3] Do not use jellyfish-sting vinegar protocols for a suspected stonefish injury: the reviewed stonefish guidance focuses on emergency care, retained-spine management and hot water, not vinegar. [2] Do not delay help while trying to identify the fish.
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Sea creature bites and stings](https://www.healthdirect.gov.au/sea-creature-stings); [Queensland Government — Dangerous marine life](https://www.qld.gov.au/emergency/safety/dangerous-marine).
 
 ## Frequently asked questions
 
@@ -52,14 +48,11 @@ It is recorded through much of the Great Barrier Reef and south to far northern 
 
 ### What should I do if I stand on a suspected stonefish?
 
-Call 000, seek urgent medical care, leave any spine in place unless told otherwise, and use tolerably hot water for pain relief without scalding the skin. [2] [3]
-
-### Should I use vinegar?
-
-No. Vinegar instructions apply to particular jellyfish stings, not stonefish stings. Follow stonefish-specific emergency guidance. [2]
+Call 000 now. WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [3] [4]
 
 ## References
 
 [1]: https://australian.museum/learn/animals/fishes/reef-stonefish-synanceia-verrucosa-bloch-schneider-1801/ "Reef Stonefish, Synanceia verrucosa — Australian Museum"
 [2]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/sea-creature-stings "Sea creature bites and stings — Healthdirect Australia"
-[3]: https://www.poisonsinfo.health.qld.gov.au/__data/assets/pdf_file/0019/342235/suspected-stonefish-sting-treatment-pathway.pdf "Suspected Stonefish Sting Treatment Pathway — Queensland Poisons Information Centre"
+[3]: https://www.healthdirect.gov.au/sea-creature-stings "Healthdirect — Sea creature bites and stings"
+[4]: https://www.qld.gov.au/emergency/safety/dangerous-marine "Queensland Government — Dangerous marine life"
