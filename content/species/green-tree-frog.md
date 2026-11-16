@@ -21,7 +21,7 @@ Adults are large by Australian frog standards. The Australian Museum describes a
 
 Those features are best treated as a combination, rather than a checklist that guarantees an identification. Colour varies across the species: the Australian Museum notes blue-green individuals inland in New South Wales and yellow on the fingers, toes, webbing and limb undersides in some northern populations. [1] The Western Australian Museum also describes a broad body, short limbs and very large expanded toe and finger discs. [4]
 
-There are genuine look-alikes in parts of its range. The Australian Museum specifically lists the Cave-dwelling Tree Frog (*Litoria cavernicola*), Red-eyed Tree Frog (*Litoria chloris*) and Magnificent Tree Frog (*Litoria splendida*) as similar species. It distinguishes them by, respectively, the lack of a head-side skin fold, a red rather than gold iris, and prominent glands on the head and above the shoulders plus white or yellow spots. [1] A photo that does not show these features clearly should remain an uncertain frog identification. A recorded call can add useful evidence: Queensland describes the male’s call as a low, repetitive “crawk-crawk-crawk”, while FrogID recordings are reviewed by Australian Museum frog-call experts. [3] [7]
+There are genuine look-alikes in parts of its range. The Australian Museum specifically lists the Cave-dwelling Tree Frog (*Litoria cavernicola*), Red-eyed Tree Frog (*Litoria chloris*) and Magnificent Tree Frog (*Litoria splendida*) as similar species. It distinguishes them by, respectively, the lack of a head-side skin fold, a red rather than gold iris, and prominent glands on the head and above the shoulders plus white or yellow spots. [1] A photo that does not show these features clearly should remain an uncertain frog identification. A recorded call can add useful evidence: Queensland describes the male’s call as a low, repetitive “crawk-crawk-crawk”, while FrogID recordings are reviewed by Australian Museum frog-call experts. [3] [5]
 
 ## Australian range and habitat
 
@@ -41,17 +41,21 @@ These details explain why a calling frog may be heard near water after rain, and
 
 ## Safer encounters around homes and outdoors
 
-The lowest-impact encounter is an observational one. Keep distance, let the frog choose where it rests, and photograph or listen without touching it. The Commonwealth frog-hygiene protocol states that handling can spread pathogens among frogs and can stress them, making them more susceptible to infection; it says capture, handling and housing of wild amphibians should be minimised or avoided where possible. [5]
+The lowest-impact encounter is an observational one. Keep distance, let the frog choose where it rests, and photograph or listen without touching it. The Commonwealth frog-hygiene protocol states that handling can spread pathogens among frogs and can stress them, making them more susceptible to infection; it says capture, handling and housing of wild amphibians should be minimised or avoided where possible. [6]
 
-This matters beyond one animal. Australian frogs have thin, permeable skin and are sensitive to environmental change; the NSW Government explains that chemicals from air and water can be absorbed through the skin. [6] The national hygiene guidance was developed because disease transmission and spread are a serious concern for Australian amphibians, including chytridiomycosis caused by amphibian chytrid fungus. [5]
+This matters beyond one animal. Australian frogs have thin, permeable skin and are sensitive to environmental change; the NSW Government explains that chemicals from air and water can be absorbed through the skin. [7] The national hygiene guidance was developed because disease transmission and spread are a serious concern for Australian amphibians, including chytridiomycosis caused by amphibian chytrid fungus. [6]
 
 Accordingly, do not collect, handle, move or attempt to keep a wild frog encountered in a garden, bathroom, campsite or bush setting. If the frog is in a safe place, leave it undisturbed. If its welfare appears compromised or a situation is beyond simple observation, seek advice from the relevant state or territory wildlife authority or a licensed local wildlife service rather than attempting an intervention yourself.
 
-A call recording is a constructive, non-contact way to contribute an observation. FrogID is an Australian Museum citizen-science project that enables people to record frog calls with a smartphone, and its submissions are listened to by frog-call experts. [7] A recorded call may help document what is present while retaining the necessary identification caution.
+A call recording is a constructive, non-contact way to contribute an observation. FrogID is an Australian Museum citizen-science project that enables people to record frog calls with a smartphone, and its submissions are listened to by frog-call experts. [5] A recorded call may help document what is present while retaining the necessary identification caution.
 
-## Medical relevance
+## If someone is bitten, stung or hurt
 
-The authoritative species accounts used here describe identification, habitat, breeding and frog-health hygiene; they do not provide a species-specific human first-aid protocol for *Litoria caerulea*. This profile therefore does not substitute general or speculative medical advice for an official species-specific response. The practical health-relevant action supported by the national frog guidance is to avoid unnecessary contact, because handling can stress frogs and contribute to pathogen spread between them. [5]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
+
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -73,7 +77,7 @@ Males call at night in the breeding season. Queensland gives a September-to-Marc
 
 ### What should I do if I find one?
 
-Observe without touching, collecting or moving it. The Commonwealth frog-hygiene protocol says capture and handling of wild amphibians should be minimised or avoided where possible because handling can spread pathogens and stress frogs. A non-contact call recording can be submitted through FrogID if appropriate. [5] [7]
+Observe without touching, collecting or moving it. The Commonwealth frog-hygiene protocol says capture and handling of wild amphibians should be minimised or avoided where possible because handling can spread pathogens and stress frogs. A non-contact call recording can be submitted through FrogID if appropriate. [6] [5]
 
 ## References
 
@@ -81,6 +85,6 @@ Observe without touching, collecting or moving it. The Commonwealth frog-hygiene
 [2]: https://apps.des.qld.gov.au/species-search/details/?id=627 "Queensland Government WildNet taxon record for Litoria caerulea"
 [3]: https://www.qld.gov.au/environment/plants-animals/animals/discovering-wildlife/frogs/common-green-tree-frog "Queensland Government Common green treefrog"
 [4]: https://museum.wa.gov.au/explore/frogwatch/frogs/green-tree-frog/index.html "Western Australian Museum Green Tree Frog"
-[5]: https://www.dcceew.gov.au/sites/default/files/documents/frogs-hygiene-protocols.pdf "Hygiene protocols for the control of diseases in Australian frogs"
-[6]: https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/amphibians/frogs "NSW Government Frogs"
-[7]: https://www.frogid.net.au/ "Australian Museum FrogID"
+[5]: https://www.frogid.net.au/ "Australian Museum FrogID"
+[6]: https://www.dcceew.gov.au/sites/default/files/documents/frogs-hygiene-protocols.pdf "Hygiene protocols for the control of diseases in Australian frogs"
+[7]: https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/amphibians/frogs "NSW Government Frogs"
