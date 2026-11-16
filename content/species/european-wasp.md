@@ -11,7 +11,7 @@ dateReviewed: 2026-10-24
 
 # European Wasp (*Vespula germanica*)
 
-**Risk label: MEDIUM.** The European Wasp is an introduced social wasp that is well established in parts of Australia. It can sting repeatedly, and disturbing a nest can provoke an attack. The sensible approach is to keep your distance, avoid treating a suspected nest as something to inspect, and take a sting seriously if symptoms extend beyond the usual local reaction. [1] [2] [5]
+**Risk label: MEDIUM.** The European Wasp is an introduced social wasp that is well established in parts of Australia. It can sting repeatedly, and disturbing a nest can provoke an attack. The sensible approach is to keep your distance, avoid treating a suspected nest as something to inspect, and take a sting seriously if symptoms extend beyond the usual local reaction. [1] [2] [3]
 
 The scientific name for this species is *Vespula germanica*. Agriculture Victoria places it in the order Hymenoptera and family Vespidae. This page concerns that one introduced species, not every yellow-and-black wasp seen in Australia. [1]
 
@@ -25,7 +25,7 @@ Do not approach an active insect, a visible entrance hole or a nest to settle th
 
 ## Australian range and habitat
 
-European Wasps are not native to Australia. They were first recorded in a Hobart suburb in 1959. [1] [4] NSW Department of Primary Industries and Regional Development lists the species as established in Tasmania, South Australia, Victoria and New South Wales, while Tasmania’s biosecurity agency says it has spread to all parts of that state. [3] [4]
+European Wasps are not native to Australia. They were first recorded in a Hobart suburb in 1959. [1] [4] NSW Department of Primary Industries and Regional Development lists the species as established in Tasmania, South Australia, Victoria and New South Wales, while Tasmania’s biosecurity agency says it has spread to all parts of that state. [5] [4]
 
 Australian sources also document a broader, changing picture. Agriculture Victoria records that by the late 1970s the species had reached southern mainland Australia, including Victoria, New South Wales, South Australia and Western Australia, with isolated nests found in southern Queensland. [1] This is not a live national distribution map.
 
@@ -39,11 +39,11 @@ European Wasps are opportunistic scavengers and hunters. Australian sources list
 
 A colony is usually founded in spring by a fertilised queen. She produces the first brood, after which workers take over food gathering, nest construction and care of young while the queen concentrates on laying eggs. The nest grows through summer; males and new queens are produced in autumn. [2] [4] In southern Australian conditions, nests commonly decline over winter, but mild winters can allow some colonies to persist and enlarge in a later season. [1] [4]
 
-This is more than an outdoor nuisance. NSW DPIRD says European Wasps can affect beekeeping, forestry and horticulture, and may disrupt native ecosystems by competing for food and disturbing food chains. [3] Tasmania’s biosecurity agency says intense predation has been shown to diminish native insect fauna in some areas. [4]
+This is more than an outdoor nuisance. NSW DPIRD says European Wasps can affect beekeeping, forestry and horticulture, and may disrupt native ecosystems by competing for food and disturbing food chains. [5] Tasmania’s biosecurity agency says intense predation has been shown to diminish native insect fauna in some areas. [4]
 
 ## Safer encounters
 
-The safest response to European Wasp activity is distance. European Wasps can attack when a nest is disturbed, and, unlike honeybees, they can sting more than once. [2] [5] Treat a stream of wasps entering a hole, crack or hidden cavity as a reason to keep people and animals away from that area rather than a reason to investigate.
+The safest response to European Wasp activity is distance. European Wasps can attack when a nest is disturbed, and, unlike honeybees, they can sting more than once. [2] [3] Treat a stream of wasps entering a hole, crack or hidden cavity as a reason to keep people and animals away from that area rather than a reason to investigate.
 
 When wasps are close, avoid sharp movements. Tasmania’s biosecurity guidance says such movements can draw their attention and excite them to sting. [4] Move away without swatting, chasing or attempting to touch the insect. Do not place hands, feet or equipment into a suspected nest location, including a hole at ground level or a cavity around a structure.
 
@@ -51,15 +51,14 @@ During outdoor eating, be especially aware around exposed meat, sweet food and d
 
 Children should be told that a yellow-and-black insect is not something to catch or challenge. Keep pets away from concentrated activity and do not intervene at a suspected nest.
 
-## Wasp stings: appropriate first aid and when to escalate
+## If someone is bitten, stung or hurt
 
-A bee or wasp sting usually causes immediate sharp pain, then redness, swelling, pain or itch. Most improve within 24 hours. [5] A wasp does not usually leave its sting in the skin and can sting multiple times. [5] Symptoms can be more severe after multiple stings, and a sting can trigger anaphylaxis in some people. [2] [5]
+> **GET MEDICAL ADVICE.** Most single stings are painful but not dangerous. Allergic reactions are the risk.
 
-For a suspected wasp sting without signs of a severe allergy, healthdirect advises washing the area with soap and water, then applying an ice pack wrapped in a towel or cloth for 15 minutes. [5] It does not replace medical assessment when the location or symptoms are concerning.
+- Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.
+- Not sure? Poisons Information Centre: 13 11 26.
 
-See a doctor straight away for a sting in the mouth, neck or face, or on the eyelid or in the eye. Healthdirect also advises prompt medical review if a child has five or more stings or an adult has 10 or more. [5]
-
-**Treat suspected anaphylaxis as an emergency.** Healthdirect lists noisy breathing, a swollen tongue or throat, wheeze or persistent cough, voice change, dizziness or collapse as reasons to call triple zero (000) for an ambulance. It also says to call an ambulance for abdominal pain or diarrhoea in the first hour after a sting. [5] If the person has an adrenaline autoinjector, use it immediately, call 000 and follow their ASCIA allergy action plan. [5]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid); [Queensland Health — Bites and stings](https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings).
 
 ## Frequently asked questions
 
@@ -73,20 +72,22 @@ Look only from a safe distance. A European Wasp is typically bright yellow and b
 
 ### Are European Wasps found across all of Australia?
 
-Official sources confirm established populations in Tasmania, South Australia, Victoria and New South Wales; Tasmania reports the species statewide. [3] [4] Agriculture Victoria also records historical establishment in Western Australia and isolated southern Queensland nests. [1] Local distribution can change, so this is not a real-time map of every suburb or region.
+Official sources confirm established populations in Tasmania, South Australia, Victoria and New South Wales; Tasmania reports the species statewide. [5] [4] Agriculture Victoria also records historical establishment in Western Australia and isolated southern Queensland nests. [1] Local distribution can change, so this is not a real-time map of every suburb or region.
 
 ### Why should I avoid a small hole with wasps flying in and out?
 
-European Wasp colonies can be underground or inside cavities, and the Australian Museum says a nest may be visible only as a small entrance hole. [2] European Wasps may attack when a nest is disturbed. [2] [5] Keep clear rather than trying to find out how large the nest is.
+European Wasp colonies can be underground or inside cavities, and the Australian Museum says a nest may be visible only as a small entrance hole. [2] European Wasps may attack when a nest is disturbed. [2] [3] Keep clear rather than trying to find out how large the nest is.
 
 ### When is a wasp sting an emergency?
 
-Call 000 for an ambulance if anaphylaxis is suspected, including breathing difficulty, tongue or throat swelling, persistent cough or wheeze, voice change, dizziness or collapse. [5] Use an available adrenaline autoinjector immediately and follow the person’s ASCIA action plan. [5]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [6] [7]
 
 ## References
 
 [1]: https://agriculture.vic.gov.au/biosecurity/pest-insects-and-mites/priority-pest-insects-and-mites/european-wasp "Agriculture Victoria: European wasp"
 [2]: https://www.austmus.gov.au/European-Wasp "Australian Museum: European wasp"
-[3]: https://www.dpird.nsw.gov.au/animals-and-livestock/bees/pests-diseases/bees-and-wasps/european-wasp "NSW Department of Primary Industries and Regional Development: European wasp"
+[3]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/bee-and-wasp-stings "healthdirect Australia: Bee and wasp stings"
 [4]: https://nre.tas.gov.au/biosecurity-tasmania/plant-biosecurity/pests-and-diseases/european-and-english-wasps "Natural Resources and Environment Tasmania: European and English Wasps"
-[5]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/bee-and-wasp-stings "healthdirect Australia: Bee and wasp stings"
+[5]: https://www.dpird.nsw.gov.au/animals-and-livestock/bees/pests-diseases/bees-and-wasps/european-wasp "NSW Department of Primary Industries and Regional Development: European wasp"
+[6]: https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid "Better Health Channel — Bites and stings first aid"
+[7]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Queensland Health — Bites and stings"
