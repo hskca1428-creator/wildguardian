@@ -50,11 +50,13 @@ A sighting is usually best treated as wildlife viewing, not an invitation to int
 
 If a kangaroo moves toward you or you feel threatened, do not run or turn your back. Move away slowly toward a safe place, keep your movements calm, and place a solid barrier such as a tree or fence between you and the animal where possible. Do not strike it. NSW National Parks also advises staying low and protecting the face and back of the neck if an approaching kangaroo continues to close the distance. [4] [5]
 
-## If someone is injured
+## If someone is bitten, stung or hurt
 
-Get to safety first and seek urgent help for a serious injury. Healthdirect Australia advises that **any animal bite which breaks the skin should be assessed by a doctor as soon as possible**. [6] Go to the nearest emergency department for a large or deep wound, a wound to the face or head, or bleeding that cannot be stopped; call Triple Zero (000) for an ambulance if urgent medical help is needed. [6]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-For a sick, injured or orphaned kangaroo, keep back. Queensland guidance warns that sick or injured kangaroos may be defensive when approached and directs people to contact a trained wildlife rehabilitator instead. [4] In NSW national parks, the direction is to contact a licensed wildlife rescue and rehabilitation group, local vet or the nearest parks office. [5] Do not attempt to handle, feed, capture or move the animal yourself.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
@@ -85,4 +87,3 @@ No. It is an encounter-safety label for this WildGuardian profile. The Australia
 [3]: https://www.environment.nsw.gov.au/sites/default/files/eastern-grey-kangaroo-nsw-scientific-committee-final-determination.pdf "NSW Scientific Committee Eastern Grey Kangaroo final determination"
 [4]: https://www.qld.gov.au/environment/plants-animals/animals/living-with/kangaroos "Queensland Government Kangaroos and wallabies"
 [5]: https://www.nationalparks.nsw.gov.au/safety/wildlife-encounters "NSW National Parks Wildlife encounters"
-[6]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/dog-cat-bat-and-human-bites "Healthdirect Australia animal bites guidance"
