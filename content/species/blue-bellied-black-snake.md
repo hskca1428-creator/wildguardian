@@ -30,13 +30,14 @@ It is mainly a terrestrial, daytime hunter of frogs, lizards, snakes and mammals
 
 When pressured, it may hiss, flatten its forebody into a low S-shape and strike. [1] This is defensive behaviour. Back away calmly, keep pets and children away and do not block the snake’s path. If it is in a place where safe separation is impossible, contact an appropriately licensed local snake-removal service rather than trying to move it yourself.
 
-## Suspected bite: emergency response
+## If someone is bitten, stung or hurt
 
-Every suspected Australian snake bite should be treated as potentially life-threatening. Healthdirect directs people to call 000 for an ambulance, or try 112 from a mobile if triple zero does not work. [3] Do not wait for symptoms or species confirmation.
+> **CALL 000 FIRST.** Call 000 now.
 
-Keep the person still and calm. Apply pressure immobilisation: put a roller bandage over the bite, then apply a firm second bandage from the fingers or toes upward over the limb, and splint the limb to limit movement. [3] Keep the bandage on, record the time and stay with the person until paramedics arrive.
+- Stay with the person and follow the 000 operator’s instructions.
+- Do not wait for symptoms, and do not try to identify the snake first.
 
-Do not wash the bite, cut it, suck it, apply a tourniquet or try to catch or kill the snake. [3] If the person is unresponsive and not breathing normally, start CPR while following emergency-dispatcher instructions.
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Snake bites](https://www.healthdirect.gov.au/snake-bites); [Queensland Health — Bites and stings](https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings).
 
 ## Frequently asked questions
 
@@ -54,10 +55,11 @@ No. A description is not a safe identification. Similar-looking snakes occur wit
 
 ### What should I do after a possible bite?
 
-Call 000 immediately, keep the person still, apply pressure immobilisation and do not wash or interfere with the bite site. [3]
+Call 000 now. WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [3] [4]
 
 ## References
 
 [1]: https://australian.museum/learn/animals/reptiles/blue-bellied-black-snake/ "Blue-bellied Black Snake, Pseudechis guttatus — Australian Museum"
 [2]: https://wildnet.science-data.qld.gov.au/taxon-detail?taxon_id=474 "Pseudechis guttatus, Spotted Black Snake — Queensland Government WildNet"
-[3]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/snake-bites "Snake bites — Healthdirect Australia"
+[3]: https://www.healthdirect.gov.au/snake-bites "Healthdirect — Snake bites"
+[4]: https://www.qld.gov.au/health/condition/accidents-injuries-and-poisonings/bites-and-stings/bites-and-stings "Queensland Health — Bites and stings"
