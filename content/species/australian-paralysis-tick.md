@@ -14,7 +14,7 @@ dateReviewed: 2026-10-24
 
 The Australian Paralysis Tick, *Ixodes holocyclus*, is a blood-feeding arachnid and parasite. It is also called the eastern paralysis tick, seed tick or grass tick. [1] WildGuardian’s HIGH label reflects its potential health consequences, including tick paralysis and allergic reactions. It does not mean every tick bite causes severe illness.
 
-If a tick is attached, do not squeeze, twist, agitate or forcibly remove it. Healthdirect advises killing an attached tick in place with an ether-containing freezing spray and allowing it to drop off. [2] People with known tick allergy need urgent medical help rather than attempting removal themselves.
+If a tick is attached, do not guess what to do. Follow the current official guidance linked below, and get medical help if you have had a tick allergy or are unsure. [2]
 
 ## Recognition and life stages
 
@@ -34,13 +34,14 @@ Stay on clearer paths where practical, wear clothing that covers skin in long gr
 
 A tick bite may cause local itch, redness, swelling or a lump. Allergic reactions can range from mild local effects to anaphylaxis, and tick paralysis can occur. [1] [2] Symptoms are a reason to seek health advice, not a substitute for proper attached-tick treatment.
 
-## Attached tick: current first aid
+## If someone is bitten, stung or hurt
 
-Healthdirect advises using an ether-containing freeze spray to kill an attached tick and waiting for it to drop off, usually within about five minutes. [2] If it cannot be frozen or does not drop off, leave it in place and obtain urgent medical help. For a very small embedded larva or nymph, Healthdirect advises permethrin cream on the tick, following product or health-professional directions. [2]
+> **GET MEDICAL ADVICE.** Do not guess. Follow current official tick guidance, and get medical help if you have had a tick allergy or are unsure.
 
-Do not use methylated spirits, kerosene, petroleum jelly, nail polish, oil, alcohol or a lighted match. Do not pull the tick with tweezers. Healthdirect says these approaches can make the tick burrow deeper or inject more saliva. [2]
+- Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.
+- Unwell in the days after a tick bite: see a doctor and mention the tick.
 
-If a person with an attached tick has a known tick allergy or mammalian-meat allergy, seek urgent medical help and do not attempt removal without medical support. If someone has trouble breathing or collapses after a tick bite, use an available prescribed adrenaline autoinjector, follow the ASCIA action plan and call 000 immediately. [2]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Tick bites](https://www.healthdirect.gov.au/tick-bites); [ASCIA — Tick allergy](https://www.allergy.org.au/ticks).
 
 ## Frequently asked questions
 
@@ -48,20 +49,18 @@ If a person with an attached tick has a known tick allergy or mammalian-meat all
 
 It occurs mainly in humid coastal eastern Australia, including Queensland, New South Wales and northern Victoria. [1] [3]
 
-### Should I pull an attached tick out with tweezers?
-
-No. Healthdirect advises against squeezing, twisting or forcibly removing a tick. Kill it in place with an ether-containing freezing product and allow it to drop off. [2]
-
 ### Is tick season only in summer?
 
 Ticks can be present year-round. Adult activity commonly peaks from spring into midsummer, while larvae are often encountered in autumn and winter. [1]
 
 ### What signs mean I should call 000?
 
-Call 000 if a person has difficulty breathing or collapses after a tick bite. Use an available prescribed adrenaline autoinjector and follow their ASCIA action plan. [2]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [4] [5]
 
 ## References
 
 [1]: https://australian.museum/learn/animals/insects/australian-paralysis-tick/ "Australian Paralysis Tick — Australian Museum"
 [2]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/tick-bites "Tick bites — Healthdirect Australia"
 [3]: https://www.csiro.au/en/news/All/Articles/2023/November/Ticking-along-this-summer "Ticked off: tick tactics on the go — CSIRO"
+[4]: https://www.healthdirect.gov.au/tick-bites "Healthdirect — Tick bites"
+[5]: https://www.allergy.org.au/ticks "ASCIA — Tick allergy"
