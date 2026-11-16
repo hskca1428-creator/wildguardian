@@ -18,7 +18,7 @@ This guide is about legally kept pet snakes in Australia, not snakes encountered
 
 **Venom risk** concerns whether a species can medically envenom a person. It is the highest-consequence risk, but not a shortcut for judging other issues. For example, New South Wales requires experience and training for people planning to keep venomous reptiles; higher reptile classes can require a first-aid certificate, escape-proof enclosures, a lockable room, references and an emergency response plan. [2]
 
-The Northern Territory likewise says venomous snakes can be very dangerous, requires a permit for any venomous snake, and assigns permits by three danger categories. [6] “Pet snake” is not a species or safety category. Do not infer that a snake is non-venomous, or a possible bite harmless, because it is in a home or enclosure: Australian health guidance says identification can be difficult and all snake bites should be treated as a medical emergency. [1]
+The Northern Territory likewise says venomous snakes can be very dangerous, requires a permit for any venomous snake, and assigns permits by three danger categories. [3] “Pet snake” is not a species or safety category. Do not infer that a snake is non-venomous, or a possible bite harmless, because it is in a home or enclosure: Australian health guidance says identification can be difficult and all snake bites should be treated as a medical emergency. [1]
 
 **Bite risk** is different. A non-venomous snake may still bite or scratch and break skin. NSW captive-snake hygiene guidance recognises this risk and advises covering open cuts before contact. [4] Do not normalise bites; if a snake may have bitten someone, use the emergency response above. [1]
 
@@ -36,7 +36,7 @@ Hygiene is not a cleaning chore to assign to a child. The responsible adult need
 
 ## Animal welfare is part of household safety
 
-A snake’s welfare needs are also safety needs. NSW says native reptiles require special care, an escape-proof enclosure, appropriate food and water, and knowledge of heating, lighting and cage-furniture standards. [3] Its code framework also addresses space, ventilation, humidity, cleaning, transport and quarantine. [3]
+A snake’s welfare needs are also safety needs. NSW says native reptiles require special care, an escape-proof enclosure, appropriate food and water, and knowledge of heating, lighting and cage-furniture standards. [6] Its code framework also addresses space, ventilation, humidity, cleaning, transport and quarantine. [6]
 
 That list is a reason not to treat a snake as a low-maintenance alternative to a dog or cat. A household unable to provide secure housing, species-appropriate conditions, cleaning and veterinary care should not acquire one. The Australian Veterinary Association supports state and territory arrangements that limit native-wildlife pets to species suitable for a domestic environment, and says permitted trade should meet high welfare standards with oversight and training. [7]
 
@@ -46,12 +46,12 @@ NSW guidance says stressed animals are more susceptible to disease and advises f
 
 A pet snake is a serious husbandry responsibility. Consider these questions before committing:
 
-- **Who is the accountable adult?** They—not a child—need to meet licence, enclosure, hygiene, cleaning, veterinary and rehoming responsibilities. [3] [4]
+- **Who is the accountable adult?** They—not a child—need to meet licence, enclosure, hygiene, cleaning, veterinary and rehoming responsibilities. [6] [4]
 - **Who lives or visits here?** Reconsider the arrangement where an under-five would have contact, or someone with reduced immunity cannot avoid exposure or maintain strict hygiene. [4] [5]
-- **Can the animal be securely and humanely housed?** Confirm the space supports the species-specific, escape-proof enclosure and conditions required by the regulator. [3]
+- **Can the animal be securely and humanely housed?** Confirm the space supports the species-specific, escape-proof enclosure and conditions required by the regulator. [6]
 - **Can cleaning be separated from food and bathing areas?** If not, the hygiene controls advised for reptile households are unlikely to be reliable. [4]
-- **Can you verify the species, legal source and permit before purchase?** A licence or sale should not be assumed to answer these questions for you. [2] [3]
-- **What happens if circumstances change?** Releasing an unwanted native reptile is not an option: NSW says it can harm the animal and affect native wildlife populations, and directs owners to lawful rehoming pathways or a veterinarian. [3]
+- **Can you verify the species, legal source and permit before purchase?** A licence or sale should not be assumed to answer these questions for you. [2] [6]
+- **What happens if circumstances change?** Releasing an unwanted native reptile is not an option: NSW says it can harm the animal and affect native wildlife populations, and directs owners to lawful rehoming pathways or a veterinarian. [6]
 
 These questions recognise that household risk includes escape prevention, hygiene discipline, animal welfare and the vulnerability of people in the home.
 
@@ -59,9 +59,9 @@ These questions recognise that household risk includes escape prevention, hygien
 
 There is no single Australia-wide pet-snake permission. Check your wildlife or environment regulator **before** acquiring an animal and check the conditions for that precise species and class. This is general information, not legal advice.
 
-In NSW, native reptiles are protected; a person needs a biodiversity conservation licence to keep a native reptile as a pet, pets must be bought from licensed dealers or breeders, and it is illegal to keep exotic non-native reptiles. [2] NSW further says only captive-bred reptiles may be legally bought and sold, and only species on its keeper list can be kept as pets. [3]
+In NSW, native reptiles are protected; a person needs a biodiversity conservation licence to keep a native reptile as a pet, pets must be bought from licensed dealers or breeders, and it is illegal to keep exotic non-native reptiles. [2] NSW further says only captive-bred reptiles may be legally bought and sold, and only species on its keeper list can be kept as pets. [6]
 
-Rules do not transfer across borders. In the NT, venomous-snake permits depend on danger category, the property is inspected for suitability, and private permit holders cannot keep exotic snakes. [6] Check the current species list, permit conditions, welfare code and source records directly. Do not take a snake from the wild or release a pet into a backyard or the wild. [2] [3]
+Rules do not transfer across borders. In the NT, venomous-snake permits depend on danger category, the property is inspected for suitability, and private permit holders cannot keep exotic snakes. [3] Check the current species list, permit conditions, welfare code and source records directly. Do not take a snake from the wild or release a pet into a backyard or the wild. [2] [6]
 
 ## When a possible bite or escape changes the answer
 
@@ -73,11 +73,11 @@ An escape is not a cue for an untrained person to attempt capture. Contact the a
 
 ### Are pet pythons dangerous?
 
-No python is risk-free simply because it is discussed as a pet. Venom, bite, hygiene and welfare are separate questions. Verify the exact species and its legal status, provide appropriate secure housing, and call 000 for any possible snake bite. [1] [2] [3]
+No python is risk-free simply because it is discussed as a pet. Venom, bite, hygiene and welfare are separate questions. Verify the exact species and its legal status, provide appropriate secure housing, and call 000 for any possible snake bite. [1] [2] [6]
 
 ### Can Australian households legally keep venomous snakes?
 
-Some jurisdictions have tightly controlled pathways, but requirements vary. NSW requires demonstrated experience and training for venomous reptiles; the NT requires a permit for any venomous snake and uses danger categories. These examples are not permission elsewhere—check your regulator first. [2] [6]
+Some jurisdictions have tightly controlled pathways, but requirements vary. NSW requires demonstrated experience and training for venomous reptiles; the NT requires a permit for any venomous snake and uses danger categories. These examples are not permission elsewhere—check your regulator first. [2] [3]
 
 ### Is a snake safe around children?
 
@@ -89,14 +89,14 @@ Good hygiene is essential but does not guarantee a reptile is free of *Salmonell
 
 ### Does a licence mean the snake is suitable for my home?
 
-No. A licence addresses legal permission and conditions; household suitability also depends on people present, housing, hygiene capacity and ongoing welfare needs. NSW’s guidance treats these as distinct responsibilities. [2] [3]
+No. A licence addresses legal permission and conditions; household suitability also depends on people present, housing, hygiene capacity and ongoing welfare needs. NSW’s guidance treats these as distinct responsibilities. [2] [6]
 
 ## References
 
 [1]: https://www.healthdirect.gov.au/accidents-and-injuries/bites-and-stings/snake-bites "Healthdirect: Snake bites"
 [2]: https://www.environment.nsw.gov.au/licences-and-permits/wildlife-licences/native-animals-as-pets/reptile-keeper-licences "NSW Government: Reptile keeper licences"
-[3]: https://www.environment.nsw.gov.au/licences-and-permits/wildlife-licences/native-animals-as-pets/reptile-keeper-licences/buying-and-caring-for-native-reptiles "NSW Government: Buying and caring for native reptiles"
+[3]: https://nt.gov.au/environment/animals/keeping-wildlife-as-pets/keeping-snakes/permits-for-venomous-snakes "Northern Territory Government: Permits for venomous snakes"
 [4]: https://www.environment.nsw.gov.au/sites/default/files/2024-06/captive-snakes-hygiene-protocol-disease-control.pdf "NSW Government: Hygiene protocol for the control of disease in captive snakes"
 [5]: https://wildlifehealthaustralia.com.au/Portals/0/ResourceCentre/FactSheets/Reptiles/Salmonella_infection_in_Australian_Reptiles.pdf "Wildlife Health Australia: Salmonella infection in Australian reptiles"
-[6]: https://nt.gov.au/environment/animals/keeping-wildlife-as-pets/keeping-snakes/permits-for-venomous-snakes "Northern Territory Government: Permits for venomous snakes"
+[6]: https://www.environment.nsw.gov.au/licences-and-permits/wildlife-licences/native-animals-as-pets/reptile-keeper-licences/buying-and-caring-for-native-reptiles "NSW Government: Buying and caring for native reptiles"
 [7]: https://www.ava.com.au/policy/exotic-pet-and-wildlife-trade "Australian Veterinary Association: Exotic pet and wildlife trade"
