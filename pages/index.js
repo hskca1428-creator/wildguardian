@@ -15,7 +15,6 @@ import { firstAid, EMERGENCY_NOTE, GUIDANCE_NOTE, SOURCES } from '../data/firstA
 import FirstAidRouter from '../components/FirstAidRouter';
 
 const AU_STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT'];
-const MAX_FREE_ANALYSES = 3;
 
 export default function Home() {
   const [image, setImage] = useState(null);
@@ -24,8 +23,8 @@ export default function Home() {
   const [analyzing, setAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
-  const [analysisCount, setAnalysisCount] = useState(0);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [limitReason, setLimitReason] = useState(null); // 'day' | 'global' | null
 
  // Vercel serverless functions cap request bodies at ~4.5MB, and base64
 // encoding inflates file size by ~33% — so a 4-5MB phone photo can blow
@@ -71,10 +70,6 @@ const handleImageUpload = (e) => {
 };
 
   const analyzeImage = async () => {
-    if (analysisCount >= MAX_FREE_ANALYSES) {
-      setShowUpgradeModal(true);
-      return;
-    }
     if (!image) return;
 
     setAnalyzing(true);
@@ -90,11 +85,17 @@ const handleImageUpload = (e) => {
       const data = await response.json();
 
       if (!response.ok) {
+        // Daily limits (per visitor or site-wide) open the sign-up card.
+        // The per-minute limit and other errors show the normal message.
+        if (data.reason === 'day' || data.reason === 'global') {
+          setLimitReason(data.reason);
+          setShowUpgradeModal(true);
+          return;
+        }
         throw new Error(data.details || data.error || 'Analysis failed');
       }
 
       setResult(data);
-      setAnalysisCount((prev) => prev + 1);
     } catch (err) {
       setError(err.message || 'An unexpected error occurred.');
     } finally {
@@ -479,10 +480,16 @@ const handleImageUpload = (e) => {
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <AlertTriangle className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Free Limit Reached</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Daily Limit Reached</h3>
               <p className="text-gray-600">
-                You've used all {MAX_FREE_ANALYSES} free identifications for this session. Paid plans are coming
-                soon — subscribe below and we'll let you know.
+                {limitReason === 'global'
+                  ? "WildGuardian's photo check has reached its daily capacity. Please try again tomorrow."
+                  : "You've reached today's free limit for photo checks. Please try again tomorrow."}{' '}
+                You can still browse the species database and safety guides. Subscribe below and we'll let you know
+                about updates and paid plans.
+              </p>
+              <p className="mt-2 text-sm font-semibold text-red-700">
+                Bitten or stung? Don't wait for a photo result. Call 000.
               </p>
             </div>
 
