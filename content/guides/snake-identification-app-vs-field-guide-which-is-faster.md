@@ -8,7 +8,7 @@ dateReviewed: 2026-10-17
 
 # Snake identification app vs field guide: which is faster?
 
-> **Possible snake bite? Call Triple Zero (000) for an ambulance immediately.** Treat every suspected snake bite as potentially life-threatening. Do not wait for an app result, a field-guide match or symptoms before calling. Keep the person still, apply pressure bandaging with immobilisation where appropriate, and follow official emergency advice. [1] [2]
+> **Possible snake bite? Call Triple Zero (000) for an ambulance immediately.** Treat every suspected snake bite as potentially life-threatening. Do not wait for an app result, a field-guide match or symptoms before calling. Follow the operator’s instructions. [1] [2]
 
 For a **non-emergency sighting**, a phone-based snake identification app can be the faster way to generate a *possible* name when you already have a clear, safely obtained photograph. A printed Australian field guide can be faster when the phone has no battery, signal or working app, or when you need to compare a shortlist carefully using locality and several visible features. Neither has a universal speed advantage, and neither turns a visual match into a safe verdict.
 
@@ -16,15 +16,9 @@ That distinction matters in Australia. Not every snake is venomous, but official
 
 ## Identification is never the first emergency task
 
-A suspected bite changes the question from “What snake is it?” to “How do we get emergency care and reduce movement?” The Australian and New Zealand Committee on Resuscitation (ANZCOR) recommends sending for an ambulance, keeping the person immobilised, reassured and under constant observation, and applying pressure bandaging with immobilisation. Start CPR if the person is unresponsive and not breathing normally. [2]
+A suspected bite changes the question from “What snake is it?” to “How do we get emergency care?” Call 000, ask for an ambulance and follow the call-taker’s directions. WildGuardian does not write first-aid instructions; the official guidance from Healthdirect and ANZCOR is linked in the references. [1] [2]
 
-A bite can be painless and can leave only a scratch or a single mark, so an apparent lack of dramatic injury is not a reason to wait. [2] Use this simple sequence after a possible bite:
-
-1. **Get clear of the snake only if needed for immediate safety, then keep the person still.** Do not let them walk to find the snake, their phone or a guide. [1] [2]
-2. **Call 000 and ask for an ambulance.** Tell the call-taker it is a suspected snake bite and follow their directions. [1]
-3. **Apply pressure bandaging with immobilisation to a bitten limb if you can do so without delaying the call or creating further danger.** Official NSW guidance describes firm bandaging of the limb and splinting to restrict walking and movement. [5]
-4. **Do not wash, cut or suck the bite, and do not use an arterial tourniquet.** These are specifically discouraged in Australian first-aid guidance. [1] [2]
-5. **Do not try to catch, kill or identify the snake.** ANZCOR says a digital photograph may assist identification *if it is safe to take*, but that optional information never outranks the emergency response. [2]
+A bite can be painless and can leave only a scratch or a single mark, so an apparent lack of dramatic injury is not a reason to wait. [2] Do not try to catch, kill or identify the snake; ANZCOR says a digital photograph may assist identification *if it is safe to take*, but that optional information never outranks the emergency response. [2]
 
 In other words, the fastest useful action after a bite is an emergency call and first aid—not an identification workflow. Clinicians can assess the person and the bite; Healthdirect notes that doctors can organise blood tests to determine whether a venomous snake was involved. [1]
 
@@ -98,4 +92,3 @@ Keep an unedited photo if one already exists, plus the broad location, date, tim
 [2]: https://www.anzcor.org/home/first-aid/guideline-9-4-1-first-aid-management-of-australian-snake-bite "ANZCOR Guideline 9.4.1 – First Aid Management of Australian Snake Bite"
 [3]: https://environment.qld.gov.au/wildlife/animals/living-with/snakes/frequent-questions "Queensland Government: Frequently asked questions about snakes"
 [4]: https://australian.museum/learn/animals/reptiles/eastern-brown-snake/ "Australian Museum: Eastern Brown Snake"
-[5]: https://www.poisonsinfo.nsw.gov.au/first-aid "NSW Poisons Information Centre: Poisons first aid"
