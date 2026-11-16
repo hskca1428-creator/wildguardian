@@ -53,13 +53,13 @@ If a dingo approaches or you feel threatened on K’gari, Queensland Parks and W
 
 Call **000** in an emergency. [1] [4] On K’gari, report concerning interactions such as circling, lunging, nipping, biting or chasing to a ranger using the current contact route published by Queensland Parks and Wildlife Service. [4] Elsewhere, report a serious wildlife safety concern through the relevant park or land manager.
 
-## If someone is bitten or injured
+## If someone is bitten, stung or hurt
 
-Treat a bite that breaks the skin as a medical matter, even if it seems small. Healthdirect says infections can occur after an animal bite and recommends seeing a doctor as soon as possible if the skin is broken. [5] This is ordinary animal-bite care, not snake or spider first aid.
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-For a minor wound while arranging medical advice, Healthdirect advises cleaning the skin around the wound with soap and water, using running water to remove dirt, hair or teeth if present, patting it dry with a clean cloth, and covering it with a clean dressing. Apply pressure with a dry dressing after cleaning if it is bleeding heavily. [5] A clinician can assess the wound, infection risk and whether a tetanus booster is needed. [5]
+- Not sure? Poisons Information Centre: 13 11 26.
 
-Go to an emergency department, or call **000** for an ambulance, if the wound is large or deep, the bite is on the face or head, or bleeding cannot be stopped. [5] Seek urgent reassessment for increasing pain, redness, swelling, warmth, pus or discharge, fever, or swollen lymph nodes, which Healthdirect lists as possible infection signs. [5]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
