@@ -5,7 +5,7 @@ speciesId: 49
 scientificName: Hapalochlaena species
 category: Octopus
 riskLabel: CRITICAL
-metaDescription: Australian blue-ringed octopus safety guide: identification limits, habitats, safer encounters and official emergency response.
+metaDescription: "Australian blue-ringed octopus safety guide: identification limits, habitats, safer encounters and official emergency response."
 excerpt: Blue-ringed octopus is a genus-level Australian profile. Learn how to recognise the limits of identification, avoid contact and act immediately after a suspected bite.
 dateReviewed: 2026-10-24
 ---
