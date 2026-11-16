@@ -36,13 +36,14 @@ Follow beach warnings, stay out of water where Bluebottles are visible in the sh
 
 Wear suitable footwear on beaches where washed-up marine life is present, but do not rely on shoes or a glance at the water to make an unidentified jellyfish safe. Do not touch a washed-up Bluebottle to remove it; alert a lifeguard or beach manager if assistance is needed.
 
-## Bluebottle sting: correct first aid
+## If someone is bitten, stung or hurt
 
-A Bluebottle sting is treated differently from a tropical box-jellyfish sting. Healthdirect advises rinsing the sting with seawater, not fresh water, and removing tentacles by hand or with seawater. [2] Then immerse the affected limb in hot water at about 45 °C for 20 minutes, taking care not to burn the person. A hot shower or running hot water may be used if immersion is not possible. [2]
+> **GET MEDICAL ADVICE.** Follow official bluebottle guidance. Get medical help for a sting to the eye or mouth, widespread stings, or a bad reaction.
 
-Do **not** use vinegar for a Bluebottle sting. Healthdirect says vinegar may increase pain. [2] Seek medical care for severe or persistent pain or other concerning symptoms. Call 000 for urgent medical help.
+- Difficulty breathing, swelling of the face or throat, dizziness or collapse, or widespread hives after any bite or sting: call 000 immediately.
+- Not sure? Poisons Information Centre: 13 11 26.
 
-In northern Australia, do not assume an unknown jellyfish sting is a Bluebottle sting. Healthdirect advises treating an unknown sting north of Bundaberg in Queensland and Geraldton in Western Australia as a possible box-jellyfish sting. [2]
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Sea creature bites and stings](https://www.healthdirect.gov.au/sea-creature-stings); [Queensland Government — Dangerous marine life](https://www.qld.gov.au/emergency/safety/dangerous-marine).
 
 ## Frequently asked questions
 
@@ -53,10 +54,6 @@ It is often called a jellyfish, but it is technically a colonial siphonophore ra
 ### Can a Bluebottle on the beach still sting?
 
 Yes. Keep clear of beached animals and tentacles. [1]
-
-### Should I use vinegar for a Bluebottle sting?
-
-No. Rinse with seawater, remove tentacles and use tolerably hot water. Healthdirect says vinegar can increase Bluebottle-sting pain. [2]
 
 ### What if I do not know what stung me in northern Australia?
 
