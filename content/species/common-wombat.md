@@ -47,11 +47,13 @@ On roads through known wombat habitat, stay alert, particularly around the coole
 
 A wombat seen during the day is not automatically a problem, but visible hair loss, thickened or inflamed skin, or an animal that appears in poor condition can be consistent with sarcoptic mange. [2] [3] For concerns about an apparently sick, injured or orphaned wombat, use the relevant state wildlife authority or a licensed wildlife rehabilitation organisation; Victoria’s wildlife authority directs people concerned about a mange-affected wombat to those services. [3]
 
-## If a wombat bites or scratches someone
+## If someone is bitten, stung or hurt
 
-A wombat encounter can cause injury, even though bites from native animals are less commonly discussed than dog or cat bites. Healthdirect states that any animal, including native animals, can bite and that infection can occur when an animal bite breaks the skin. [5]
+> **GET MEDICAL ADVICE.** Get medical advice about any bite or scratch that breaks the skin.
 
-If a wombat bite or scratch **breaks the skin**, seek medical advice as soon as possible. [5] Go to an emergency department for a large or deep wound, a bite to the face or head, or bleeding that will not stop; for urgent medical help, Healthdirect says to call Triple Zero (000). [5] A clinician can assess the wound, infection risk and tetanus status. [5] This is general Australian health guidance, not a diagnosis for an individual injury.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## Frequently asked questions
 
