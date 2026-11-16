@@ -49,11 +49,14 @@ Physical contact is the key health distinction. The NSW Government says there is
 
 For households, the practical boundary is to avoid contact and use appropriate local wildlife or council channels for concerns about a camp or an animal. This page does not provide capture, feeding, rehabilitation, handling or relocation directions.
 
-## Medical response after bat contact
+## If someone is bitten, stung or hurt
 
-ABLV is a rare but serious disease, and it is unique to Australia. It can spread when saliva from an infected bat enters through a bite or scratch, broken skin, or the eyes, nose or mouth. [4] This is bat-exposure guidance, not general animal-bite guidance.
+> **GET MEDICAL ADVICE.** Get urgent medical advice after any bat bite, scratch or saliva contact, even if it looks minor.
 
-If a bat bites or scratches someone, the Australian Centre for Disease Control says to **immediately wash the wound for at least 15 minutes with soap and water**, apply an antiseptic with antiviral properties, and seek urgent medical attention. The same source says to flush the eyes, nose or mouth with water for several minutes after bat saliva contacts those areas, then seek urgent medical attention. [4] Do not wait for symptoms, and seek care even if you have previously received rabies vaccination. [4]
+- Do not handle a bat. Report a sick or injured bat to local wildlife authorities.
+- Not sure? Poisons Information Centre: 13 11 26.
+
+WildGuardian does not write first-aid instructions. For what to do, use the official guidance: [Healthdirect — Dog, cat, bat and human bites](https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites); [Better Health Channel — Bites and stings first aid](https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid).
 
 ## FAQs
 
@@ -71,7 +74,7 @@ Their movements track flowering and fruiting resources. Flying-foxes can change 
 
 ### What should I do after any bite, scratch or saliva contact from a bat?
 
-Follow the official ABLV steps: wash a bite or scratch immediately for at least 15 minutes with soap and water, apply an antiviral antiseptic, and seek urgent medical attention. For saliva in the eyes, nose or mouth, flush with water for several minutes and seek urgent medical attention. [4]
+Get medical advice (Poisons Information Centre: 13 11 26). WildGuardian does not write first-aid instructions; follow the official guidance linked in the section above. [5] [6]
 
 ## References
 
@@ -79,3 +82,5 @@ Follow the official ABLV steps: wash a bite or scratch immediately for at least 
 [2]: https://www.dcceew.gov.au/environment/biodiversity/threatened/species/flying-fox-law "Australian Government: Flying-foxes and national environmental law"
 [3]: https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/land-mammals/flying-foxes "NSW Government: Flying-foxes"
 [4]: https://www.cdc.gov.au/diseases/australian-bat-lyssavirus "Australian Centre for Disease Control: Australian bat lyssavirus"
+[5]: https://www.healthdirect.gov.au/dog-cat-bat-and-human-bites "Healthdirect — Dog, cat, bat and human bites"
+[6]: https://www.betterhealth.vic.gov.au/health/healthyliving/bites-and-stings-first-aid "Better Health Channel — Bites and stings first aid"
