@@ -11,7 +11,8 @@ import {
   Camera,
   BookOpen,
 } from 'lucide-react';
-import { firstAid, EMERGENCY_NOTE, LAST_REVIEWED, SOURCES } from '../data/firstAid';
+import { firstAid, EMERGENCY_NOTE, GUIDANCE_NOTE, SOURCES } from '../data/firstAid';
+import FirstAidRouter from '../components/FirstAidRouter';
 
 const AU_STATES = ['NSW', 'VIC', 'QLD', 'WA', 'SA', 'TAS', 'ACT', 'NT'];
 const MAX_FREE_ANALYSES = 3;
@@ -189,8 +190,8 @@ const handleImageUpload = (e) => {
             </div>
           </div>
           <p className="text-lg text-blue-200 max-w-xl mx-auto leading-relaxed">
-            Photograph a snake or spider, get an instant ID with a danger rating and first-aid
-            steps if it bites.
+            Photograph a snake or spider, get an instant ID with a danger rating and links to
+            official help if it bites.
           </p>
         </div>
 
@@ -332,19 +333,7 @@ const handleImageUpload = (e) => {
                       <p className="text-xs font-semibold text-gray-500 uppercase mb-1">If you see one</p>
                       <p className="text-sm text-gray-800">{s.encounterAdvice}</p>
                     </div>
-
-                    {aid && (
-                      <div className="bg-slate-900 text-white rounded-lg p-4">
-                        <p className="text-xs font-semibold text-slate-300 uppercase mb-2">
-                          If bitten or stung: {aid.title}
-                        </p>
-                        <ul className="text-sm text-slate-100 space-y-1 list-disc list-inside">
-                          {aid.steps.map((step, i) => (
-                            <li key={i}>{step}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                    <FirstAidRouter aid={aid} />
                   </div>
                 );
               })}
@@ -392,7 +381,7 @@ const handleImageUpload = (e) => {
               Full Species Database
               <ChevronRight className="w-5 h-5" />
             </h3>
-            <p className="text-blue-200 text-sm">Browse 60+ native species with ID guides and first-aid info</p>
+            <p className="text-blue-200 text-sm">Browse 60+ native species with ID guides and links to official first-aid help</p>
           </a>
 
           <a
@@ -406,7 +395,7 @@ const handleImageUpload = (e) => {
               Snake Safety Guides
               <ChevronRight className="w-5 h-5" />
             </h3>
-            <p className="text-blue-200 text-sm">Australian first aid, backyard safety, seasons and identification guides</p>
+            <p className="text-blue-200 text-sm">Snake bite help, backyard safety, seasons and identification guides</p>
           </a>
 
           <div className="block bg-white/5 backdrop-blur-xl rounded-xl p-6 border border-white/10">
@@ -462,7 +451,7 @@ const handleImageUpload = (e) => {
         {/* Footer */}
         <div className="text-center text-blue-300/60 text-sm space-y-2">
           <p>
-            First-aid guidance last reviewed: {LAST_REVIEWED}. Sources:{' '}
+            {GUIDANCE_NOTE} Official sources:{' '}
             {SOURCES.map((s, i) => (
               <span key={s.url}>
                 {i > 0 && ', '}
